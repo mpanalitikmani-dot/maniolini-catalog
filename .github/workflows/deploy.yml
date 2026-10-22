@@ -1,0 +1,55 @@
+name: Обновить каталог и опубликовать
+
+on:
+  push:
+    branches: [main]
+  schedule:
+    - cron: "0 3 * * *" # каждый день в 06:00 МСК
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Собрать товары с maniolini.ru
+        if: github.event_name != 'push'
+        run: python scraper/scrape.py
+
+      - name: Сохранить обновлённый products.json
+        if: github.event_name != 'push'
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@users.noreply.github.com"
+          git add data/products.json
+          git diff --cached --quiet || git commit -m "Обновить каталог $(date -u +%F)"
+          git push
+
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
