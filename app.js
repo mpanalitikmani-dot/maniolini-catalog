@@ -8,7 +8,7 @@
   const inTg = !!(tg && tg.platform && tg.platform !== "unknown");
 
   const state = {
-    all: [], categories: [], cat: "", sub: "", q: "", size: "", color: "", shown: PAGE,
+    all: [], categories: [], looks: [], cat: "", sub: "", q: "", size: "", color: "", shown: PAGE,
     current: null, colorIdx: 0, pickedSize: "",
   };
 
@@ -238,6 +238,11 @@
     const g = e.target, i = Math.round(g.scrollLeft / g.clientWidth);
     [...$("pDots").children].forEach((d, k) => d.classList.toggle("on", k === i));
   }, { passive: true });
+  // На ПК мышью не свайпнуть — листаем кликом по точкам
+  $("pDots").addEventListener("click", (e) => {
+    const i = [...$("pDots").children].indexOf(e.target); if (i < 0) return;
+    const g = $("pGallery"); g.scrollTo({ left: i * g.clientWidth, behavior: "smooth" });
+  });
   $("pWrite").addEventListener("click", () => contact(state.current));
   $("pSite").addEventListener("click", (e) => {
     if (inTg) { e.preventDefault(); tg.openLink($("pSite").href); }
@@ -276,7 +281,7 @@
       href: `https://t.me/${m.telegram}?text=${enc}` });
     if (m.vk) list.push({ title: "ВКонтакте", color: "#0077ff", ic: "VK", href: `https://vk.me/${m.vk}` });
     if (m.whatsapp) list.push({ title: "WhatsApp", color: "#25d366", ic: "WA", href: `https://wa.me/${m.whatsapp}?text=${enc}` });
-    if (m.phone) list.push({ title: "Позвонить " + m.phone, color: "#555", ic: "☎", href: "tel:" + m.phone.replace(/[^\d+]/g, ""), plain: true });
+    if (m.phone) list.push({ title: "Позвонить", color: "#555", ic: "☎", href: "tel:" + m.phone.replace(/[^\d+]/g, ""), plain: true });
     return list;
   }
 
@@ -305,10 +310,10 @@
 
   // Текст сообщения всегда виден: Telegram не гарантирует подстановку ?text= в чат
   // (а если в чате уже есть черновик — оставляет старый), поэтому человек видит, что отправляет.
-  function contact(p) {
+  function contact(p, text) {
     haptic("medium");
-    $("cTitle").textContent = p ? "Сообщение о товаре" : "Сообщение менеджеру";
-    $("cText").value = message(p);
+    $("cTitle").textContent = p ? "Сообщение о товаре" : text ? "Сообщение об образе" : "Сообщение менеджеру";
+    $("cText").value = text || message(p);
     renderChannels();
     openSheet("contact"); // сначала показать: скрытое поле нельзя выделить и скопировать
     showCopied(copy($("cText").value));
@@ -332,13 +337,49 @@
     ok ? b.setAttribute("data-done", "") : b.removeAttribute("data-done");
     b.textContent = ok ? "✓ Текст скопирован" : "Скопировать текст";
     $("cHint").textContent = ok
-      ? "Откройте чат и вставьте сообщение — менеджер сразу увидит товар, цвет и размер."
-      : "Нажмите «Скопировать текст», затем выберите, куда написать.";
+      ? "вставьте его в чат"
+      : "и выберите, куда написать";
   }
   $("cCopy").addEventListener("click", () => { haptic(); showCopied(copy($("cText").value)); });
   // Текст можно поправить перед отправкой — ссылки с ?text= обновляем
   $("cText").addEventListener("input", () => { showCopied(false); renderChannels(); });
   $("writeBtn").addEventListener("click", () => contact(null));
+
+  // ---------- Лукбук ----------
+  function renderLooks() {
+    $("looksSection").hidden = !state.looks.length;
+    $("looks").innerHTML = state.looks.map((l, i) =>
+      `<button class="look" data-look="${i}" aria-label="${esc(l.alt)}">${imgTag(l.src, 600, l.alt)}</button>`).join("");
+  }
+  $("looks").addEventListener("click", (e) => {
+    const b = e.target.closest("[data-look]"); if (b) openLook(+b.dataset.look);
+  });
+
+  function openLook(i) {
+    const track = $("vTrack");
+    if (!track.children.length) track.innerHTML = state.looks.map((l) => imgTag(l.src, 1100, l.alt)).join("");
+    openSheet("viewer");
+    track.scrollLeft = i * track.clientWidth;
+    updateLookCount();
+  }
+  const lookIndex = () => Math.round($("vTrack").scrollLeft / ($("vTrack").clientWidth || 1));
+  function updateLookCount() { $("vCount").textContent = `${lookIndex() + 1} / ${state.looks.length}`; }
+  function lookMessage() {
+    const i = lookIndex();
+    return `Здравствуйте! Понравился образ из лукбука MANIOLINI (фото ${i + 1}). Подберёте похожее?
+${state.looks[i].src}`;
+  }
+  $("vTrack").addEventListener("scroll", updateLookCount, { passive: true });
+  $("vWrite").addEventListener("click", () => contact(null, lookMessage()));
+  // На ПК листаем стрелками на экране и на клавиатуре
+  const stepLook = (d) => { const t = $("vTrack"); t.scrollBy({ left: d * t.clientWidth, behavior: "smooth" }); };
+  $("viewer").addEventListener("click", (e) => {
+    const b = e.target.closest("[data-step]"); if (b) stepLook(+b.dataset.step);
+  });
+  document.addEventListener("keydown", (e) => {
+    if ($("viewer").hidden || !["ArrowLeft", "ArrowRight"].includes(e.key)) return;
+    stepLook(e.key === "ArrowRight" ? 1 : -1);
+  });
 
   // ---------- Telegram ----------
   function haptic(kind = "light") { if (inTg && tg.HapticFeedback) tg.HapticFeedback.impactOccurred(kind); }
@@ -349,7 +390,7 @@
     stack.length ? tg.BackButton.show() : tg.BackButton.hide();
     if (top === "contact" || top === "filterSheet") return tg.MainButton.hide();
     tg.MainButton.setParams({
-      text: top === "product" ? "Написать о товаре" : "Написать менеджеру",
+      text: top === "product" ? "Написать о товаре" : top === "viewer" ? "Хочу такой образ" : "Написать менеджеру",
       is_visible: true,
     });
   }
@@ -361,7 +402,11 @@
     const applyTheme = () => document.documentElement.dataset.theme = tg.colorScheme === "dark" ? "dark" : "light";
     applyTheme(); tg.onEvent("themeChanged", applyTheme);
     try { tg.setHeaderColor("bg_color"); } catch {}
-    tg.MainButton.onClick(() => contact(stack.includes("product") ? state.current : null));
+    tg.MainButton.onClick(() => {
+      const top = stack[stack.length - 1];
+      if (top === "viewer") return contact(null, lookMessage());
+      contact(stack.includes("product") ? state.current : null);
+    });
     tg.BackButton.onClick(closeSheet);
     syncTgButtons();
   }
@@ -392,7 +437,7 @@
     try {
       const res = await fetch("data/products.json", { cache: "no-cache" });
       const data = await res.json();
-      state.all = data.products; state.categories = data.categories;
+      state.all = data.products; state.categories = data.categories; state.looks = data.lookbook || [];
       $("updated").textContent = "Обновлено " + new Date(data.updated).toLocaleDateString("ru-RU");
     } catch (e) {
       $("empty").hidden = false;
@@ -400,7 +445,7 @@
       return;
     }
     const item = applyDeepLink();
-    renderHits(); renderChips(); renderGrid();
+    renderHits(); renderLooks(); renderChips(); renderGrid();
     if (item) openProduct(...item);
   }
   init();

@@ -12,6 +12,7 @@ import json
 import re
 import sys
 import time
+import urllib.parse
 import urllib.request
 from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timezone
@@ -40,6 +41,7 @@ PRODUCT_ID = re.compile(r'class="sku-props[^"]*"[^>]*?data-item-id="(\d+)"', re.
 SKU_PROP = re.compile(r'sku-props__inner([^"]*)"[^>]*data-id="(\d+)">(.*?)</div>\s*</div>\s*</div>', re.S)
 SKU_VALUE = re.compile(r'<button[^>]*class="sku-props__value([^"]*)"[^>]*data-onevalue="(\d+)"[^>]*data-title="([^"]*)"([^>]*)>')
 SWATCH = re.compile(r'background-image:\s*url\(([^)]+)\)')
+GALLERY_IMG = re.compile(r'(?:href|data-src|src)="(/upload/iblock/[^"]+\.(?:jpe?g|png|webp))"', re.I)
 TREE = re.compile(r'offers-template-json">\s*(\[.*?\])\s*</template>', re.S)
 
 
@@ -97,24 +99,48 @@ def parse_sku(chunk: str) -> dict:
     }
 
 
-def detail_sizes(card: dict) -> dict[int, list[int]] | None:
-    """Со страницы товара: id цвета -> id размеров в продаже. В списке это есть не всегда."""
+def detail(card: dict) -> dict:
+    """Страница цвета товара: все фото галереи и какие размеры есть в этом цвете.
+
+    В списке каталога сайт отдаёт максимум 4 фото и не всегда — наличие размеров.
+    """
+    page = fetch(card["url"])
+    out: dict = {}
+
+    start = page.find("gallery-big-slider-main")
+    end = page.find("gallery-big-slider-thumbs", start)
+    if start >= 0:
+        gallery = []
+        for src in GALLERY_IMG.findall(page[start:end if end > start else start + 40000]):
+            if src not in gallery:
+                gallery.append(src)
+        if gallery:
+            out["images"] = [BASE + s for s in gallery]
+
     sku = card["sku"]
-    if not sku["sizeProp"]:
-        return None
-    m = TREE.search(fetch(card["url"]))
-    if not m:
-        return None
-    tree = [t.get("TREE") or {} for t in json.loads(m.group(1))]
-    if not any(tree):
-        return None
-    out: dict[int, list[int]] = {}
-    for t in tree:
-        size = t.get(f"PROP_{sku['sizeProp']}")
-        color = t.get(f"PROP_{sku['colorProp']}") if sku["colorProp"] else None
-        if size is not None:
-            out.setdefault(color, []).append(size)
+    m = TREE.search(page)
+    tree = [t.get("TREE") or {} for t in json.loads(m.group(1))] if m else []
+    if sku["sizeProp"] and any(tree):
+        ids = [
+            t.get(f"PROP_{sku['sizeProp']}") for t in tree
+            if not sku["colorProp"] or t.get(f"PROP_{sku['colorProp']}") == sku["colorId"]
+        ]
+        out["sizes"] = [t for v, t in sku["sizeIds"].items() if v in ids]
     return out
+
+
+def lookbook() -> list[dict]:
+    """Фото со страницы /lukbuk/ (alt «Лукбук, фото N»)."""
+    page = fetch(BASE + "/lukbuk/")
+    photos = []
+    for tag in re.findall(r"<img[^>]*>", page):
+        alt = re.search(r'alt="([^"]*)"', tag)
+        src = re.search(r'data-src="(/upload/[^"]+)"', tag) or re.search(r'src="(/upload/[^"]+)"', tag)
+        if alt and src and "фото" in alt.group(1).lower():
+            url = BASE + urllib.parse.quote(html.unescape(src.group(1)))
+            if url not in [p["src"] for p in photos]:
+                photos.append({"src": url, "alt": html.unescape(alt.group(1))})
+    return photos
 
 
 def parse_cards(page: str) -> list[dict]:
@@ -245,20 +271,16 @@ def main() -> None:
         else:
             cards[c["oid"]] = c
 
-    # Точное наличие размеров по цветам — со страницы товара (одна страница на товар)
-    first: dict[int, dict] = {}
-    for c in cards.values():
-        first.setdefault(c["productId"], c)
-    print(f"[sizes] {len(first)} product pages")
+    # Все фото и точное наличие размеров — со страницы каждого цвета
+    print(f"[details] {len(cards)} pages")
     with ThreadPoolExecutor(max_workers=4) as pool:
-        trees = dict(zip(first, pool.map(lambda c: _safe(detail_sizes, c), first.values())))
-    for c in cards.values():
-        tree = trees.get(c["productId"])
-        if tree is None:
-            continue
-        ids = tree.get(c["sku"]["colorId"], [])
-        c["sizes"] = [t for v, t in c["sku"]["sizeIds"].items() if v in ids]
-    print(f"  exact sizes for {sum(t is not None for t in trees.values())} products")
+        details = list(pool.map(lambda c: _safe(detail, c) or {}, cards.values()))
+    for c, d in zip(cards.values(), details):
+        c.update(d)
+    print(f"  photos: {sum('images' in d for d in details)}, sizes: {sum('sizes' in d for d in details)}")
+
+    looks = _safe(lookbook) or []
+    print(f"[lookbook] {len(looks)} photos")
 
     items = group(list(cards.values()), sections)
     OUT.parent.mkdir(parents=True, exist_ok=True)
@@ -267,6 +289,7 @@ def main() -> None:
         "source": BASE,
         "categories": [{"slug": s, "title": t} for s, t in CATEGORIES.items()],
         "products": items,
+        "lookbook": looks,
     }, ensure_ascii=False, indent=1), encoding="utf-8")
     print(f"saved {len(items)} products ({len(cards)} color cards), hits: {sum(p['hit'] for p in items)} -> {OUT}")
 

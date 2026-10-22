@@ -11,9 +11,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=202610221343">
+  <link rel="stylesheet" href="style.css?v=20261022143510">
   <script src="https://telegram.org/js/telegram-web-app.js"></script>
-  <script src="config.js?v=202610221343"></script>
+  <script src="config.js?v=20261022143510"></script>
 </head>
 <body>
   <header class="top">
@@ -33,6 +33,14 @@
         <span class="muted" id="hitsCount"></span>
       </div>
       <div class="carousel" id="hits"></div>
+    </section>
+
+    <section class="looks" id="looksSection" hidden>
+      <div class="section-head">
+        <h2>Лукбук</h2>
+        <span class="muted">образы MANIOLINI</span>
+      </div>
+      <div class="carousel carousel--looks" id="looks"></div>
     </section>
 
     <section class="catalog">
@@ -62,11 +70,13 @@
   <!-- Карточка товара -->
   <div class="sheet" id="product" hidden>
     <div class="sheet__backdrop" data-close></div>
-    <div class="sheet__panel" role="dialog" aria-modal="true">
+    <div class="sheet__panel sheet__panel--product" role="dialog" aria-modal="true">
       <button class="sheet__close icon-btn" data-close aria-label="Закрыть">✕</button>
-      <div class="gallery" id="pGallery"></div>
-      <div class="dots" id="pDots"></div>
-      <div class="sheet__body">
+      <div class="pmedia">
+        <div class="gallery" id="pGallery"></div>
+        <div class="dots" id="pDots"></div>
+      </div>
+      <div class="sheet__body pinfo">
         <div class="stickers" id="pStickers"></div>
         <h3 id="pName"></h3>
         <div class="muted" id="pSection"></div>
@@ -90,12 +100,16 @@
     <div class="sheet__backdrop" data-close></div>
     <div class="sheet__panel sheet__panel--small" role="dialog" aria-modal="true">
       <div class="sheet__body">
-        <h3 id="cTitle">Сообщение менеджеру</h3>
-        <textarea class="msg" id="cText" rows="4"></textarea>
-        <button class="copy-btn" id="cCopy" type="button">Скопировать текст</button>
-        <p class="muted" id="cHint"></p>
+        <div class="sheet__head">
+          <h3 id="cTitle">Сообщение менеджеру</h3>
+          <button class="icon-btn icon-btn--sm" data-close aria-label="Закрыть">✕</button>
+        </div>
+        <textarea class="msg" id="cText" rows="3"></textarea>
+        <div class="copy-row">
+          <button class="copy-btn" id="cCopy" type="button">Скопировать текст</button>
+          <span class="muted" id="cHint"></span>
+        </div>
         <div class="contact-list" id="cList"></div>
-        <button class="btn btn--ghost" data-close>Отмена</button>
       </div>
     </div>
   </div>
@@ -112,6 +126,19 @@
     </div>
   </div>
 
-  <script src="app.js?v=202610221343"></script>
+  <!-- Лукбук: просмотр фото на весь экран -->
+  <div class="sheet viewer" id="viewer" hidden>
+    <div class="sheet__backdrop" data-close></div>
+    <button class="sheet__close icon-btn" data-close aria-label="Закрыть">✕</button>
+    <div class="viewer__track" id="vTrack"></div>
+    <button class="viewer__nav viewer__nav--prev" data-step="-1" aria-label="Предыдущее фото">‹</button>
+    <button class="viewer__nav viewer__nav--next" data-step="1" aria-label="Следующее фото">›</button>
+    <div class="viewer__bar">
+      <span id="vCount"></span>
+      <button class="btn btn--primary btn--sm" id="vWrite">Хочу такой образ</button>
+    </div>
+  </div>
+
+  <script src="app.js?v=20261022143510"></script>
 </body>
 </html>
