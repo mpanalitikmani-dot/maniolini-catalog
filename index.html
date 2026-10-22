@@ -39,6 +39,11 @@
       <div class="section-head"><h2>Каталог</h2><span class="muted" id="count"></span></div>
       <nav class="chips" id="cats"></nav>
       <nav class="chips chips--sub" id="subs"></nav>
+      <nav class="chips chips--filters" id="filters">
+        <button class="chip chip--filter" data-filter="size"><span>Размер</span> ▾</button>
+        <button class="chip chip--filter" data-filter="color"><span>Цвет</span> ▾</button>
+        <button class="chip chip--reset" id="resetFilters" hidden>Сбросить ✕</button>
+      </nav>
       <div class="grid" id="grid"></div>
       <button class="more" id="more" hidden>Показать ещё</button>
       <p class="empty" id="empty" hidden>Ничего не нашлось — напишите менеджеру, подберём.</p>
@@ -66,6 +71,14 @@
         <h3 id="pName"></h3>
         <div class="muted" id="pSection"></div>
         <div class="price price--lg" id="pPrice"></div>
+        <div class="variant" id="pColorsBox">
+          <div class="variant__label">Цвет: <b id="pColorName"></b></div>
+          <div class="swatches" id="pColors"></div>
+        </div>
+        <div class="variant" id="pSizesBox">
+          <div class="variant__label">Размер: <b id="pSizeName"></b></div>
+          <div class="sizes" id="pSizes"></div>
+        </div>
         <button class="btn btn--primary" id="pWrite">Написать менеджеру о товаре</button>
         <a class="btn btn--ghost" id="pSite" target="_blank" rel="noopener">Открыть на сайте</a>
       </div>
@@ -81,6 +94,18 @@
         <p class="muted" id="cHint">Текст сообщения скопирован — просто вставьте его в чат.</p>
         <div class="contact-list" id="cList"></div>
         <button class="btn btn--ghost" data-close>Отмена</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Фильтр по размеру / цвету -->
+  <div class="sheet" id="filterSheet" hidden>
+    <div class="sheet__backdrop" data-close></div>
+    <div class="sheet__panel sheet__panel--small" role="dialog" aria-modal="true">
+      <div class="sheet__body">
+        <h3 id="fTitle"></h3>
+        <div class="filter-options" id="fOptions"></div>
+        <button class="btn btn--ghost" data-close>Готово</button>
       </div>
     </div>
   </div>

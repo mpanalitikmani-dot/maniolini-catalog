@@ -75,7 +75,7 @@ button { font: inherit; color: inherit; cursor: pointer; }
 /* Хиты — горизонтальная галерея */
 .carousel {
   display: grid; grid-auto-flow: column; grid-auto-columns: 62%;
-  gap: 10px; overflow-x: auto; padding: 0 var(--gutter) 4px;
+  gap: 10px; overflow-x: auto; padding: 0 var(--gutter) 4px; align-items: start;
   scroll-snap-type: x mandatory; scroll-padding: 0 var(--gutter);
   scrollbar-width: none;
 }
@@ -102,6 +102,7 @@ button { font: inherit; color: inherit; cursor: pointer; }
 .grid {
   display: grid; grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 18px 10px; padding: 6px var(--gutter) 0;
+  align-items: start; /* иначе кнопка-карточка растягивается и центрирует содержимое */
 }
 @media (min-width: 600px) { .grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
 @media (min-width: 960px) { .grid { grid-template-columns: repeat(4, minmax(0, 1fr)); max-width: 1200px; margin: 0 auto; } }
@@ -200,3 +201,35 @@ button { font: inherit; color: inherit; cursor: pointer; }
 
 @keyframes up { from { transform: translateY(100%); } }
 @keyframes fade { from { opacity: 0; } }
+
+/* Фильтры размер / цвет */
+.chips--filters { padding-bottom: 6px; }
+.chip--filter[aria-pressed="true"] { background: var(--accent); color: var(--on-accent); border-color: var(--accent); }
+.chip--reset { color: var(--muted); }
+.filter-options { display: flex; flex-wrap: wrap; gap: 8px; margin: 14px 0 6px; }
+.filter-options .chip { display: inline-flex; align-items: center; gap: 8px; }
+
+/* Цвета и размеры */
+.swatch {
+  width: 18px; height: 18px; border-radius: 50%; flex: none; display: inline-block;
+  background: var(--surface) center / cover no-repeat; box-shadow: inset 0 0 0 1px rgb(0 0 0 / .15);
+}
+.card__swatches { display: flex; align-items: center; gap: 4px; margin-top: 6px; font-size: 12px; color: var(--muted); }
+.card__swatches .swatch { width: 12px; height: 12px; }
+.variant { margin: -4px 0 16px; }
+.variant__label { font-size: 14px; color: var(--muted); margin-bottom: 8px; }
+.variant__label b { color: var(--text); font-weight: 500; }
+.swatches { display: flex; flex-wrap: wrap; gap: 10px; }
+.swatches button {
+  border: 0; padding: 3px; border-radius: 50%; background: none;
+  box-shadow: 0 0 0 1px var(--line);
+}
+.swatches button[aria-pressed="true"] { box-shadow: 0 0 0 2px var(--accent); }
+.swatches .swatch { width: 30px; height: 30px; display: block; }
+.sizes { display: flex; flex-wrap: wrap; gap: 8px; }
+.sizes button {
+  min-width: 48px; padding: 9px 12px; border-radius: 10px;
+  border: 1px solid var(--line); background: var(--bg); font-size: 14px;
+}
+.sizes button[aria-pressed="true"] { background: var(--accent); color: var(--on-accent); border-color: var(--accent); }
+.sizes button:disabled { color: var(--muted); text-decoration: line-through; opacity: .55; cursor: default; }

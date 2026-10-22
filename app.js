@@ -7,10 +7,14 @@
   const tg = window.Telegram && window.Telegram.WebApp;
   const inTg = !!(tg && tg.platform && tg.platform !== "unknown");
 
-  const state = { all: [], cat: "", sub: "", q: "", shown: PAGE, current: null };
+  const state = {
+    all: [], categories: [], cat: "", sub: "", q: "", size: "", color: "", shown: PAGE,
+    current: null, colorIdx: 0, pickedSize: "",
+  };
 
   const rub = (n) => n == null ? "" : n.toLocaleString("ru-RU") + " ₽";
   const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+  const swatch = (c) => `<span class="swatch" style="background-image:url('${esc(c.swatch)}')"></span>`;
 
   function img(url, w) {
     if (!CFG.imageProxy) return url;
@@ -26,6 +30,16 @@
     if (el.tagName === "IMG" && el.dataset.orig && el.src !== el.dataset.orig) el.src = el.dataset.orig;
   }, true);
 
+  // Размеры: одежда XS…2XL, обувь по номеру, One Size в конце
+  const SIZE_ORDER = ["XXS", "XS", "S", "M", "L", "XL", "2XL", "XXL", "3XL"];
+  function sizeRank(s) {
+    const i = SIZE_ORDER.indexOf(s);
+    if (i >= 0) return i;
+    const n = parseFloat(s);
+    return isNaN(n) ? 1000 : 100 + n;
+  }
+  const bySize = (a, b) => sizeRank(a) - sizeRank(b);
+
   function stickers(p) {
     return [
       p.hit && `<span class="sticker">Хит</span>`,
@@ -33,37 +47,59 @@
       p.sale && `<span class="sticker sticker--sale">Акция</span>`,
     ].filter(Boolean).join("");
   }
-  function priceHtml(p) {
-    return rub(p.price) + (p.oldPrice && p.oldPrice > p.price ? `<s>${rub(p.oldPrice)}</s>` : "");
+  function priceHtml(c) {
+    return rub(c.price) + (c.oldPrice && c.oldPrice > c.price ? `<s>${rub(c.oldPrice)}</s>` : "");
   }
+
+  // Цвет, который показываем в списке: выбранный в фильтре, иначе первый
+  function shownColor(p) {
+    const i = state.color ? p.colors.findIndex((c) => c.title === state.color) : 0;
+    return Math.max(i, 0);
+  }
+
   function card(p, w) {
-    return `<button class="card" data-id="${p.id}">
-      <div class="card__img">${imgTag(p.images[0], w, p.name)}<div class="stickers">${stickers(p)}</div></div>
+    const ci = shownColor(p), c = p.colors[ci];
+    const named = p.colors.filter((x) => x.title);
+    const dots = named.length > 1
+      ? `<div class="card__swatches">${named.slice(0, 5).map(swatch).join("")}${named.length > 5 ? `+${named.length - 5}` : ""}</div>`
+      : "";
+    return `<button class="card" data-id="${p.id}" data-color="${ci}">
+      <div class="card__img">${imgTag(c.images[0], w, p.name)}<div class="stickers">${stickers(p)}</div></div>
       <div class="card__name">${esc(p.name)}</div>
-      <div class="price">${priceHtml(p)}</div>
+      <div class="price">${priceHtml(c)}</div>
+      ${dots}
     </button>`;
   }
 
   // ---------- Каталог ----------
-  function filtered() {
+  function matches(p) {
     const q = state.q.trim().toLowerCase();
-    return state.all.filter((p) =>
-      (!state.cat || p.category === state.cat) &&
-      (!state.sub || p.subsection === state.sub) &&
-      (!q || (p.name + " " + p.subsectionTitle).toLowerCase().includes(q)));
+    if (state.cat && p.category !== state.cat) return false;
+    if (state.sub && p.subsection !== state.sub) return false;
+    if (q && !(p.name + " " + p.subsectionTitle + " " + p.colors.map((c) => c.title).join(" ")).toLowerCase().includes(q)) return false;
+    // Цвет и размер должны совпасть в одном варианте: «чёрный 38», а не «чёрный» + «38 в бежевом»
+    return p.colors.some((c) =>
+      (!state.color || c.title === state.color) && (!state.size || c.sizes.includes(state.size)));
   }
+  const filtered = () => state.all.filter(matches);
 
   function renderChips() {
     const cats = [{ slug: "", title: "Все" }, ...state.categories];
     $("cats").innerHTML = cats.map((c) =>
       `<button class="chip" data-cat="${c.slug}" aria-pressed="${c.slug === state.cat}">${esc(c.title)}</button>`).join("");
 
-    if (!state.cat) { $("subs").innerHTML = ""; return; }
     const subs = new Map();
-    state.all.filter((p) => p.category === state.cat && p.subsection)
+    if (state.cat) state.all.filter((p) => p.category === state.cat && p.subsection)
       .forEach((p) => subs.set(p.subsection, p.subsectionTitle || p.subsection));
     $("subs").innerHTML = subs.size < 2 ? "" : [["", "Все"], ...subs].map(([s, t]) =>
       `<button class="chip" data-sub="${s}" aria-pressed="${s === state.sub}">${esc(t)}</button>`).join("");
+
+    const [sizeBtn, colorBtn] = $("filters").querySelectorAll("[data-filter]");
+    sizeBtn.setAttribute("aria-pressed", !!state.size);
+    sizeBtn.firstElementChild.textContent = state.size ? "Размер " + state.size : "Размер";
+    colorBtn.setAttribute("aria-pressed", !!state.color);
+    colorBtn.firstElementChild.textContent = state.color || "Цвет";
+    $("resetFilters").hidden = !state.size && !state.color;
   }
 
   function renderGrid() {
@@ -78,19 +114,24 @@
     let hits = state.all.filter((p) => p.hit);
     if (hits.length < 6) hits = hits.concat(state.all.filter((p) => !p.hit && p.new)).slice(0, 12);
     $("hitsSection").hidden = !hits.length;
+    // В хитах всегда основной цвет, независимо от фильтров каталога
+    const saved = state.color; state.color = "";
     $("hits").innerHTML = hits.map((p) => card(p, 500)).join("");
+    state.color = saved;
     $("hitsCount").textContent = "листайте →";
   }
 
+  function refresh() { state.shown = PAGE; renderChips(); renderGrid(); }
+
   $("cats").addEventListener("click", (e) => {
     const b = e.target.closest("[data-cat]"); if (!b) return;
-    state.cat = b.dataset.cat; state.sub = ""; state.shown = PAGE;
-    haptic(); renderChips(); renderGrid();
+    state.cat = b.dataset.cat; state.sub = "";
+    haptic(); refresh();
   });
   $("subs").addEventListener("click", (e) => {
     const b = e.target.closest("[data-sub]"); if (!b) return;
-    state.sub = b.dataset.sub; state.shown = PAGE;
-    haptic(); renderChips(); renderGrid();
+    state.sub = b.dataset.sub;
+    haptic(); refresh();
   });
   $("more").addEventListener("click", () => { state.shown += PAGE; renderGrid(); });
   $("searchToggle").addEventListener("click", () => {
@@ -103,30 +144,103 @@
     t = setTimeout(() => { state.q = e.target.value; state.shown = PAGE; renderGrid(); }, 150);
   });
   document.addEventListener("click", (e) => {
-    const c = e.target.closest(".card"); if (c) openProduct(+c.dataset.id);
+    const c = e.target.closest(".card"); if (c) openProduct(+c.dataset.id, +c.dataset.color);
   });
 
+  // ---------- Фильтры размер / цвет ----------
+  // Варианты считаем по текущему разделу, чтобы не предлагать «XL» в обуви
+  function filterOptions(kind) {
+    const pool = state.all.filter((p) => (!state.cat || p.category === state.cat) && (!state.sub || p.subsection === state.sub));
+    if (kind === "size") {
+      const set = new Set();
+      pool.forEach((p) => p.colors.forEach((c) => c.sizes.forEach((s) => set.add(s))));
+      return [...set].sort(bySize).map((s) => ({ value: s, label: esc(s) }));
+    }
+    const map = new Map();
+    pool.forEach((p) => p.colors.forEach((c) => { if (c.title && !map.has(c.title)) map.set(c.title, c); }));
+    return [...map.values()].sort((a, b) => a.title.localeCompare(b.title, "ru"))
+      .map((c) => ({ value: c.title, label: swatch(c) + esc(c.title) }));
+  }
+
+  function openFilter(kind) {
+    const current = state[kind];
+    $("fTitle").textContent = kind === "size" ? "Размер" : "Цвет";
+    $("fOptions").innerHTML = [{ value: "", label: "Любой" }, ...filterOptions(kind)].map((o) =>
+      `<button class="chip" data-value="${esc(o.value)}" aria-pressed="${o.value === current}">${o.label}</button>`).join("");
+    $("fOptions").onclick = (e) => {
+      const b = e.target.closest("[data-value]"); if (!b) return;
+      state[kind] = b.dataset.value;
+      haptic(); refresh(); closeSheet();
+    };
+    openSheet("filterSheet");
+  }
+  $("filters").addEventListener("click", (e) => {
+    const b = e.target.closest("[data-filter]"); if (b) openFilter(b.dataset.filter);
+  });
+  $("resetFilters").addEventListener("click", () => { state.size = ""; state.color = ""; haptic(); refresh(); });
+
   // ---------- Карточка товара ----------
-  function openProduct(id) {
+  function openProduct(id, colorIdx = 0) {
     const p = state.all.find((x) => x.id === id); if (!p) return;
     state.current = p;
-    $("pGallery").innerHTML = p.images.map((u) => imgTag(u, 900, p.name)).join("");
-    $("pGallery").scrollLeft = 0;
-    $("pDots").innerHTML = p.images.length > 1 ? p.images.map((_, i) => `<span class="${i ? "" : "on"}"></span>`).join("") : "";
+    // Если в каталоге выбран размер и он есть в этом цвете — сразу подставляем
+    state.pickedSize = "";
     $("pStickers").innerHTML = stickers(p);
     $("pName").textContent = p.name;
     $("pSection").textContent = [catTitle(p.category), p.subsectionTitle].filter(Boolean).join(" · ");
-    $("pPrice").innerHTML = priceHtml(p);
-    $("pSite").href = p.url;
+    selectColor(colorIdx || 0);
     openSheet("product");
   }
+
+  function selectColor(i) {
+    const p = state.current, c = p.colors[i] || p.colors[0];
+    state.colorIdx = p.colors.indexOf(c);
+    if (state.pickedSize && !c.sizes.includes(state.pickedSize)) state.pickedSize = "";
+    if (!state.pickedSize && state.size && c.sizes.includes(state.size)) state.pickedSize = state.size;
+    // Единственный размер (One Size) выбираем сами
+    if (!state.pickedSize && c.sizes.length === 1) state.pickedSize = c.sizes[0];
+
+    $("pGallery").innerHTML = c.images.map((u) => imgTag(u, 900, p.name)).join("");
+    $("pGallery").scrollLeft = 0;
+    $("pDots").innerHTML = c.images.length > 1 ? c.images.map((_, k) => `<span class="${k ? "" : "on"}"></span>`).join("") : "";
+    $("pPrice").innerHTML = priceHtml(c);
+    $("pSite").href = c.url;
+
+    const named = p.colors.filter((x) => x.title);
+    $("pColorsBox").hidden = !named.length;
+    $("pColorName").textContent = c.title;
+    $("pColors").innerHTML = p.colors.map((x, k) => x.title
+      ? `<button data-color="${k}" aria-pressed="${k === state.colorIdx}" title="${esc(x.title)}" aria-label="${esc(x.title)}">${swatch(x)}</button>` : "").join("");
+    renderSizes();
+  }
+
+  function renderSizes() {
+    const p = state.current, c = p.colors[state.colorIdx];
+    const all = (p.allSizes.length ? p.allSizes : c.sizes).slice().sort(bySize);
+    $("pSizesBox").hidden = !all.length;
+    $("pSizeName").textContent = state.pickedSize || "выберите";
+    $("pSizes").innerHTML = all.map((s) => {
+      const ok = c.sizes.includes(s);
+      return `<button data-size="${esc(s)}" aria-pressed="${s === state.pickedSize}" ${ok ? "" : "disabled title=\"Нет в этом цвете\""}>${esc(s)}</button>`;
+    }).join("");
+  }
+
+  $("pColors").addEventListener("click", (e) => {
+    const b = e.target.closest("[data-color]"); if (!b) return;
+    haptic(); selectColor(+b.dataset.color);
+  });
+  $("pSizes").addEventListener("click", (e) => {
+    const b = e.target.closest("[data-size]"); if (!b || b.disabled) return;
+    state.pickedSize = state.pickedSize === b.dataset.size ? "" : b.dataset.size;
+    haptic(); renderSizes();
+  });
   $("pGallery").addEventListener("scroll", (e) => {
     const g = e.target, i = Math.round(g.scrollLeft / g.clientWidth);
     [...$("pDots").children].forEach((d, k) => d.classList.toggle("on", k === i));
   }, { passive: true });
   $("pWrite").addEventListener("click", () => contact(state.current));
   $("pSite").addEventListener("click", (e) => {
-    if (inTg) { e.preventDefault(); tg.openLink(state.current.url); }
+    if (inTg) { e.preventDefault(); tg.openLink($("pSite").href); }
   });
 
   const catTitle = (slug) => (state.categories.find((c) => c.slug === slug) || {}).title || "";
@@ -149,7 +263,11 @@
   // ---------- Написать менеджеру ----------
   function message(p) {
     if (!p) return CFG.messageGeneral;
-    return CFG.messageItem.replace("{name}", p.name).replace("{price}", rub(p.price)).replace("{url}", p.url);
+    const c = p.colors[state.colorIdx] || p.colors[0];
+    const variant = [c.title && "цвет: " + c.title, state.pickedSize && "размер: " + state.pickedSize]
+      .filter(Boolean).map((s) => ", " + s).join("");
+    return CFG.messageItem.replace("{name}", p.name).replace("{variant}", variant)
+      .replace("{price}", rub(c.price)).replace("{url}", c.url);
   }
 
   function channels(text) {
@@ -209,7 +327,7 @@
     if (!inTg) return;
     const top = stack[stack.length - 1];
     stack.length ? tg.BackButton.show() : tg.BackButton.hide();
-    if (top === "contact") return tg.MainButton.hide();
+    if (top === "contact" || top === "filterSheet") return tg.MainButton.hide();
     tg.MainButton.setParams({
       text: top === "product" ? "Написать о товаре" : "Написать менеджеру",
       is_visible: true,
@@ -228,15 +346,22 @@
     syncTgButtons();
   }
 
-  // Ссылки вида ?cat=obuv или ?item=35358 и startapp=cat_obuv / item_35358 из бота
+  // Ссылки вида ?cat=obuv или ?item=35595 и startapp=cat_obuv / item_35595 из бота.
+  // item — id товара или конкретного цвета (oid с сайта).
   function applyDeepLink() {
     const qs = new URLSearchParams(location.search);
     const sp = inTg && tg.initDataUnsafe && tg.initDataUnsafe.start_param || "";
     const [k, v] = sp.split("_");
     const cat = qs.get("cat") || (k === "cat" ? sp.slice(4) : "");
-    const item = qs.get("item") || (k === "item" ? v : "");
+    const item = +(qs.get("item") || (k === "item" ? v : "")) || 0;
     if (cat && state.categories.some((c) => c.slug === cat)) state.cat = cat;
-    return item ? +item : null;
+    if (!item) return null;
+    for (const p of state.all) {
+      if (p.id === item) return [p.id, 0];
+      const i = p.colors.findIndex((c) => c.oid === item);
+      if (i >= 0) return [p.id, i];
+    }
+    return null;
   }
 
   // ---------- Старт ----------
@@ -256,7 +381,7 @@
     }
     const item = applyDeepLink();
     renderHits(); renderChips(); renderGrid();
-    if (item) openProduct(item);
+    if (item) openProduct(...item);
   }
   init();
 })();
