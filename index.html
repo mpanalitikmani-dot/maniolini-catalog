@@ -11,9 +11,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css?v=202610221343">
   <script src="https://telegram.org/js/telegram-web-app.js"></script>
-  <script src="config.js"></script>
+  <script src="config.js?v=202610221343"></script>
 </head>
 <body>
   <header class="top">
@@ -90,8 +90,10 @@
     <div class="sheet__backdrop" data-close></div>
     <div class="sheet__panel sheet__panel--small" role="dialog" aria-modal="true">
       <div class="sheet__body">
-        <h3>Как удобнее связаться?</h3>
-        <p class="muted" id="cHint">Текст сообщения скопирован — просто вставьте его в чат.</p>
+        <h3 id="cTitle">Сообщение менеджеру</h3>
+        <textarea class="msg" id="cText" rows="4"></textarea>
+        <button class="copy-btn" id="cCopy" type="button">Скопировать текст</button>
+        <p class="muted" id="cHint"></p>
         <div class="contact-list" id="cList"></div>
         <button class="btn btn--ghost" data-close>Отмена</button>
       </div>
@@ -110,7 +112,6 @@
     </div>
   </div>
 
-  <div class="toast" id="toast" hidden></div>
-  <script src="app.js"></script>
+  <script src="app.js?v=202610221343"></script>
 </body>
 </html>

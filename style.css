@@ -233,3 +233,16 @@ button { font: inherit; color: inherit; cursor: pointer; }
 }
 .sizes button[aria-pressed="true"] { background: var(--accent); color: var(--on-accent); border-color: var(--accent); }
 .sizes button:disabled { color: var(--muted); text-decoration: line-through; opacity: .55; cursor: default; }
+
+/* Текст сообщения менеджеру */
+.msg {
+  width: 100%; margin: 10px 0 8px; padding: 12px; border-radius: 12px; resize: none;
+  border: 1px solid var(--line); background: var(--surface); color: var(--text);
+  font: 14px/1.4 inherit; font-family: inherit;
+}
+.copy-btn {
+  border: 0; background: none; padding: 0; font-size: 14px; font-weight: 500;
+  text-decoration: underline; text-underline-offset: 3px;
+}
+.copy-btn[data-done] { text-decoration: none; color: var(--new); }
+#cHint { margin: 8px 0 14px; }

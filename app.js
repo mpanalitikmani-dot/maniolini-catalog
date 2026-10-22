@@ -286,39 +286,59 @@
     window.open(ch.href, ch.plain ? "_self" : "_blank");
   }
 
-  // Буфер обмена в webview может «зависнуть» на запросе доступа — не ждём дольше 300 мс
+  // Копируем синхронно, прямо в обработчике нажатия: во встроенном браузере Telegram
+  // navigator.clipboard часто молча не работает, а execCommand через выделение — работает.
   function copy(text) {
-    const write = navigator.clipboard ? navigator.clipboard.writeText(text).then(() => true, () => false) : Promise.resolve(false);
-    return Promise.race([write, new Promise((r) => setTimeout(() => r(false), 300))]);
+    const ta = $("cText");
+    ta.value = text;
+    let ok = false;
+    // readonly — чтобы на телефоне не выскакивала клавиатура
+    const ro = ta.readOnly; ta.readOnly = true;
+    try {
+      ta.focus({ preventScroll: true }); ta.select(); ta.setSelectionRange(0, text.length);
+      ok = document.execCommand("copy");
+    } catch {}
+    ta.blur(); ta.readOnly = ro;
+    if (!ok && navigator.clipboard) navigator.clipboard.writeText(text).catch(() => {});
+    return ok;
   }
 
-  async function contact(p) {
+  // Текст сообщения всегда виден: Telegram не гарантирует подстановку ?text= в чат
+  // (а если в чате уже есть черновик — оставляет старый), поэтому человек видит, что отправляет.
+  function contact(p) {
     haptic("medium");
-    const text = message(p);
-    const copied = await copy(text);
-    const list = channels(text);
-    // Внутри Telegram с указанным менеджером — сразу в чат, без лишнего шага
-    if (inTg && list[0] && list[0].tg) {
-      if (copied) toast("Текст скопирован");
-      return go(list[0]);
-    }
-    $("cHint").textContent = copied
-      ? "Текст сообщения скопирован — вставьте его в чат."
-      : "Напишите нам — менеджер поможет с размером и заказом.";
+    $("cTitle").textContent = p ? "Сообщение о товаре" : "Сообщение менеджеру";
+    $("cText").value = message(p);
+    renderChannels();
+    openSheet("contact"); // сначала показать: скрытое поле нельзя выделить и скопировать
+    showCopied(copy($("cText").value));
+  }
+
+  function renderChannels() {
+    const list = channels($("cText").value);
     $("cList").innerHTML = list.map((c, i) =>
       `<a href="${esc(c.href)}" data-ch="${i}" target="_blank" rel="noopener"><span class="ic" style="background:${c.color}">${c.ic}</span>${esc(c.title)}</a>`).join("");
     $("cList").onclick = (e) => {
       const a = e.target.closest("[data-ch]"); if (!a) return;
-      e.preventDefault(); go(list[+a.dataset.ch]);
+      e.preventDefault();
+      // Перед переходом копируем ещё раз — вдруг текст поправили
+      showCopied(copy($("cText").value));
+      go(list[+a.dataset.ch]);
     };
-    openSheet("contact");
   }
-  $("writeBtn").addEventListener("click", () => contact(null));
 
-  function toast(msg) {
-    const el = $("toast"); el.textContent = msg; el.hidden = false;
-    clearTimeout(el._t); el._t = setTimeout(() => (el.hidden = true), 2200);
+  function showCopied(ok) {
+    const b = $("cCopy");
+    ok ? b.setAttribute("data-done", "") : b.removeAttribute("data-done");
+    b.textContent = ok ? "✓ Текст скопирован" : "Скопировать текст";
+    $("cHint").textContent = ok
+      ? "Откройте чат и вставьте сообщение — менеджер сразу увидит товар, цвет и размер."
+      : "Нажмите «Скопировать текст», затем выберите, куда написать.";
   }
+  $("cCopy").addEventListener("click", () => { haptic(); showCopied(copy($("cText").value)); });
+  // Текст можно поправить перед отправкой — ссылки с ?text= обновляем
+  $("cText").addEventListener("input", () => { showCopied(false); renderChannels(); });
+  $("writeBtn").addEventListener("click", () => contact(null));
 
   // ---------- Telegram ----------
   function haptic(kind = "light") { if (inTg && tg.HapticFeedback) tg.HapticFeedback.impactOccurred(kind); }
