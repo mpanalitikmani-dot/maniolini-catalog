@@ -132,14 +132,18 @@ def detail(card: dict) -> dict:
 def lookbook() -> list[dict]:
     """Фото со страницы /lukbuk/ (alt «Лукбук, фото N»)."""
     page = fetch(BASE + "/lukbuk/")
-    photos = []
+    photos, seen = [], set()
     for tag in re.findall(r"<img[^>]*>", page):
         alt = re.search(r'alt="([^"]*)"', tag)
         src = re.search(r'data-src="(/upload/[^"]+)"', tag) or re.search(r'src="(/upload/[^"]+)"', tag)
         if alt and src and "фото" in alt.group(1).lower():
-            url = BASE + urllib.parse.quote(html.unescape(src.group(1)))
-            if url not in [p["src"] for p in photos]:
-                photos.append({"src": url, "alt": html.unescape(alt.group(1))})
+            path = html.unescape(src.group(1))
+            # На сайте одно фото загружено по 2–3 раза: «x.png», «x (1).png», «x (1) (1).png»
+            key = re.sub(r"(\s*\(\d+\))+(?=\.\w+$)", "", path.rsplit("/", 1)[-1])
+            if key in seen:
+                continue
+            seen.add(key)
+            photos.append({"src": BASE + urllib.parse.quote(path), "alt": html.unescape(alt.group(1))})
     return photos
 
 
