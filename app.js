@@ -265,7 +265,7 @@
   document.addEventListener("click", (e) => { if (e.target.closest("[data-close]")) closeSheet(); });
   document.addEventListener("keydown", (e) => { if (e.key === "Escape") closeSheet(); });
 
-  // ---------- Написать менеджеру ----------
+  // ---------- Написать нам ----------
   function message(p) {
     if (!p) return CFG.messageGeneral;
     const c = p.colors[state.colorIdx] || p.colors[0];
@@ -312,7 +312,7 @@
   // (а если в чате уже есть черновик — оставляет старый), поэтому человек видит, что отправляет.
   function contact(p, text) {
     haptic("medium");
-    $("cTitle").textContent = p ? "Сообщение о товаре" : text ? "Сообщение об образе" : "Сообщение менеджеру";
+    $("cTitle").textContent = p ? "Сообщение о товаре" : text ? "Сообщение об образе" : "Ваше сообщение";
     $("cText").value = text || message(p);
     renderChannels();
     openSheet("contact"); // сначала показать: скрытое поле нельзя выделить и скопировать
@@ -390,7 +390,7 @@ ${state.looks[i].src}`;
     stack.length ? tg.BackButton.show() : tg.BackButton.hide();
     if (top === "contact" || top === "filterSheet") return tg.MainButton.hide();
     tg.MainButton.setParams({
-      text: top === "product" ? "Написать о товаре" : top === "viewer" ? "Хочу такой образ" : "Написать менеджеру",
+      text: top === "product" ? "Написать о товаре" : top === "viewer" ? "Хочу такой образ" : "Написать нам",
       is_visible: true,
     });
   }
@@ -441,7 +441,7 @@ ${state.looks[i].src}`;
       $("updated").textContent = "Обновлено " + new Date(data.updated).toLocaleDateString("ru-RU");
     } catch (e) {
       $("empty").hidden = false;
-      $("empty").textContent = "Каталог не загрузился. Напишите менеджеру — пришлём подборку.";
+      $("empty").textContent = "Каталог не загрузился. Напишите нам — пришлём подборку.";
       return;
     }
     const item = applyDeepLink();

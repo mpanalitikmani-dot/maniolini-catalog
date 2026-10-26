@@ -4,16 +4,16 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>MANIOLINI — каталог</title>
-  <meta name="description" content="Мини-каталог MANIOLINI: хиты, одежда, обувь. Напишите менеджеру — поможем с размером и заказом.">
+  <meta name="description" content="Мини-каталог MANIOLINI: хиты, одежда, обувь. Напишите нам — поможем с размером и заказом.">
   <meta property="og:title" content="MANIOLINI — каталог">
-  <meta property="og:description" content="Хиты, одежда, обувь. Напишите менеджеру — поможем с размером и заказом.">
+  <meta property="og:description" content="Хиты, одежда, обувь. Напишите нам — поможем с размером и заказом.">
   <link rel="icon" href="assets/favicon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=20261022143510">
+  <link rel="stylesheet" href="style.css?v=20261026121649">
   <script src="https://telegram.org/js/telegram-web-app.js"></script>
-  <script src="config.js?v=20261022143510"></script>
+  <script src="config.js?v=20261026121649"></script>
 </head>
 <body>
   <header class="top">
@@ -54,7 +54,7 @@
       </nav>
       <div class="grid" id="grid"></div>
       <button class="more" id="more" hidden>Показать ещё</button>
-      <p class="empty" id="empty" hidden>Ничего не нашлось — напишите менеджеру, подберём.</p>
+      <p class="empty" id="empty" hidden>Ничего не нашлось — напишите нам, подберём.</p>
     </section>
 
     <footer class="foot">
@@ -64,7 +64,7 @@
   </main>
 
   <div class="cta" id="cta">
-    <button class="btn btn--primary" id="writeBtn">Написать менеджеру</button>
+    <button class="btn btn--primary" id="writeBtn">Написать нам</button>
   </div>
 
   <!-- Карточка товара -->
@@ -89,7 +89,7 @@
           <div class="variant__label">Размер: <b id="pSizeName"></b></div>
           <div class="sizes" id="pSizes"></div>
         </div>
-        <button class="btn btn--primary" id="pWrite">Написать менеджеру о товаре</button>
+        <button class="btn btn--primary" id="pWrite">Написать нам о товаре</button>
         <a class="btn btn--ghost" id="pSite" target="_blank" rel="noopener">Открыть на сайте</a>
       </div>
     </div>
@@ -101,7 +101,7 @@
     <div class="sheet__panel sheet__panel--small" role="dialog" aria-modal="true">
       <div class="sheet__body">
         <div class="sheet__head">
-          <h3 id="cTitle">Сообщение менеджеру</h3>
+          <h3 id="cTitle">Ваше сообщение</h3>
           <button class="icon-btn icon-btn--sm" data-close aria-label="Закрыть">✕</button>
         </div>
         <textarea class="msg" id="cText" rows="3"></textarea>
@@ -139,6 +139,6 @@
     </div>
   </div>
 
-  <script src="app.js?v=20261022143510"></script>
+  <script src="app.js?v=20261026121649"></script>
 </body>
 </html>

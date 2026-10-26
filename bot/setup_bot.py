@@ -40,14 +40,14 @@ def main() -> None:
     call(token, "setChatMenuButton", menu_button={
         "type": "web_app", "text": "Каталог", "web_app": {"url": url},
     })
-    call(token, "setMyShortDescription", short_description="Каталог MANIOLINI: хиты, одежда, обувь. Менеджер поможет с размером.")
-    call(token, "setMyDescription", description="Откройте каталог MANIOLINI прямо в Telegram: хиты продаж, одежда, обувь. Понравилась вещь — напишите менеджеру в один тап.")
+    call(token, "setMyShortDescription", short_description="Каталог MANIOLINI: хиты, одежда, обувь. Поможем с размером.")
+    call(token, "setMyDescription", description="Откройте каталог MANIOLINI прямо в Telegram: хиты продаж, одежда, обувь. Понравилась вещь — напишите нам в один тап.")
     print("Кнопка меню «Каталог» установлена")
 
     if "--send" in sys.argv:
         chat_id = sys.argv[sys.argv.index("--send") + 1]
         call(token, "sendMessage", chat_id=chat_id,
-             text="Наш каталог 👗 Хиты, одежда и обувь — выберите вещь и напишите менеджеру.",
+             text="Наш каталог 👗 Хиты, одежда и обувь — выберите вещь и напишите нам.",
              reply_markup={"inline_keyboard": [
                  [{"text": "Открыть каталог", "web_app": {"url": url}}],
                  [{"text": "👗 Одежда", "web_app": {"url": url + "?cat=odezhda"}},
