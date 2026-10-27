@@ -283,7 +283,7 @@
     if (m.vk) list.push({ title: "ВКонтакте", color: "#0077ff", ic: "VK", href: `https://vk.me/${m.vk}` });
     if (m.max) list.push({ title: "MAX", color: "#6f42ff", ic: "MAX", href: m.max });
     if (m.whatsapp) list.push({ title: "WhatsApp", color: "#25d366", ic: "WA", href: `https://wa.me/${m.whatsapp}?text=${enc}` });
-    if (m.phone) list.push({ title: "Позвонить", color: "#555", ic: "☎", href: "tel:" + m.phone.replace(/[^\d+]/g, ""), plain: true });
+    if (m.phone) list.push({ title: "Позвонить", color: "#555", ic: "☎", href: "tel:" + m.phone.replace(/[^\d+]/g, ""), plain: true, call: true });
     return list;
   }
 
@@ -328,10 +328,39 @@
     $("cList").onclick = (e) => {
       const a = e.target.closest("[data-ch]"); if (!a) return;
       e.preventDefault();
+      const ch = list[+a.dataset.ch];
+      if (ch.call && !isCallTime()) return openOffHours(list);
       // Перед переходом копируем ещё раз — вдруг текст поправили
       showCopied(copy($("cText").value));
-      go(list[+a.dataset.ch]);
+      go(ch);
     };
+  }
+
+  // Звонки — только в часы работы (по Москве). В остальное время предлагаем мессенджеры.
+  function isCallTime() {
+    const h = CFG.callHours; if (!h) return true;
+    const parts = Object.fromEntries(new Intl.DateTimeFormat("en-GB", {
+      timeZone: h.timeZone, weekday: "short", hour: "numeric", minute: "numeric", hour12: false,
+    }).formatToParts(new Date()).map((p) => [p.type, p.value]));
+    const day = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"].indexOf(parts.weekday);
+    const min = (+parts.hour % 24) * 60 + +parts.minute;
+    return h.days.includes(day) && min >= h.from * 60 && min < h.to * 60;
+  }
+
+  function openOffHours(list) {
+    haptic("medium");
+    $("oText").textContent = `Звонки принимаем ${CFG.callHours.label}. А сообщения — в любое время: напишите в мессенджер, ответим в рабочие часы.`;
+    const msg = list.filter((c) => !c.call);
+    $("oList").innerHTML = msg.map((c, i) =>
+      `<a href="${esc(c.href)}" data-ch="${i}" target="_blank" rel="noopener"><span class="ic" style="background:${c.color}">${c.ic}</span>${esc(c.title)}</a>`).join("");
+    $("oList").onclick = (e) => {
+      const a = e.target.closest("[data-ch]"); if (!a) return;
+      e.preventDefault();
+      showCopied(copy($("cText").value));
+      go(msg[+a.dataset.ch]);
+    };
+    $("oCall").href = list.find((c) => c.call).href;
+    openSheet("offHours");
   }
 
   function showCopied(ok) {
@@ -390,7 +419,7 @@ ${state.looks[i].src}`;
     if (!inTg) return;
     const top = stack[stack.length - 1];
     stack.length ? tg.BackButton.show() : tg.BackButton.hide();
-    if (top === "contact" || top === "filterSheet") return tg.MainButton.hide();
+    if (top === "contact" || top === "filterSheet" || top === "offHours") return tg.MainButton.hide();
     tg.MainButton.setParams({
       text: top === "product" ? "Написать о товаре" : top === "viewer" ? "Хочу такой образ" : "Написать нам",
       is_visible: true,
