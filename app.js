@@ -277,9 +277,11 @@
 
   function channels(text) {
     const m = CFG.manager, enc = encodeURIComponent(text), list = [];
+    // Ботам Telegram текст через ?text= не передать — только открываем чат, текст уже скопирован
     if (m.telegram) list.push({ title: "Telegram", color: "#2aabee", ic: "TG", tg: true,
-      href: `https://t.me/${m.telegram}?text=${enc}` });
+      href: `https://t.me/${m.telegram}` + (/bot$/i.test(m.telegram) ? "" : `?text=${enc}`) });
     if (m.vk) list.push({ title: "ВКонтакте", color: "#0077ff", ic: "VK", href: `https://vk.me/${m.vk}` });
+    if (m.max) list.push({ title: "MAX", color: "#6f42ff", ic: "MAX", href: m.max });
     if (m.whatsapp) list.push({ title: "WhatsApp", color: "#25d366", ic: "WA", href: `https://wa.me/${m.whatsapp}?text=${enc}` });
     if (m.phone) list.push({ title: "Позвонить", color: "#555", ic: "☎", href: "tel:" + m.phone.replace(/[^\d+]/g, ""), plain: true });
     return list;

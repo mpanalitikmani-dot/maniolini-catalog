@@ -1,10 +1,13 @@
-"""Подключает мини-каталог к Telegram-боту: кнопка меню «Каталог» + описание.
+"""Подключает мини-каталог к Telegram-боту: кнопка меню «Каталог».
 
-Токен не хранится в репозитории — передайте его через переменную окружения:
-    set BOT_TOKEN=123:ABC          (Windows)
-    python bot/setup_bot.py https://<user>.github.io/<repo>/
+Токены не хранятся в репозитории — они в bot/.env (файл в .gitignore) или в переменной окружения:
+    python bot/setup_bot.py https://<адрес каталога>/                  # токен из BOT_TOKEN
+    python bot/setup_bot.py <url> --token-env BOT_TOKEN_C              # другой бот из bot/.env
 
-Чтобы проверить, что бот жив, и прислать себе сообщение с кнопкой:
+По умолчанию меняется ТОЛЬКО кнопка меню: у боевых ботов (Senler, Битрикс24) свои описания
+и подключения, их не трогаем. Описание бота — только с флагом --describe (для тестового бота).
+
+Прислать себе сообщение с кнопками каталога:
     python bot/setup_bot.py <url> --send <ваш chat_id>
 """
 import json
@@ -26,8 +29,19 @@ def call(token: str, method: str, **params):
     return res["result"]
 
 
+def load_env() -> None:
+    env = os.path.join(os.path.dirname(os.path.abspath(__file__)), ".env")
+    if os.path.exists(env):
+        for line in open(env, encoding="utf-8"):
+            k, _, v = line.strip().partition("=")
+            if k and v and not k.startswith("#"):
+                os.environ.setdefault(k, v)
+
+
 def main() -> None:
-    token = os.environ.get("BOT_TOKEN")
+    load_env()
+    name = sys.argv[sys.argv.index("--token-env") + 1] if "--token-env" in sys.argv else "BOT_TOKEN"
+    token = os.environ.get(name)
     if not token or len(sys.argv) < 2:
         raise SystemExit(__doc__)
     url = sys.argv[1]
@@ -40,18 +54,26 @@ def main() -> None:
     call(token, "setChatMenuButton", menu_button={
         "type": "web_app", "text": "Каталог", "web_app": {"url": url},
     })
+    print("Кнопка меню «Каталог» установлена")
+    if "--describe" not in sys.argv:
+        return send_test(token, url)
+
     call(token, "setMyShortDescription", short_description="Каталог MANIOLINI: хиты, одежда, обувь. Поможем с размером.")
     call(token, "setMyDescription", description="Откройте каталог MANIOLINI прямо в Telegram: хиты продаж, одежда, обувь. Понравилась вещь — напишите нам в один тап.")
-    print("Кнопка меню «Каталог» установлена")
+    print("Описание бота обновлено")
+    send_test(token, url)
 
+
+def send_test(token: str, url: str) -> None:
     if "--send" in sys.argv:
         chat_id = sys.argv[sys.argv.index("--send") + 1]
+        sep = "&" if "?" in url else "?"
         call(token, "sendMessage", chat_id=chat_id,
              text="Наш каталог 👗 Хиты, одежда и обувь — выберите вещь и напишите нам.",
              reply_markup={"inline_keyboard": [
                  [{"text": "Открыть каталог", "web_app": {"url": url}}],
-                 [{"text": "👗 Одежда", "web_app": {"url": url + "?cat=odezhda"}},
-                  {"text": "👢 Обувь", "web_app": {"url": url + "?cat=obuv"}}],
+                 [{"text": "👗 Одежда", "web_app": {"url": url + sep + "cat=odezhda"}},
+                  {"text": "👢 Обувь", "web_app": {"url": url + sep + "cat=obuv"}}],
              ]})
         print(f"Сообщение с кнопками отправлено в чат {chat_id}")
 

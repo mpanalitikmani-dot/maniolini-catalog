@@ -202,12 +202,12 @@ button { font: inherit; color: inherit; cursor: pointer; }
 }
 
 /* Связь с менеджером — компактно */
-.contact-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(84px, 1fr)); gap: 8px; }
+.contact-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(70px, 1fr)); gap: 8px; }
 .contact-list a {
   display: flex; flex-direction: column; align-items: center; gap: 6px; padding: 10px 6px;
   border-radius: 12px; background: var(--surface); text-decoration: none; font-size: 13px; font-weight: 500;
 }
-.contact-list .ic { width: 30px; height: 30px; border-radius: 9px; display: grid; place-items: center; color: #fff; font-size: 12px; font-weight: 600; }
+.contact-list .ic { width: 30px; height: 30px; border-radius: 9px; display: grid; place-items: center; color: #fff; font-size: 11px; font-weight: 600; }
 .msg {
   width: 100%; margin: 10px 0 6px; padding: 10px 12px; border-radius: 12px; resize: none;
   border: 1px solid var(--line); background: var(--surface); color: var(--text);
