@@ -359,7 +359,6 @@
       showCopied(copy($("cText").value));
       go(msg[+a.dataset.ch]);
     };
-    $("oCall").href = list.find((c) => c.call).href;
     openSheet("offHours");
   }
 

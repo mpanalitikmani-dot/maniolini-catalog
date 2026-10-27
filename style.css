@@ -302,4 +302,3 @@ body.in-tg .viewer__bar .btn { display: none; }
 /* Звонок в нерабочее время */
 #offHours { z-index: 60; }
 .off-text { margin: 8px 0 14px; font-size: 14px; color: var(--muted); }
-.off-call { display: block; margin: 14px 0 2px; text-align: center; font-size: 13px; color: var(--muted); text-underline-offset: 3px; }
