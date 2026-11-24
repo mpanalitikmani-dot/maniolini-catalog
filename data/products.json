@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-23T11:59:03+00:00",
+ "updated": "2026-11-24T13:24:23+00:00",
  "source": "https://maniolini.ru",
  "categories": [
   {
@@ -209,28 +209,6 @@
      ]
     },
     {
-     "oid": 35572,
-     "title": "Салатовый",
-     "swatch": "https://maniolini.ru/upload/uf/fc6/ghzqptans1k3ujg3ff6li4iq143062fv.png",
-     "url": "https://maniolini.ru/catalog/odezhda/vodolazki/vodolazka_ovd01/?oid=35572",
-     "price": 790,
-     "oldPrice": null,
-     "images": [
-      "https://maniolini.ru/upload/iblock/98c/8s9c809vmp67yo3xu4klu0ie7ieqy4if.jpg",
-      "https://maniolini.ru/upload/iblock/054/im9jq3ewbxf1l3at1kn965rtx2oyr8ak.jpg",
-      "https://maniolini.ru/upload/iblock/7dc/b5u3m6gzckk08wloyxf3pa410kuwck8h.jpg",
-      "https://maniolini.ru/upload/iblock/247/p5p0vp53a4lgatszr8xux70dunvpztex.jpg",
-      "https://maniolini.ru/upload/iblock/1ae/1il65g7ws8pe63rm1j6oetd6p1t0pveh.jpg",
-      "https://maniolini.ru/upload/iblock/e9d/r74zbkjxueibooehlk3xoqqphsciuaow.jpg",
-      "https://maniolini.ru/upload/iblock/453/d8m623whg01mietvj9fnqqz0asvy11q0.jpg",
-      "https://maniolini.ru/upload/iblock/3a5/t705emi93k38olhjrip0qutsas72xep0.jpg",
-      "https://maniolini.ru/upload/iblock/8f7/5j2s70s1p3tz7alpk7x28nri9m7xcvhr.jpg"
-     ],
-     "sizes": [
-      "One Size"
-     ]
-    },
-    {
      "oid": 35571,
      "title": "Розовый",
      "swatch": "https://maniolini.ru/upload/uf/ceb/b0ai0xtot2z1eojea69k9erjc82bhxx6.png",
@@ -254,40 +232,6 @@
     }
    ],
    "price": 790
-  },
-  {
-   "id": 37160,
-   "name": "Брюки \"Барби\"  (без шлёвки)",
-   "category": "odezhda",
-   "subsection": "bryuki",
-   "subsectionTitle": "Брюки",
-   "hit": true,
-   "new": false,
-   "sale": false,
-   "allSizes": [
-    "S",
-    "M",
-    "L"
-   ],
-   "colors": [
-    {
-     "oid": 37169,
-     "title": "Черный",
-     "swatch": "https://maniolini.ru/upload/uf/87b/y2t1pezl7eztkhzmchubp074hhayaqi3.png",
-     "url": "https://maniolini.ru/catalog/odezhda/bryuki/bryuki_barbi_obt01_26_170_bez_shlyevki/?oid=37169",
-     "price": 1900,
-     "oldPrice": null,
-     "images": [
-      "https://maniolini.ru/upload/iblock/4c9/mmnj6hveebdhbgupl9ay9331t1yj03ur.jpg"
-     ],
-     "sizes": [
-      "S",
-      "M",
-      "L"
-     ]
-    }
-   ],
-   "price": 1900
   },
   {
    "id": 35565,
@@ -358,21 +302,25 @@
    "new": true,
    "sale": false,
    "allSizes": [
-    "XL"
+    "S",
+    "XL",
+    "XS"
    ],
    "colors": [
     {
-     "oid": 37163,
+     "oid": 37165,
      "title": "Черный",
      "swatch": "https://maniolini.ru/upload/uf/87b/y2t1pezl7eztkhzmchubp074hhayaqi3.png",
-     "url": "https://maniolini.ru/catalog/odezhda/bryuki/bryuki_barbi_obt01_26_160_bez_shlyevki/?oid=37163",
+     "url": "https://maniolini.ru/catalog/odezhda/bryuki/bryuki_barbi_obt01_26_160_bez_shlyevki/?oid=37165",
      "price": 1900,
      "oldPrice": null,
      "images": [
       "https://maniolini.ru/upload/iblock/acd/anw0hdli3d9kieertz83pbhhvbdrj0wj.png"
      ],
      "sizes": [
-      "XL"
+      "S",
+      "XL",
+      "XS"
      ]
     }
    ],
@@ -449,6 +397,103 @@
    "price": 1900
   },
   {
+   "id": 19294,
+   "name": "Костюм",
+   "category": "odezhda",
+   "subsection": "kostyumy",
+   "subsectionTitle": "Костюмы",
+   "hit": false,
+   "new": false,
+   "sale": false,
+   "allSizes": [
+    "XL",
+    "XS"
+   ],
+   "colors": [
+    {
+     "oid": 32903,
+     "title": "Тиффани",
+     "swatch": "https://maniolini.ru/upload/uf/e25/sqkcicm8dyy563c7gkko94raz3ilmkos.png",
+     "url": "https://maniolini.ru/catalog/odezhda/kostyumy/kostyum_odkl16/?oid=32903",
+     "price": 2600,
+     "oldPrice": null,
+     "images": [
+      "https://maniolini.ru/upload/iblock/a86/gvtfgx2sshm3a4c3tni5ttnyzdqjkijh.jpg",
+      "https://maniolini.ru/upload/iblock/dff/bv2yl254n6vsxib5vbwqsm3msxm8zvyx.png",
+      "https://maniolini.ru/upload/iblock/343/x578gewm7fmr8g7xrkujlf799sv7196m.jpg",
+      "https://maniolini.ru/upload/iblock/e9e/vu5bzl103pf3rcxu6uwo6gs06u7m17wp.jpg",
+      "https://maniolini.ru/upload/iblock/6c9/dn5nq4iphxbwh9tmw1v36jabkw2qhhx8.jpg",
+      "https://maniolini.ru/upload/iblock/597/zaoi79s69m3xevm05d0z03x3qq8uk3y7.jpg",
+      "https://maniolini.ru/upload/iblock/c31/t1s5e0pcmcnbf4l376mviidw63iqw9rw.jpg",
+      "https://maniolini.ru/upload/iblock/5a3/r2zujttb0zk2lim5q9l8tmyr25qm2nos.jpg"
+     ],
+     "sizes": [
+      "XL"
+     ]
+    },
+    {
+     "oid": 32884,
+     "title": "Синий",
+     "swatch": "https://maniolini.ru/upload/uf/df8/er652dk5em326ohh420a4zmfxszuccfi.png",
+     "url": "https://maniolini.ru/catalog/odezhda/kostyumy/kostyum_odkl16/?oid=32884",
+     "price": 2600,
+     "oldPrice": null,
+     "images": [
+      "https://maniolini.ru/upload/iblock/ef6/a3fjpdo309rmddwjiy4x0n1ik8foiyi3.jpg",
+      "https://maniolini.ru/upload/iblock/5fe/ignul4bhk1wetf0j7dfnqv0host8pqlm.jpg",
+      "https://maniolini.ru/upload/iblock/da4/2msiv4sosb0y4xdkrcgwzoc01krzcuxf.jpg",
+      "https://maniolini.ru/upload/iblock/4ea/xsgtq61gg1zzhlb7nzc3xevj5rwg3d9d.jpg",
+      "https://maniolini.ru/upload/iblock/e55/g6kq9pxvx85bjmd6d0k14drsetif2bp3.jpg",
+      "https://maniolini.ru/upload/iblock/f12/x789fmq3yg2zu2ytga1lekc2n7qnjr68.jpg",
+      "https://maniolini.ru/upload/iblock/5a3/r2zujttb0zk2lim5q9l8tmyr25qm2nos.jpg"
+     ],
+     "sizes": [
+      "XS"
+     ]
+    },
+    {
+     "oid": 32820,
+     "title": "Лазурный",
+     "swatch": "https://maniolini.ru/upload/uf/fb6/z1jrzbd0qv6a0kb939lvzss1g1oelrvm.png",
+     "url": "https://maniolini.ru/catalog/odezhda/kostyumy/kostyum_odkl16/?oid=32820",
+     "price": 2600,
+     "oldPrice": null,
+     "images": [
+      "https://maniolini.ru/upload/iblock/a9f/hfbyp7hmcxcxv12bgnfxdr95d3tct3r9.png",
+      "https://maniolini.ru/upload/iblock/339/31i0kld3xviq17ixtfojb36zr0wwp9mr.png",
+      "https://maniolini.ru/upload/iblock/e59/qjrnam2lgqcvyr4mg3sc4tkmi3y1ikfz.png",
+      "https://maniolini.ru/upload/iblock/4d3/3rcr0rc1re6cl6aq23z2mbzfczd8te0b.png",
+      "https://maniolini.ru/upload/iblock/5a3/r2zujttb0zk2lim5q9l8tmyr25qm2nos.jpg"
+     ],
+     "sizes": [
+      "XL",
+      "XS"
+     ]
+    },
+    {
+     "oid": 31718,
+     "title": "Малиновый",
+     "swatch": "https://maniolini.ru/upload/uf/557/c1wz4s3galpd7r23qokfrpl43r5f5239.png",
+     "url": "https://maniolini.ru/catalog/odezhda/kostyumy/kostyum_odkl16/?oid=31718",
+     "price": 2600,
+     "oldPrice": null,
+     "images": [
+      "https://maniolini.ru/upload/iblock/9a2/45dezgc94a3m0ire6q6m28v9gobvm9oo.jpg",
+      "https://maniolini.ru/upload/iblock/f5c/4s8lm9fhhvuusb4jokkj1nlw9p37w8yl.jpg",
+      "https://maniolini.ru/upload/iblock/e27/cfltv53016pwa5lz1k2lvf33gxzej0xp.jpg",
+      "https://maniolini.ru/upload/iblock/abd/bblqrmr1zv8a47d1a0il097o2ybldped.jpg",
+      "https://maniolini.ru/upload/iblock/feb/2tnhzemef8rh259tdg3loxk9zv5h3qr2.jpg",
+      "https://maniolini.ru/upload/iblock/1b4/1inkom4268jamw739kc2vd17xuyr9er6.jpg",
+      "https://maniolini.ru/upload/iblock/5a3/r2zujttb0zk2lim5q9l8tmyr25qm2nos.jpg"
+     ],
+     "sizes": [
+      "XS"
+     ]
+    }
+   ],
+   "price": 2600
+  },
+  {
    "id": 19509,
    "name": "Платье  длинное \"цветочек\"",
    "category": "odezhda",
@@ -460,6 +505,7 @@
    "allSizes": [
     "S",
     "M",
+    "L",
     "XL",
     "XS"
    ],
@@ -521,6 +567,7 @@
      "sizes": [
       "S",
       "M",
+      "L",
       "XL"
      ]
     },
@@ -569,99 +616,6 @@
     }
    ],
    "price": 2000
-  },
-  {
-   "id": 19294,
-   "name": "Костюм",
-   "category": "odezhda",
-   "subsection": "kostyumy",
-   "subsectionTitle": "Костюмы",
-   "hit": false,
-   "new": false,
-   "sale": false,
-   "allSizes": [
-    "XL",
-    "XS"
-   ],
-   "colors": [
-    {
-     "oid": 32911,
-     "title": "Тиффани",
-     "swatch": "https://maniolini.ru/upload/uf/e25/sqkcicm8dyy563c7gkko94raz3ilmkos.png",
-     "url": "https://maniolini.ru/catalog/odezhda/kostyumy/kostyum_odkl16/?oid=32911",
-     "price": 2600,
-     "oldPrice": null,
-     "images": [
-      "https://maniolini.ru/upload/iblock/a86/gvtfgx2sshm3a4c3tni5ttnyzdqjkijh.jpg",
-      "https://maniolini.ru/upload/iblock/dff/bv2yl254n6vsxib5vbwqsm3msxm8zvyx.png",
-      "https://maniolini.ru/upload/iblock/343/x578gewm7fmr8g7xrkujlf799sv7196m.jpg",
-      "https://maniolini.ru/upload/iblock/e9e/vu5bzl103pf3rcxu6uwo6gs06u7m17wp.jpg",
-      "https://maniolini.ru/upload/iblock/6c9/dn5nq4iphxbwh9tmw1v36jabkw2qhhx8.jpg",
-      "https://maniolini.ru/upload/iblock/597/zaoi79s69m3xevm05d0z03x3qq8uk3y7.jpg",
-      "https://maniolini.ru/upload/iblock/c31/t1s5e0pcmcnbf4l376mviidw63iqw9rw.jpg",
-      "https://maniolini.ru/upload/iblock/5a3/r2zujttb0zk2lim5q9l8tmyr25qm2nos.jpg"
-     ],
-     "sizes": [
-      "XL",
-      "XS"
-     ]
-    },
-    {
-     "oid": 32884,
-     "title": "Синий",
-     "swatch": "https://maniolini.ru/upload/uf/df8/er652dk5em326ohh420a4zmfxszuccfi.png",
-     "url": "https://maniolini.ru/catalog/odezhda/kostyumy/kostyum_odkl16/?oid=32884",
-     "price": 2600,
-     "oldPrice": null,
-     "images": [
-      "https://maniolini.ru/upload/iblock/ef6/a3fjpdo309rmddwjiy4x0n1ik8foiyi3.jpg",
-      "https://maniolini.ru/upload/iblock/5fe/ignul4bhk1wetf0j7dfnqv0host8pqlm.jpg",
-      "https://maniolini.ru/upload/iblock/da4/2msiv4sosb0y4xdkrcgwzoc01krzcuxf.jpg",
-      "https://maniolini.ru/upload/iblock/4ea/xsgtq61gg1zzhlb7nzc3xevj5rwg3d9d.jpg",
-      "https://maniolini.ru/upload/iblock/e55/g6kq9pxvx85bjmd6d0k14drsetif2bp3.jpg",
-      "https://maniolini.ru/upload/iblock/f12/x789fmq3yg2zu2ytga1lekc2n7qnjr68.jpg",
-      "https://maniolini.ru/upload/iblock/5a3/r2zujttb0zk2lim5q9l8tmyr25qm2nos.jpg"
-     ],
-     "sizes": [
-      "XS"
-     ]
-    },
-    {
-     "oid": 32820,
-     "title": "Лазурный",
-     "swatch": "https://maniolini.ru/bitrix/templates/aspro-premier/images/noimage.png",
-     "url": "https://maniolini.ru/catalog/odezhda/kostyumy/kostyum_odkl16/?oid=32820",
-     "price": 2600,
-     "oldPrice": null,
-     "images": [
-      "https://maniolini.ru/upload/iblock/a9f/hfbyp7hmcxcxv12bgnfxdr95d3tct3r9.png",
-      "https://maniolini.ru/upload/iblock/339/31i0kld3xviq17ixtfojb36zr0wwp9mr.png",
-      "https://maniolini.ru/upload/iblock/e59/qjrnam2lgqcvyr4mg3sc4tkmi3y1ikfz.png",
-      "https://maniolini.ru/upload/iblock/4d3/3rcr0rc1re6cl6aq23z2mbzfczd8te0b.png",
-      "https://maniolini.ru/upload/iblock/5a3/r2zujttb0zk2lim5q9l8tmyr25qm2nos.jpg"
-     ],
-     "sizes": []
-    },
-    {
-     "oid": 31718,
-     "title": "Малиновый",
-     "swatch": "https://maniolini.ru/upload/uf/557/c1wz4s3galpd7r23qokfrpl43r5f5239.png",
-     "url": "https://maniolini.ru/catalog/odezhda/kostyumy/kostyum_odkl16/?oid=31718",
-     "price": 2600,
-     "oldPrice": null,
-     "images": [
-      "https://maniolini.ru/upload/iblock/9a2/45dezgc94a3m0ire6q6m28v9gobvm9oo.jpg",
-      "https://maniolini.ru/upload/iblock/f5c/4s8lm9fhhvuusb4jokkj1nlw9p37w8yl.jpg",
-      "https://maniolini.ru/upload/iblock/e27/cfltv53016pwa5lz1k2lvf33gxzej0xp.jpg",
-      "https://maniolini.ru/upload/iblock/abd/bblqrmr1zv8a47d1a0il097o2ybldped.jpg",
-      "https://maniolini.ru/upload/iblock/feb/2tnhzemef8rh259tdg3loxk9zv5h3qr2.jpg",
-      "https://maniolini.ru/upload/iblock/1b4/1inkom4268jamw739kc2vd17xuyr9er6.jpg",
-      "https://maniolini.ru/upload/iblock/5a3/r2zujttb0zk2lim5q9l8tmyr25qm2nos.jpg"
-     ],
-     "sizes": []
-    }
-   ],
-   "price": 2600
   },
   {
    "id": 19513,
@@ -811,7 +765,6 @@
    "sale": false,
    "allSizes": [
     "S",
-    "L",
     "XS"
    ],
    "colors": [
@@ -830,7 +783,6 @@
      ],
      "sizes": [
       "S",
-      "L",
       "XS"
      ]
     }
@@ -874,46 +826,6 @@
    "price": 2000
   },
   {
-   "id": 19625,
-   "name": "Платье  \"Japanese Silk\"",
-   "category": "odezhda",
-   "subsection": "platya",
-   "subsectionTitle": "Платья",
-   "hit": false,
-   "new": false,
-   "sale": false,
-   "allSizes": [
-    "S",
-    "M",
-    "L",
-    "XS"
-   ],
-   "colors": [
-    {
-     "oid": 32779,
-     "title": "Шоколадный",
-     "swatch": "https://maniolini.ru/upload/uf/4c3/7osh5eenqradv9oj3csjm8oak9o8p7nv.png",
-     "url": "https://maniolini.ru/catalog/odezhda/platya/plate_opt06_japanese_silk/?oid=32779",
-     "price": 2600,
-     "oldPrice": null,
-     "images": [
-      "https://maniolini.ru/upload/iblock/3fc/1bchjm3db3gti5vuyjcxc6p0pthvk4wn.jpg",
-      "https://maniolini.ru/upload/iblock/38e/ta30ddgs2tnjeiim70h3kmexg1lvx6wx.jpg",
-      "https://maniolini.ru/upload/iblock/aa5/ratq8vmddhzwz3v56wjhzkded2tbaek6.jpg",
-      "https://maniolini.ru/upload/iblock/b15/edowhdbzq5ch6lfzrp9q5eqj0ewi8l3w.jpg",
-      "https://maniolini.ru/upload/iblock/bf3/m5rjrsr6pr6f7r0j2367klsg97xsbgkm.jpg"
-     ],
-     "sizes": [
-      "S",
-      "M",
-      "L",
-      "XS"
-     ]
-    }
-   ],
-   "price": 2600
-  },
-  {
    "id": 18935,
    "name": "Брюки  (узкие, клеш, без шлёвки)",
    "category": "odezhda",
@@ -923,6 +835,8 @@
    "new": false,
    "sale": false,
    "allSizes": [
+    "S",
+    "M",
     "L",
     "XL",
     "XS"
@@ -942,6 +856,8 @@
       "https://maniolini.ru/upload/iblock/5f3/4d72uolmnp62e955krcoh2eue1jn60za.jpg"
      ],
      "sizes": [
+      "S",
+      "M",
       "L",
       "XL",
       "XS"
@@ -990,42 +906,6 @@
     }
    ],
    "price": 1800
-  },
-  {
-   "id": 19741,
-   "name": "Брюки \"Барби\"  (без шлёвки)",
-   "category": "odezhda",
-   "subsection": "bryuki",
-   "subsectionTitle": "Брюки",
-   "hit": false,
-   "new": false,
-   "sale": false,
-   "allSizes": [
-    "L",
-    "XS"
-   ],
-   "colors": [
-    {
-     "oid": 32629,
-     "title": "Черный",
-     "swatch": "https://maniolini.ru/upload/uf/87b/y2t1pezl7eztkhzmchubp074hhayaqi3.png",
-     "url": "https://maniolini.ru/catalog/odezhda/bryuki/bryuki_barbi_obt01_160_bez_shlyevki/?oid=32629",
-     "price": 1700,
-     "oldPrice": null,
-     "images": [
-      "https://maniolini.ru/upload/iblock/47f/a6n2bpnzb4jplndparp7c08pj5n2go1c.jpg",
-      "https://maniolini.ru/upload/iblock/010/dt56nwv35a2j4ad8lpc7jg6ct6tv8idl.jpg",
-      "https://maniolini.ru/upload/iblock/53b/k10j3kny9x0ap7ai3rfv9slwvrjkz37f.jpg",
-      "https://maniolini.ru/upload/iblock/da3/vceezk73idezwaykw5oswou9wj3w9vx7.jpg",
-      "https://maniolini.ru/upload/iblock/7e0/hawvuirdla3fph1t1giqls6pqfspe7lx.jpg"
-     ],
-     "sizes": [
-      "L",
-      "XS"
-     ]
-    }
-   ],
-   "price": 1700
   },
   {
    "id": 19744,
@@ -1184,14 +1064,15 @@
    "new": false,
    "sale": false,
    "allSizes": [
+    "S",
     "XS"
    ],
    "colors": [
     {
-     "oid": 32950,
+     "oid": 32966,
      "title": "Черный",
      "swatch": "https://maniolini.ru/upload/uf/87b/y2t1pezl7eztkhzmchubp074hhayaqi3.png",
-     "url": "https://maniolini.ru/catalog/odezhda/platya/plate_opt02_25_pr4_76_mini_tsvetochek_chernyy/?oid=32950",
+     "url": "https://maniolini.ru/catalog/odezhda/platya/plate_opt02_25_pr4_76_mini_tsvetochek_chernyy/?oid=32966",
      "price": 1900,
      "oldPrice": null,
      "images": [
@@ -1199,6 +1080,7 @@
       "https://maniolini.ru/upload/iblock/f2b/614trixbtat5nxe653logcfiol57tpqk.png"
      ],
      "sizes": [
+      "S",
       "XS"
      ]
     }
@@ -1251,20 +1133,22 @@
    "new": false,
    "sale": false,
    "allSizes": [
+    "XL",
     "XS"
    ],
    "colors": [
     {
-     "oid": 32934,
+     "oid": 32977,
      "title": "Бежевый",
      "swatch": "https://maniolini.ru/upload/uf/01f/zfhhby3mpxuie56u8p9eof9050919i47.png",
-     "url": "https://maniolini.ru/catalog/odezhda/platya/plate_opt04_sarafan_s_pugovitsami/?oid=32934",
+     "url": "https://maniolini.ru/catalog/odezhda/platya/plate_opt04_sarafan_s_pugovitsami/?oid=32977",
      "price": 2670,
      "oldPrice": null,
      "images": [
       "https://maniolini.ru/upload/iblock/6cf/6auwi612yf7eolkp5b0bvu42i3ddyttu.jpg"
      ],
      "sizes": [
+      "XL",
       "XS"
      ]
     }
@@ -1601,7 +1485,6 @@
       "https://maniolini.ru/upload/iblock/1ac/lv6p6511b62lylu1p9nc5jzh67zn08yh.jpg"
      ],
      "sizes": [
-      "46",
       "48"
      ]
     },
@@ -2189,16 +2072,14 @@
    "new": true,
    "sale": false,
    "allSizes": [
-    "36",
-    "37",
-    "39"
+    "36"
    ],
    "colors": [
     {
-     "oid": 34896,
+     "oid": 34893,
      "title": "Черный",
      "swatch": "https://maniolini.ru/upload/uf/87b/y2t1pezl7eztkhzmchubp074hhayaqi3.png",
-     "url": "https://maniolini.ru/catalog/obuv/demisezon/sapogi/sapogi_sd96_23_s10/?oid=34896",
+     "url": "https://maniolini.ru/catalog/obuv/demisezon/sapogi/sapogi_sd96_23_s10/?oid=34893",
      "price": 6500,
      "oldPrice": null,
      "images": [
@@ -2208,16 +2089,14 @@
       "https://maniolini.ru/upload/iblock/44f/nw7xpgm03j8rwi2swght8v4fr00hsgfc.jpg",
       "https://maniolini.ru/upload/iblock/73f/mjxjy9w0drys835aj2tx57hsb1sfik8c.jpg",
       "https://maniolini.ru/upload/iblock/c55/rfww12y64ctas3tu050rjgdv8dqkx70f.jpg",
-      "https://maniolini.ru/upload/iblock/6cb/wr6r9966u46c2bnhmpwoa38bi6me7zgg.jpg",
       "https://maniolini.ru/upload/iblock/6bd/7c7s4dyfwsbfsquke69w67pzlwc0aru4.jpg",
+      "https://maniolini.ru/upload/iblock/6cb/wr6r9966u46c2bnhmpwoa38bi6me7zgg.jpg",
       "https://maniolini.ru/upload/iblock/bfc/6774qnxr86xkqsdaqcnn0tspt59oausr.jpg",
       "https://maniolini.ru/upload/iblock/5ab/o7m84ehnhctac2qemo409hxnpwxrd3rn.jpg",
       "https://maniolini.ru/upload/iblock/f65/y1c4w9og5o214mrd7zecf5hy0f9mkqgt.jpg"
      ],
      "sizes": [
-      "36",
-      "37",
-      "39"
+      "36"
      ]
     },
     {
@@ -2481,6 +2360,52 @@
    "price": 9500
   },
   {
+   "id": 34240,
+   "name": "Ботфорты",
+   "category": "obuv",
+   "subsection": "demisezon",
+   "subsectionTitle": "Демисезон",
+   "hit": false,
+   "new": false,
+   "sale": false,
+   "allSizes": [
+    "36",
+    "37",
+    "38",
+    "39",
+    "40"
+   ],
+   "colors": [
+    {
+     "oid": 34829,
+     "title": "Черный",
+     "swatch": "https://maniolini.ru/upload/uf/87b/y2t1pezl7eztkhzmchubp074hhayaqi3.png",
+     "url": "https://maniolini.ru/catalog/obuv/demisezon/botforty/botforty_d310_2_k12/?oid=34829",
+     "price": 5500,
+     "oldPrice": null,
+     "images": [
+      "https://maniolini.ru/upload/iblock/587/hy5hji6y7ip1ke6dea7bczmce0o6bpyk.jpg",
+      "https://maniolini.ru/upload/iblock/d7c/krcu0j5g9pezqisbv9jnhhc05z1m5uu5.jpg",
+      "https://maniolini.ru/upload/iblock/138/8cg7xc1blrnerb8zaltl5gpar0mnqwic.jpg",
+      "https://maniolini.ru/upload/iblock/e27/oz27jv9ilpw51lp9h4ypwvok8vhy63ex.jpg",
+      "https://maniolini.ru/upload/iblock/84a/dwxd1jshgm1nge2g4l3wh1lbd56uyem1.jpg",
+      "https://maniolini.ru/upload/iblock/605/2j7x9fqt0veaou10dy0ol2ejc64y7k14.jpg",
+      "https://maniolini.ru/upload/iblock/19e/dvhfds4r1jnu2kysq920x28pmrix9h2p.jpg",
+      "https://maniolini.ru/upload/iblock/efc/ot87jvrn019u8mr6d6czipdnek07euiq.jpg",
+      "https://maniolini.ru/upload/iblock/433/c2syg53h3cj75y8k7au1bbtgn3011b2n.jpg"
+     ],
+     "sizes": [
+      "36",
+      "37",
+      "38",
+      "39",
+      "40"
+     ]
+    }
+   ],
+   "price": 5500
+  },
+  {
    "id": 34320,
    "name": "Ботильоны - Таби",
    "category": "obuv",
@@ -2520,54 +2445,6 @@
     }
    ],
    "price": 7400
-  },
-  {
-   "id": 34240,
-   "name": "Ботфорты",
-   "category": "obuv",
-   "subsection": "demisezon",
-   "subsectionTitle": "Демисезон",
-   "hit": false,
-   "new": false,
-   "sale": false,
-   "allSizes": [
-    "35",
-    "36",
-    "37",
-    "38",
-    "39",
-    "40"
-   ],
-   "colors": [
-    {
-     "oid": 34831,
-     "title": "Черный",
-     "swatch": "https://maniolini.ru/upload/uf/87b/y2t1pezl7eztkhzmchubp074hhayaqi3.png",
-     "url": "https://maniolini.ru/catalog/obuv/demisezon/botforty/botforty_d310_2_k12/?oid=34831",
-     "price": 5500,
-     "oldPrice": null,
-     "images": [
-      "https://maniolini.ru/upload/iblock/587/hy5hji6y7ip1ke6dea7bczmce0o6bpyk.jpg",
-      "https://maniolini.ru/upload/iblock/d7c/krcu0j5g9pezqisbv9jnhhc05z1m5uu5.jpg",
-      "https://maniolini.ru/upload/iblock/138/8cg7xc1blrnerb8zaltl5gpar0mnqwic.jpg",
-      "https://maniolini.ru/upload/iblock/e27/oz27jv9ilpw51lp9h4ypwvok8vhy63ex.jpg",
-      "https://maniolini.ru/upload/iblock/84a/dwxd1jshgm1nge2g4l3wh1lbd56uyem1.jpg",
-      "https://maniolini.ru/upload/iblock/605/2j7x9fqt0veaou10dy0ol2ejc64y7k14.jpg",
-      "https://maniolini.ru/upload/iblock/19e/dvhfds4r1jnu2kysq920x28pmrix9h2p.jpg",
-      "https://maniolini.ru/upload/iblock/efc/ot87jvrn019u8mr6d6czipdnek07euiq.jpg",
-      "https://maniolini.ru/upload/iblock/433/c2syg53h3cj75y8k7au1bbtgn3011b2n.jpg"
-     ],
-     "sizes": [
-      "35",
-      "36",
-      "37",
-      "38",
-      "39",
-      "40"
-     ]
-    }
-   ],
-   "price": 5500
   },
   {
    "id": 34294,
@@ -2618,15 +2495,14 @@
    "new": false,
    "sale": false,
    "allSizes": [
-    "36",
-    "37"
+    "36"
    ],
    "colors": [
     {
-     "oid": 35367,
+     "oid": 35366,
      "title": "Коричневый",
      "swatch": "https://maniolini.ru/upload/uf/cd5/xhlk05k1356ql3sydwtuxy43n0oqwydi.png",
-     "url": "https://maniolini.ru/catalog/obuv/demisezon/sapogi/sapogi_sd93_2_s7/?oid=35367",
+     "url": "https://maniolini.ru/catalog/obuv/demisezon/sapogi/sapogi_sd93_2_s7/?oid=35366",
      "price": 5400,
      "oldPrice": null,
      "images": [
@@ -2643,8 +2519,7 @@
       "https://maniolini.ru/upload/iblock/eb7/esqv1bzddhwqm200l1qh3bz1eaml343u.jpg"
      ],
      "sizes": [
-      "36",
-      "37"
+      "36"
      ]
     },
     {
@@ -2755,7 +2630,6 @@
    "sale": false,
    "allSizes": [
     "36",
-    "38",
     "39",
     "40"
    ],
@@ -2780,7 +2654,6 @@
      ],
      "sizes": [
       "36",
-      "38",
       "39",
       "40"
      ]
@@ -2830,46 +2703,6 @@
     }
    ],
    "price": 5600
-  },
-  {
-   "id": 34270,
-   "name": "Сапоги",
-   "category": "obuv",
-   "subsection": "demisezon",
-   "subsectionTitle": "Демисезон",
-   "hit": false,
-   "new": false,
-   "sale": false,
-   "allSizes": [
-    "40"
-   ],
-   "colors": [
-    {
-     "oid": 34654,
-     "title": "Черный",
-     "swatch": "https://maniolini.ru/upload/uf/87b/y2t1pezl7eztkhzmchubp074hhayaqi3.png",
-     "url": "https://maniolini.ru/catalog/obuv/demisezon/sapogi/sapogi_sd37_2_k11/?oid=34654",
-     "price": 4700,
-     "oldPrice": null,
-     "images": [
-      "https://maniolini.ru/upload/iblock/43e/x93u0u9egbfk21mzzxk713clqt8na24p.jpg",
-      "https://maniolini.ru/upload/iblock/0b4/aij9u02nw3x3hdcq8oc4p39at311b1r8.jpg",
-      "https://maniolini.ru/upload/iblock/5c7/f843a0t68sse1q62rsimvb76rrlnrqv6.jpg",
-      "https://maniolini.ru/upload/iblock/ebb/639eql8mxlhl8rjvlftyciok7opcn9nz.jpg",
-      "https://maniolini.ru/upload/iblock/a48/s7wwyoffvj61tfb5em6gaz3nkibymq54.jpg",
-      "https://maniolini.ru/upload/iblock/262/213qdv0mok69e53j91kgw2w7gvn291dx.jpg",
-      "https://maniolini.ru/upload/iblock/834/dczcbvkixb66ue1ltq1idj3ezwwfd0ju.jpg",
-      "https://maniolini.ru/upload/iblock/0f0/w32all95rrxk1wkdzvndwhf0lxlwx3nr.jpg",
-      "https://maniolini.ru/upload/iblock/496/a7rfhd3j8knyfaequ3rpga69n309fe7e.jpg",
-      "https://maniolini.ru/upload/iblock/93b/0xaxo4xpdfrv6o3gvr418tb5m4n9kifz.jpg",
-      "https://maniolini.ru/upload/iblock/1a0/x5p6gmlr2wj4u16oyxs6v2jsyogdmdhl.jpg"
-     ],
-     "sizes": [
-      "40"
-     ]
-    }
-   ],
-   "price": 4700
   },
   {
    "id": 34314,
@@ -3093,39 +2926,14 @@
    "sale": false,
    "allSizes": [
     "37",
-    "38",
-    "39"
+    "38"
    ],
    "colors": [
     {
-     "oid": 35477,
-     "title": "Черный",
-     "swatch": "https://maniolini.ru/upload/uf/87b/y2t1pezl7eztkhzmchubp074hhayaqi3.png",
-     "url": "https://maniolini.ru/catalog/obuv/demisezon/sapogi/sapogi_sdn63_2_p5/?oid=35477",
-     "price": 6000,
-     "oldPrice": null,
-     "images": [
-      "https://maniolini.ru/upload/iblock/1ea/g13sh8qwtcfirozzeqqvlbnzzai9hk45.jpg",
-      "https://maniolini.ru/upload/iblock/dac/ohoj2x5nwkqb8d76qr7g2gbb5ku3pqst.jpg",
-      "https://maniolini.ru/upload/iblock/41f/f0sacahrc49gwl5keq08os2g3xob1kb9.jpg",
-      "https://maniolini.ru/upload/iblock/7c7/1thw32gd0zlvwe1u63ioh5r0day6324v.jpg",
-      "https://maniolini.ru/upload/iblock/766/dwxocy8dr99apsaxpvi4yhli7z9gmprg.jpg",
-      "https://maniolini.ru/upload/iblock/fed/qf6ogo7n9qgngk9b3nm8t8618hsyj5xm.jpg",
-      "https://maniolini.ru/upload/iblock/2e6/a524zw05lcruw1ptlr6s0st29dvyloaz.jpg",
-      "https://maniolini.ru/upload/iblock/53a/7myu4nszkg82v6j7zr3jopiup5p9yqb5.jpg",
-      "https://maniolini.ru/upload/iblock/0df/6zy0r60s4v3twm2lz1ecvrdm1e771wm0.jpg",
-      "https://maniolini.ru/upload/iblock/3ca/ad7sb7wldwfjswair330l29owv9uee6k.jpg",
-      "https://maniolini.ru/upload/iblock/d11/55zx2ss934iwur1lrfku00hae91lwabq.jpg"
-     ],
-     "sizes": [
-      "37"
-     ]
-    },
-    {
-     "oid": 35476,
+     "oid": 34778,
      "title": "Молочный",
      "swatch": "https://maniolini.ru/upload/uf/80b/xgz3ifvuzuvn5nr7xw5zaby8cg24o5q7.png",
-     "url": "https://maniolini.ru/catalog/obuv/demisezon/sapogi/sapogi_sdn63_2_p5/?oid=35476",
+     "url": "https://maniolini.ru/catalog/obuv/demisezon/sapogi/sapogi_sdn63_2_p5/?oid=34778",
      "price": 6000,
      "oldPrice": null,
      "images": [
@@ -3142,8 +2950,7 @@
      ],
      "sizes": [
       "37",
-      "38",
-      "39"
+      "38"
      ]
     }
    ],
@@ -3285,37 +3092,11 @@
    "new": false,
    "sale": false,
    "allSizes": [
-    "36",
     "37",
     "38",
     "39"
    ],
    "colors": [
-    {
-     "oid": 35171,
-     "title": "Белый",
-     "swatch": "https://maniolini.ru/upload/uf/b57/g8omcrb5q80yratvrhwnfb5r0cr7an74.png",
-     "url": "https://maniolini.ru/catalog/obuv/demisezon/botinki/botinki_fd21_2_p5/?oid=35171",
-     "price": 4800,
-     "oldPrice": null,
-     "images": [
-      "https://maniolini.ru/upload/iblock/aa5/5kz40s84fr7la74wk78g6mutihww36bs.jpg",
-      "https://maniolini.ru/upload/iblock/59b/m8052feh98ijrc3v9n67az092oj4eiw6.jpg",
-      "https://maniolini.ru/upload/iblock/930/ufer5qnmqqujq003f4ujmmfgz8pc36rj.jpg",
-      "https://maniolini.ru/upload/iblock/7bf/cttl2o9smc4oeapyndzsrrkoydpmhetw.jpg",
-      "https://maniolini.ru/upload/iblock/5c5/7qf4nf1uy0qfxt6e6iacptn3l2988ir5.jpg",
-      "https://maniolini.ru/upload/iblock/68b/v3srstw23wmz667wlzqoal4dkdkgdh9m.jpg",
-      "https://maniolini.ru/upload/iblock/aea/2luq04hj689dayfggnksqjd1p4yq7g2m.jpg",
-      "https://maniolini.ru/upload/iblock/d7a/y1w62syb17r5nn1ayegqglvfp12ur3em.jpg",
-      "https://maniolini.ru/upload/iblock/10c/hoat1sy1qntp0ielgr200gpfvnjltyhp.jpg",
-      "https://maniolini.ru/upload/iblock/eec/ejr031m2fpmem2xi96csgz84xsww43jo.jpg"
-     ],
-     "sizes": [
-      "36",
-      "37",
-      "39"
-     ]
-    },
     {
      "oid": 35167,
      "title": "Бежевый",
@@ -3339,6 +3120,29 @@
      "sizes": [
       "38",
       "39"
+     ]
+    },
+    {
+     "oid": 34443,
+     "title": "Белый",
+     "swatch": "https://maniolini.ru/upload/uf/b57/g8omcrb5q80yratvrhwnfb5r0cr7an74.png",
+     "url": "https://maniolini.ru/catalog/obuv/demisezon/botinki/botinki_fd21_2_p5/?oid=34443",
+     "price": 4800,
+     "oldPrice": null,
+     "images": [
+      "https://maniolini.ru/upload/iblock/aa5/5kz40s84fr7la74wk78g6mutihww36bs.jpg",
+      "https://maniolini.ru/upload/iblock/59b/m8052feh98ijrc3v9n67az092oj4eiw6.jpg",
+      "https://maniolini.ru/upload/iblock/930/ufer5qnmqqujq003f4ujmmfgz8pc36rj.jpg",
+      "https://maniolini.ru/upload/iblock/7bf/cttl2o9smc4oeapyndzsrrkoydpmhetw.jpg",
+      "https://maniolini.ru/upload/iblock/5c5/7qf4nf1uy0qfxt6e6iacptn3l2988ir5.jpg",
+      "https://maniolini.ru/upload/iblock/68b/v3srstw23wmz667wlzqoal4dkdkgdh9m.jpg",
+      "https://maniolini.ru/upload/iblock/aea/2luq04hj689dayfggnksqjd1p4yq7g2m.jpg",
+      "https://maniolini.ru/upload/iblock/d7a/y1w62syb17r5nn1ayegqglvfp12ur3em.jpg",
+      "https://maniolini.ru/upload/iblock/10c/hoat1sy1qntp0ielgr200gpfvnjltyhp.jpg",
+      "https://maniolini.ru/upload/iblock/eec/ejr031m2fpmem2xi96csgz84xsww43jo.jpg"
+     ],
+     "sizes": [
+      "37"
      ]
     }
    ],
@@ -3850,74 +3654,6 @@
    "price": 4400
   },
   {
-   "id": 18933,
-   "name": "Босоножки",
-   "category": "obuv",
-   "subsection": "leto",
-   "subsectionTitle": "Лето",
-   "hit": false,
-   "new": false,
-   "sale": false,
-   "allSizes": [
-    "35",
-    "36",
-    "37",
-    "38",
-    "39",
-    "40"
-   ],
-   "colors": [
-    {
-     "oid": 32646,
-     "title": "Бежевый",
-     "swatch": "https://maniolini.ru/upload/uf/01f/zfhhby3mpxuie56u8p9eof9050919i47.png",
-     "url": "https://maniolini.ru/catalog/obuv/leto/bosonozhki/bosonozhki_42k10_1/?oid=32646",
-     "price": 2940,
-     "oldPrice": 4200,
-     "images": [
-      "https://maniolini.ru/upload/iblock/cb2/nmpbcw0woid5vdhfntgw71ttdrzjl1fj.jpg",
-      "https://maniolini.ru/upload/iblock/d28/ig02dgzes0dj122hts342p4n6tsa0vrw.jpg",
-      "https://maniolini.ru/upload/iblock/a37/5ko189k7osc2itkf7wev194a69r8myvm.jpg",
-      "https://maniolini.ru/upload/iblock/c44/m2l2w6cefdfml6lq8r6e35oauh46xmon.jpg",
-      "https://maniolini.ru/upload/iblock/486/mwus3pggjpnpzj1yi26o40tpe8hsw32i.jpg"
-     ],
-     "sizes": [
-      "35",
-      "36",
-      "37",
-      "38",
-      "39",
-      "40"
-     ]
-    },
-    {
-     "oid": 32637,
-     "title": "Черный",
-     "swatch": "https://maniolini.ru/upload/uf/87b/y2t1pezl7eztkhzmchubp074hhayaqi3.png",
-     "url": "https://maniolini.ru/catalog/obuv/leto/bosonozhki/bosonozhki_42k10_1/?oid=32637",
-     "price": 2940,
-     "oldPrice": 4200,
-     "images": [
-      "https://maniolini.ru/upload/iblock/52a/b798222a0n58wv19nyrwljhrdbaka2fl.jpg",
-      "https://maniolini.ru/upload/iblock/ba1/nhtnq8vcv535ix1zklisqzdawlr22dwc.jpg",
-      "https://maniolini.ru/upload/iblock/6c9/603fdn42nvfzqjdb014606ehpefxk5cu.jpg",
-      "https://maniolini.ru/upload/iblock/c6c/9l6a4d721a7dd5hhku5p0x6p76on4byp.jpg",
-      "https://maniolini.ru/upload/iblock/c35/frvrqa0iqqccbzye70oliic1on7gtitp.jpg",
-      "https://maniolini.ru/upload/iblock/1ef/9c58qoalivznacoyrdf9mv91daref1oh.jpg",
-      "https://maniolini.ru/upload/iblock/e8c/hea3u8w2saa8k9egivh6vmrkqyvurh5j.jpg",
-      "https://maniolini.ru/upload/iblock/cb2/nmpbcw0woid5vdhfntgw71ttdrzjl1fj.jpg"
-     ],
-     "sizes": [
-      "37",
-      "38",
-      "39",
-      "40"
-     ]
-    }
-   ],
-   "price": 2940
-  },
-  {
    "id": 19576,
    "name": "Мюли",
    "category": "obuv",
@@ -4030,8 +3766,8 @@
    "price": 2940
   },
   {
-   "id": 19596,
-   "name": "Мюли сетчатые",
+   "id": 18933,
+   "name": "Босоножки",
    "category": "obuv",
    "subsection": "leto",
    "subsectionTitle": "Лето",
@@ -4039,6 +3775,7 @@
    "new": false,
    "sale": false,
    "allSizes": [
+    "35",
     "36",
     "37",
     "38",
@@ -4047,39 +3784,46 @@
    ],
    "colors": [
     {
-     "oid": 32377,
-     "title": "Черный",
-     "swatch": "https://maniolini.ru/upload/uf/87b/y2t1pezl7eztkhzmchubp074hhayaqi3.png",
-     "url": "https://maniolini.ru/catalog/obuv/leto/myuli/myuli_setchatye_ml13_3_s9/?oid=32377",
-     "price": 2870,
-     "oldPrice": 4100,
+     "oid": 32646,
+     "title": "Бежевый",
+     "swatch": "https://maniolini.ru/upload/uf/01f/zfhhby3mpxuie56u8p9eof9050919i47.png",
+     "url": "https://maniolini.ru/catalog/obuv/leto/bosonozhki/bosonozhki_42k10_1/?oid=32646",
+     "price": 2940,
+     "oldPrice": 4200,
      "images": [
-      "https://maniolini.ru/upload/iblock/809/rzbs8mnry9add9gvh5h6ivwieohj182y.jpg",
-      "https://maniolini.ru/upload/iblock/3ef/50s8dde0060j8hpwmct31xajvghdsls4.jpg",
-      "https://maniolini.ru/upload/iblock/c21/8qeq09xy0dhqj6v6frrdnmtovowo97pw.jpg",
-      "https://maniolini.ru/upload/iblock/daf/kbfv13c02tipfp35619ipqjavcdfw38i.jpg",
-      "https://maniolini.ru/upload/iblock/05b/ulj954qo3yl2tkyiynjc850bxsuwbet8.jpg"
+      "https://maniolini.ru/upload/iblock/cb2/nmpbcw0woid5vdhfntgw71ttdrzjl1fj.jpg",
+      "https://maniolini.ru/upload/iblock/d28/ig02dgzes0dj122hts342p4n6tsa0vrw.jpg",
+      "https://maniolini.ru/upload/iblock/a37/5ko189k7osc2itkf7wev194a69r8myvm.jpg",
+      "https://maniolini.ru/upload/iblock/c44/m2l2w6cefdfml6lq8r6e35oauh46xmon.jpg",
+      "https://maniolini.ru/upload/iblock/486/mwus3pggjpnpzj1yi26o40tpe8hsw32i.jpg"
      ],
      "sizes": [
+      "35",
+      "36",
       "37",
-      "38"
+      "38",
+      "39",
+      "40"
      ]
     },
     {
-     "oid": 32373,
-     "title": "Белый",
-     "swatch": "https://maniolini.ru/upload/uf/b57/g8omcrb5q80yratvrhwnfb5r0cr7an74.png",
-     "url": "https://maniolini.ru/catalog/obuv/leto/myuli/myuli_setchatye_ml13_3_s9/?oid=32373",
-     "price": 2870,
-     "oldPrice": 4100,
+     "oid": 32637,
+     "title": "Черный",
+     "swatch": "https://maniolini.ru/upload/uf/87b/y2t1pezl7eztkhzmchubp074hhayaqi3.png",
+     "url": "https://maniolini.ru/catalog/obuv/leto/bosonozhki/bosonozhki_42k10_1/?oid=32637",
+     "price": 2940,
+     "oldPrice": 4200,
      "images": [
-      "https://maniolini.ru/upload/iblock/05b/ulj954qo3yl2tkyiynjc850bxsuwbet8.jpg",
-      "https://maniolini.ru/upload/iblock/628/94b3dkpafqezze4b0g10klhdyasn1f7m.jpg",
-      "https://maniolini.ru/upload/iblock/d8f/i7vqsf2xnif1wmkxhz9bjlhkgm19cg0m.jpg",
-      "https://maniolini.ru/upload/iblock/060/vtey654nf5hx154ch7tsafhb4fgoj0yc.jpg"
+      "https://maniolini.ru/upload/iblock/52a/b798222a0n58wv19nyrwljhrdbaka2fl.jpg",
+      "https://maniolini.ru/upload/iblock/ba1/nhtnq8vcv535ix1zklisqzdawlr22dwc.jpg",
+      "https://maniolini.ru/upload/iblock/6c9/603fdn42nvfzqjdb014606ehpefxk5cu.jpg",
+      "https://maniolini.ru/upload/iblock/c6c/9l6a4d721a7dd5hhku5p0x6p76on4byp.jpg",
+      "https://maniolini.ru/upload/iblock/c35/frvrqa0iqqccbzye70oliic1on7gtitp.jpg",
+      "https://maniolini.ru/upload/iblock/1ef/9c58qoalivznacoyrdf9mv91daref1oh.jpg",
+      "https://maniolini.ru/upload/iblock/e8c/hea3u8w2saa8k9egivh6vmrkqyvurh5j.jpg",
+      "https://maniolini.ru/upload/iblock/cb2/nmpbcw0woid5vdhfntgw71ttdrzjl1fj.jpg"
      ],
      "sizes": [
-      "36",
       "37",
       "38",
       "39",
@@ -4087,7 +3831,7 @@
      ]
     }
    ],
-   "price": 2870
+   "price": 2940
   },
   {
    "id": 19006,
@@ -4211,6 +3955,66 @@
     }
    ],
    "price": 3080
+  },
+  {
+   "id": 19596,
+   "name": "Мюли сетчатые",
+   "category": "obuv",
+   "subsection": "leto",
+   "subsectionTitle": "Лето",
+   "hit": false,
+   "new": false,
+   "sale": false,
+   "allSizes": [
+    "36",
+    "37",
+    "38",
+    "39",
+    "40"
+   ],
+   "colors": [
+    {
+     "oid": 32377,
+     "title": "Черный",
+     "swatch": "https://maniolini.ru/upload/uf/87b/y2t1pezl7eztkhzmchubp074hhayaqi3.png",
+     "url": "https://maniolini.ru/catalog/obuv/leto/myuli/myuli_setchatye_ml13_3_s9/?oid=32377",
+     "price": 2870,
+     "oldPrice": 4100,
+     "images": [
+      "https://maniolini.ru/upload/iblock/809/rzbs8mnry9add9gvh5h6ivwieohj182y.jpg",
+      "https://maniolini.ru/upload/iblock/3ef/50s8dde0060j8hpwmct31xajvghdsls4.jpg",
+      "https://maniolini.ru/upload/iblock/c21/8qeq09xy0dhqj6v6frrdnmtovowo97pw.jpg",
+      "https://maniolini.ru/upload/iblock/daf/kbfv13c02tipfp35619ipqjavcdfw38i.jpg",
+      "https://maniolini.ru/upload/iblock/05b/ulj954qo3yl2tkyiynjc850bxsuwbet8.jpg"
+     ],
+     "sizes": [
+      "37",
+      "38"
+     ]
+    },
+    {
+     "oid": 32373,
+     "title": "Белый",
+     "swatch": "https://maniolini.ru/upload/uf/b57/g8omcrb5q80yratvrhwnfb5r0cr7an74.png",
+     "url": "https://maniolini.ru/catalog/obuv/leto/myuli/myuli_setchatye_ml13_3_s9/?oid=32373",
+     "price": 2870,
+     "oldPrice": 4100,
+     "images": [
+      "https://maniolini.ru/upload/iblock/05b/ulj954qo3yl2tkyiynjc850bxsuwbet8.jpg",
+      "https://maniolini.ru/upload/iblock/628/94b3dkpafqezze4b0g10klhdyasn1f7m.jpg",
+      "https://maniolini.ru/upload/iblock/d8f/i7vqsf2xnif1wmkxhz9bjlhkgm19cg0m.jpg",
+      "https://maniolini.ru/upload/iblock/060/vtey654nf5hx154ch7tsafhb4fgoj0yc.jpg"
+     ],
+     "sizes": [
+      "36",
+      "37",
+      "38",
+      "39",
+      "40"
+     ]
+    }
+   ],
+   "price": 2870
   },
   {
    "id": 19222,
@@ -5572,45 +5376,6 @@
    "price": 2730
   },
   {
-   "id": 34253,
-   "name": "Сапоги",
-   "category": "obuv",
-   "subsection": "demisezon",
-   "subsectionTitle": "Демисезон",
-   "hit": false,
-   "new": false,
-   "sale": false,
-   "allSizes": [
-    "36"
-   ],
-   "colors": [
-    {
-     "oid": 34423,
-     "title": "Черный",
-     "swatch": "https://maniolini.ru/upload/uf/87b/y2t1pezl7eztkhzmchubp074hhayaqi3.png",
-     "url": "https://maniolini.ru/catalog/obuv/demisezon/sapogi/sapogi_sdn72_2_k9/?oid=34423",
-     "price": 6700,
-     "oldPrice": null,
-     "images": [
-      "https://maniolini.ru/upload/iblock/4c7/42ck6mh3gchgktda3wh3s90vaa9dldun.jpg",
-      "https://maniolini.ru/upload/iblock/ee9/r7zdrkpl5sj2o4oznla64k2hr6cbbfcd.jpg",
-      "https://maniolini.ru/upload/iblock/dd6/u0ifug7r4x2cznuitg5k3atc24sgoxdo.jpg",
-      "https://maniolini.ru/upload/iblock/ff2/mfh6esf0d0j2e5jbrrbccid76jdl50m7.jpg",
-      "https://maniolini.ru/upload/iblock/593/06xk5la0y53cz17sbpce07kpyn41em55.jpg",
-      "https://maniolini.ru/upload/iblock/9b3/naf10na1eyffv2dityzi4ljxs05qzsl3.jpg",
-      "https://maniolini.ru/upload/iblock/048/30ev3a8yvzbivg7tu102v0guxclu41d7.jpg",
-      "https://maniolini.ru/upload/iblock/6f6/7k406c39p3qkijlcie2f0tr0ylhrfs1t.jpg",
-      "https://maniolini.ru/upload/iblock/cc8/hrvqx98nlbry5xe014x350b4mz2gcodd.jpg",
-      "https://maniolini.ru/upload/iblock/61e/1cp5n7srxpccze6bz0tfu7o3zwddpcfe.jpg"
-     ],
-     "sizes": [
-      "36"
-     ]
-    }
-   ],
-   "price": 6700
-  },
-  {
    "id": 34291,
    "name": "Сапоги",
    "category": "obuv",
@@ -5621,7 +5386,6 @@
    "sale": false,
    "allSizes": [
     "36",
-    "39",
     "40"
    ],
    "colors": [
@@ -5646,7 +5410,6 @@
      ],
      "sizes": [
       "36",
-      "39",
       "40"
      ]
     }
@@ -5783,40 +5546,6 @@
     }
    ],
    "price": 3080
-  },
-  {
-   "id": 34316,
-   "name": "Ботильоны",
-   "category": "obuv",
-   "subsection": "demisezon",
-   "subsectionTitle": "Демисезон",
-   "hit": false,
-   "new": false,
-   "sale": true,
-   "allSizes": [
-    "40"
-   ],
-   "colors": [
-    {
-     "oid": 34937,
-     "title": "Белый",
-     "swatch": "https://maniolini.ru/upload/uf/b57/g8omcrb5q80yratvrhwnfb5r0cr7an74.png",
-     "url": "https://maniolini.ru/catalog/obuv/demisezon/botilony/botilony_bd24_2_k10/?oid=34937",
-     "price": 4800,
-     "oldPrice": null,
-     "images": [
-      "https://maniolini.ru/upload/iblock/cc2/gpw9bdxuwbj9u867t8inn0mrxnerb526.jpg",
-      "https://maniolini.ru/upload/iblock/1fb/8r1xntcpeowiocs3qbelvl60498t53z1.jpg",
-      "https://maniolini.ru/upload/iblock/3cc/47wyvzhscqfvw1fptxjgry6v0h9a7bp9.jpg",
-      "https://maniolini.ru/upload/iblock/f6b/dc11rqvi1s9ddypi62y8f2g4ph3y3zjj.jpg",
-      "https://maniolini.ru/upload/iblock/764/0mlsgv6cev9ykvs04bdpqck11eu1wm2x.jpg"
-     ],
-     "sizes": [
-      "40"
-     ]
-    }
-   ],
-   "price": 4800
   },
   {
    "id": 19508,
@@ -5976,6 +5705,44 @@
    "price": 2590
   },
   {
+   "id": 34239,
+   "name": "Ботфорты",
+   "category": "obuv",
+   "subsection": "demisezon",
+   "subsectionTitle": "Демисезон",
+   "hit": false,
+   "new": false,
+   "sale": false,
+   "allSizes": [
+    "38"
+   ],
+   "colors": [
+    {
+     "oid": 34373,
+     "title": "Черный",
+     "swatch": "https://maniolini.ru/upload/uf/87b/y2t1pezl7eztkhzmchubp074hhayaqi3.png",
+     "url": "https://maniolini.ru/catalog/obuv/demisezon/botforty/botforty_dn41_2_p3/?oid=34373",
+     "price": 5200,
+     "oldPrice": null,
+     "images": [
+      "https://maniolini.ru/upload/iblock/1eb/q8lwa9vnvi4vem8itzk7eke5g9gkk4rb.jpg",
+      "https://maniolini.ru/upload/iblock/8fc/qsnsg3syp56w5hk58hml1odxngqzczm5.jpg",
+      "https://maniolini.ru/upload/iblock/351/tqked0j52uhazgp739rhw08m8z3euhkc.jpg",
+      "https://maniolini.ru/upload/iblock/acb/d3kvzl7j90w4q54l23k2ai8t2biz2xio.jpg",
+      "https://maniolini.ru/upload/iblock/9eb/kmzt60cuesvb5z9rf8swyc5ijfr60c0b.jpg",
+      "https://maniolini.ru/upload/iblock/a9a/mpdmozeft1d9wg3sy1k6adw0ybcjtupi.jpg",
+      "https://maniolini.ru/upload/iblock/420/zzhxbvdlsmuu4de7nqliwutmk3rbhdfp.jpg",
+      "https://maniolini.ru/upload/iblock/245/hxdgggjoy7jy1mg98ugb1ff484fdpyuf.jpg",
+      "https://maniolini.ru/upload/iblock/376/dbozc1bjl05mh50s1m6zvuswes70ncef.jpg"
+     ],
+     "sizes": [
+      "38"
+     ]
+    }
+   ],
+   "price": 5200
+  },
+  {
    "id": 19443,
    "name": "Босоножки",
    "category": "obuv",
@@ -6109,45 +5876,6 @@
    "price": 3640
   },
   {
-   "id": 34322,
-   "name": "Казаки",
-   "category": "obuv",
-   "subsection": "demisezon",
-   "subsectionTitle": "Демисезон",
-   "hit": false,
-   "new": false,
-   "sale": false,
-   "allSizes": [
-    "35"
-   ],
-   "colors": [
-    {
-     "oid": 35064,
-     "title": "Черный",
-     "swatch": "https://maniolini.ru/upload/uf/87b/y2t1pezl7eztkhzmchubp074hhayaqi3.png",
-     "url": "https://maniolini.ru/catalog/obuv/demisezon/kazaki/kazaki_kkdn02_2_k8/?oid=35064",
-     "price": 6900,
-     "oldPrice": null,
-     "images": [
-      "https://maniolini.ru/upload/iblock/c36/fbdrumb3xqakd1r32lbb7wt6dxle3vx8.jpg",
-      "https://maniolini.ru/upload/iblock/fc5/9mkmvt71z248ln7wjb1zna5tmzkaf0s4.jpg",
-      "https://maniolini.ru/upload/iblock/738/jvxum3ygequ1pjl8ko7c7ahnx45u5l78.jpg",
-      "https://maniolini.ru/upload/iblock/263/iuvrqgee62fzo8qpqtxj9zmo5js5qlxh.jpg",
-      "https://maniolini.ru/upload/iblock/966/uirq73u84rhzc3kw2ey5tupkpk7d8bqe.jpg",
-      "https://maniolini.ru/upload/iblock/a76/hvjd2qevlyhhk2didcqxt2tn0jxyuts8.jpg",
-      "https://maniolini.ru/upload/iblock/d2a/0uyj96nwham0k0y6hnf8630tplybalp1.jpg",
-      "https://maniolini.ru/upload/iblock/447/nefg0n9lywubo4dpaq09mp279jg9pqpb.jpg",
-      "https://maniolini.ru/upload/iblock/89f/vykvn0dlgqi5n4z48jelne8khnex9hs3.jpg",
-      "https://maniolini.ru/upload/iblock/995/mek7cpwv50jnufmt2tkdfnat8nu5oy90.jpg"
-     ],
-     "sizes": [
-      "35"
-     ]
-    }
-   ],
-   "price": 6900
-  },
-  {
    "id": 19053,
    "name": "Босоножки",
    "category": "obuv",
@@ -6223,9 +5951,24 @@
    "allSizes": [
     "36",
     "38",
+    "39",
     "41"
    ],
    "colors": [
+    {
+     "oid": 32927,
+     "title": "Черный",
+     "swatch": "https://maniolini.ru/upload/uf/87b/y2t1pezl7eztkhzmchubp074hhayaqi3.png",
+     "url": "https://maniolini.ru/catalog/obuv/leto/bosonozhki/bosonozhki_01k7_1/?oid=32927",
+     "price": 2590,
+     "oldPrice": 3700,
+     "images": [
+      "https://maniolini.ru/upload/iblock/082/90vlrmaft2ob2cr1mlbcophpkr25rt77.jpg"
+     ],
+     "sizes": [
+      "39"
+     ]
+    },
     {
      "oid": 32797,
      "title": "Желтый",
@@ -6387,6 +6130,63 @@
    "price": 4700
   },
   {
+   "id": 19011,
+   "name": "Ботинки-сабо",
+   "category": "obuv",
+   "subsection": "zima",
+   "subsectionTitle": "Зима",
+   "hit": false,
+   "new": false,
+   "sale": false,
+   "allSizes": [
+    "36",
+    "37",
+    "38",
+    "39",
+    "40"
+   ],
+   "colors": [
+    {
+     "oid": 31539,
+     "title": "Черный",
+     "swatch": "https://maniolini.ru/upload/uf/87b/y2t1pezl7eztkhzmchubp074hhayaqi3.png",
+     "url": "https://maniolini.ru/catalog/obuv/zima/botinki_2/botinki_sabo_fzn59_1_p4/?oid=31539",
+     "price": 7400,
+     "oldPrice": null,
+     "images": [
+      "https://maniolini.ru/upload/iblock/b04/vsd1dfbldjuqygvws45js1eiw5ob2elk.png",
+      "https://maniolini.ru/upload/iblock/285/ycaxjmhve9rv6gfjzu64jz66us9efiw3.png"
+     ],
+     "sizes": [
+      "36",
+      "37",
+      "38",
+      "39",
+      "40"
+     ]
+    },
+    {
+     "oid": 31536,
+     "title": "Бежевый",
+     "swatch": "https://maniolini.ru/upload/uf/01f/zfhhby3mpxuie56u8p9eof9050919i47.png",
+     "url": "https://maniolini.ru/catalog/obuv/zima/botinki_2/botinki_sabo_fzn59_1_p4/?oid=31536",
+     "price": 7400,
+     "oldPrice": null,
+     "images": [
+      "https://maniolini.ru/upload/iblock/285/ycaxjmhve9rv6gfjzu64jz66us9efiw3.png"
+     ],
+     "sizes": [
+      "36",
+      "37",
+      "38",
+      "39",
+      "40"
+     ]
+    }
+   ],
+   "price": 7400
+  },
+  {
    "id": 19570,
    "name": "Мюли",
    "category": "obuv",
@@ -6450,63 +6250,6 @@
    "price": 2730
   },
   {
-   "id": 19011,
-   "name": "Ботинки-сабо",
-   "category": "obuv",
-   "subsection": "zima",
-   "subsectionTitle": "Зима",
-   "hit": false,
-   "new": false,
-   "sale": false,
-   "allSizes": [
-    "36",
-    "37",
-    "38",
-    "39",
-    "40"
-   ],
-   "colors": [
-    {
-     "oid": 31539,
-     "title": "Черный",
-     "swatch": "https://maniolini.ru/upload/uf/87b/y2t1pezl7eztkhzmchubp074hhayaqi3.png",
-     "url": "https://maniolini.ru/catalog/obuv/zima/botinki_2/botinki_sabo_fzn59_1_p4/?oid=31539",
-     "price": 7400,
-     "oldPrice": null,
-     "images": [
-      "https://maniolini.ru/upload/iblock/b04/vsd1dfbldjuqygvws45js1eiw5ob2elk.png",
-      "https://maniolini.ru/upload/iblock/285/ycaxjmhve9rv6gfjzu64jz66us9efiw3.png"
-     ],
-     "sizes": [
-      "36",
-      "37",
-      "38",
-      "39",
-      "40"
-     ]
-    },
-    {
-     "oid": 31536,
-     "title": "Бежевый",
-     "swatch": "https://maniolini.ru/upload/uf/01f/zfhhby3mpxuie56u8p9eof9050919i47.png",
-     "url": "https://maniolini.ru/catalog/obuv/zima/botinki_2/botinki_sabo_fzn59_1_p4/?oid=31536",
-     "price": 7400,
-     "oldPrice": null,
-     "images": [
-      "https://maniolini.ru/upload/iblock/285/ycaxjmhve9rv6gfjzu64jz66us9efiw3.png"
-     ],
-     "sizes": [
-      "36",
-      "37",
-      "38",
-      "39",
-      "40"
-     ]
-    }
-   ],
-   "price": 7400
-  },
-  {
    "id": 19543,
    "name": "Ботфорты",
    "category": "obuv",
@@ -6535,44 +6278,6 @@
     }
    ],
    "price": 4600
-  },
-  {
-   "id": 34257,
-   "name": "Ботфорты",
-   "category": "obuv",
-   "subsection": "demisezon",
-   "subsectionTitle": "Демисезон",
-   "hit": false,
-   "new": false,
-   "sale": true,
-   "allSizes": [
-    "35"
-   ],
-   "colors": [
-    {
-     "oid": 35160,
-     "title": "Черный",
-     "swatch": "https://maniolini.ru/upload/uf/87b/y2t1pezl7eztkhzmchubp074hhayaqi3.png",
-     "url": "https://maniolini.ru/catalog/obuv/demisezon/botforty/botforty_dn200_1_k12/?oid=35160",
-     "price": 5900,
-     "oldPrice": null,
-     "images": [
-      "https://maniolini.ru/upload/iblock/46a/2u9edn0fbl648l5oj22new6ufjdv1cwk.jpg",
-      "https://maniolini.ru/upload/iblock/354/cqu6u27bteajwck0zcl5y3fflmoinwt2.jpg",
-      "https://maniolini.ru/upload/iblock/ad6/7mhi37371b13uzj151gyxh16kaqji3ak.jpg",
-      "https://maniolini.ru/upload/iblock/4f7/nd0e9wvcvu5ddwnpqfdv4bib37uqdy69.jpg",
-      "https://maniolini.ru/upload/iblock/f48/o928rh9on4lglh9gl68o20eg451x3wm7.jpg",
-      "https://maniolini.ru/upload/iblock/af7/b2me68plnjgmo7b0akzcej1xpy6e3ydn.jpg",
-      "https://maniolini.ru/upload/iblock/7a5/v9zry8mj1z3yys2kngt1bnbz7qro4mo0.jpg",
-      "https://maniolini.ru/upload/iblock/685/qacb04q3xzxtwx3iy7x89o1sqqja8o5s.jpg",
-      "https://maniolini.ru/upload/iblock/ad8/ls0eix8ymww72cjhk51zsoa0321jg16v.jpg"
-     ],
-     "sizes": [
-      "35"
-     ]
-    }
-   ],
-   "price": 5900
   },
   {
    "id": 19723,
@@ -6666,44 +6371,6 @@
    "price": 2450
   },
   {
-   "id": 19735,
-   "name": "Ботфорты",
-   "category": "obuv",
-   "subsection": "zima",
-   "subsectionTitle": "Зима",
-   "hit": false,
-   "new": false,
-   "sale": false,
-   "allSizes": [
-    "37"
-   ],
-   "colors": [
-    {
-     "oid": 31959,
-     "title": "Черный",
-     "swatch": "https://maniolini.ru/upload/uf/87b/y2t1pezl7eztkhzmchubp074hhayaqi3.png",
-     "url": "https://maniolini.ru/catalog/obuv/zima/botforty_2/botforty_zn41_2_p3/?oid=31959",
-     "price": 5500,
-     "oldPrice": null,
-     "images": [
-      "https://maniolini.ru/upload/iblock/a24/kfs2dyj59x83shqk9zerkhpvsvvytpug.jpg",
-      "https://maniolini.ru/upload/iblock/05f/6yiokerfba6mcuosa9m6nw53e7mtu7kz.jpg",
-      "https://maniolini.ru/upload/iblock/ce9/k08jxe4t087k5mcjjtx3l6kvm8mfs39k.jpg",
-      "https://maniolini.ru/upload/iblock/017/5bzzt1v6asckb6kktvfaxsaelwo6hap1.jpg",
-      "https://maniolini.ru/upload/iblock/805/mj4r5zz77sdf6ladsdrz9nzuw7pb75yv.jpg",
-      "https://maniolini.ru/upload/iblock/0c8/tvcvwheqstugta6ofnli7njpgvaavt7n.jpg",
-      "https://maniolini.ru/upload/iblock/3b6/mb3qsf1gix8867q9jmnlhharrh1f7czo.jpg",
-      "https://maniolini.ru/upload/iblock/b1d/p4jl4zclgh59g2h3acm3u3lh8mq1km9j.jpg",
-      "https://maniolini.ru/upload/iblock/fce/ho47j4ys0a41wy6anfmbfroprdom7e3z.jpg"
-     ],
-     "sizes": [
-      "37"
-     ]
-    }
-   ],
-   "price": 5500
-  },
-  {
    "id": 19240,
    "name": "Босоножки",
    "category": "obuv",
@@ -6770,6 +6437,80 @@
    "price": 2310
   },
   {
+   "id": 19535,
+   "name": "Балетки с ремешком",
+   "category": "obuv",
+   "subsection": "leto",
+   "subsectionTitle": "Лето",
+   "hit": false,
+   "new": false,
+   "sale": false,
+   "allSizes": [
+    "36",
+    "37",
+    "38",
+    "39",
+    "40"
+   ],
+   "colors": [
+    {
+     "oid": 27421,
+     "title": "Красный",
+     "swatch": "https://maniolini.ru/upload/uf/2a6/sa9lvq3afjoaddy326eujlaf4kmqf13z.png",
+     "url": "https://maniolini.ru/catalog/obuv/leto/baletki/baletki_s_remeshkom_bln01_23_k1/?oid=27421",
+     "price": 3080,
+     "oldPrice": 4400,
+     "images": [
+      "https://maniolini.ru/upload/iblock/f09/7ta5xw4wg79uuxibhs1rmc2pzrm65ov2.jpg",
+      "https://maniolini.ru/upload/iblock/f18/lqya2z474oduvs0ud9x4g8ugd0pr3p05.jpg",
+      "https://maniolini.ru/upload/iblock/181/m1rbzmxdb5gap56p11n54ma633spt06i.jpg",
+      "https://maniolini.ru/upload/iblock/3f3/5yte8iu70dhbif03lnxnktdm5pt6jzwc.jpg"
+     ],
+     "sizes": [
+      "36",
+      "37",
+      "38",
+      "39",
+      "40"
+     ]
+    },
+    {
+     "oid": 26522,
+     "title": "Черный",
+     "swatch": "https://maniolini.ru/upload/uf/87b/y2t1pezl7eztkhzmchubp074hhayaqi3.png",
+     "url": "https://maniolini.ru/catalog/obuv/leto/baletki/baletki_s_remeshkom_bln01_23_k1/?oid=26522",
+     "price": 3080,
+     "oldPrice": 4400,
+     "images": [
+      "https://maniolini.ru/upload/iblock/5c9/pooiqzsgy2dbfsb7v5mxlc1m4h2uk69j.jpg",
+      "https://maniolini.ru/upload/iblock/aec/xhlncbvxmfi4ajyxinpqutctsqmfihde.jpg",
+      "https://maniolini.ru/upload/iblock/d03/nkye2u8lrrwlcr4m701hkc5n81wjum00.jpg",
+      "https://maniolini.ru/upload/iblock/544/b094ev2iopopdq5dsmu1q1hrezkoanm4.jpg",
+      "https://maniolini.ru/upload/iblock/f09/7ta5xw4wg79uuxibhs1rmc2pzrm65ov2.jpg"
+     ],
+     "sizes": [
+      "38",
+      "39"
+     ]
+    },
+    {
+     "oid": 26429,
+     "title": "Винный",
+     "swatch": "https://maniolini.ru/upload/uf/ffa/s2ta0a8ipxbnuqz03qb03esp89c1svo1.webp",
+     "url": "https://maniolini.ru/catalog/obuv/leto/baletki/baletki_s_remeshkom_bln01_23_k1/?oid=26429",
+     "price": 3080,
+     "oldPrice": 4400,
+     "images": [
+      "https://maniolini.ru/upload/iblock/f09/7ta5xw4wg79uuxibhs1rmc2pzrm65ov2.jpg"
+     ],
+     "sizes": [
+      "37"
+     ]
+    }
+   ],
+   "price": 3080
+  },
+  {
    "id": 19600,
    "name": "Мюли",
    "category": "obuv",
@@ -6832,6 +6573,44 @@
     }
    ],
    "price": 2590
+  },
+  {
+   "id": 19735,
+   "name": "Ботфорты",
+   "category": "obuv",
+   "subsection": "zima",
+   "subsectionTitle": "Зима",
+   "hit": false,
+   "new": false,
+   "sale": false,
+   "allSizes": [
+    "37"
+   ],
+   "colors": [
+    {
+     "oid": 31959,
+     "title": "Черный",
+     "swatch": "https://maniolini.ru/upload/uf/87b/y2t1pezl7eztkhzmchubp074hhayaqi3.png",
+     "url": "https://maniolini.ru/catalog/obuv/zima/botforty_2/botforty_zn41_2_p3/?oid=31959",
+     "price": 5500,
+     "oldPrice": null,
+     "images": [
+      "https://maniolini.ru/upload/iblock/a24/kfs2dyj59x83shqk9zerkhpvsvvytpug.jpg",
+      "https://maniolini.ru/upload/iblock/05f/6yiokerfba6mcuosa9m6nw53e7mtu7kz.jpg",
+      "https://maniolini.ru/upload/iblock/ce9/k08jxe4t087k5mcjjtx3l6kvm8mfs39k.jpg",
+      "https://maniolini.ru/upload/iblock/017/5bzzt1v6asckb6kktvfaxsaelwo6hap1.jpg",
+      "https://maniolini.ru/upload/iblock/805/mj4r5zz77sdf6ladsdrz9nzuw7pb75yv.jpg",
+      "https://maniolini.ru/upload/iblock/0c8/tvcvwheqstugta6ofnli7njpgvaavt7n.jpg",
+      "https://maniolini.ru/upload/iblock/3b6/mb3qsf1gix8867q9jmnlhharrh1f7czo.jpg",
+      "https://maniolini.ru/upload/iblock/b1d/p4jl4zclgh59g2h3acm3u3lh8mq1km9j.jpg",
+      "https://maniolini.ru/upload/iblock/fce/ho47j4ys0a41wy6anfmbfroprdom7e3z.jpg"
+     ],
+     "sizes": [
+      "37"
+     ]
+    }
+   ],
+   "price": 5500
   },
   {
    "id": 19270,
@@ -6952,80 +6731,6 @@
    "price": 2450
   },
   {
-   "id": 19535,
-   "name": "Балетки с ремешком",
-   "category": "obuv",
-   "subsection": "leto",
-   "subsectionTitle": "Лето",
-   "hit": false,
-   "new": false,
-   "sale": false,
-   "allSizes": [
-    "36",
-    "37",
-    "38",
-    "39",
-    "40"
-   ],
-   "colors": [
-    {
-     "oid": 27421,
-     "title": "Красный",
-     "swatch": "https://maniolini.ru/upload/uf/2a6/sa9lvq3afjoaddy326eujlaf4kmqf13z.png",
-     "url": "https://maniolini.ru/catalog/obuv/leto/baletki/baletki_s_remeshkom_bln01_23_k1/?oid=27421",
-     "price": 3080,
-     "oldPrice": 4400,
-     "images": [
-      "https://maniolini.ru/upload/iblock/f09/7ta5xw4wg79uuxibhs1rmc2pzrm65ov2.jpg",
-      "https://maniolini.ru/upload/iblock/f18/lqya2z474oduvs0ud9x4g8ugd0pr3p05.jpg",
-      "https://maniolini.ru/upload/iblock/181/m1rbzmxdb5gap56p11n54ma633spt06i.jpg",
-      "https://maniolini.ru/upload/iblock/3f3/5yte8iu70dhbif03lnxnktdm5pt6jzwc.jpg"
-     ],
-     "sizes": [
-      "36",
-      "37",
-      "38",
-      "39",
-      "40"
-     ]
-    },
-    {
-     "oid": 26522,
-     "title": "Черный",
-     "swatch": "https://maniolini.ru/upload/uf/87b/y2t1pezl7eztkhzmchubp074hhayaqi3.png",
-     "url": "https://maniolini.ru/catalog/obuv/leto/baletki/baletki_s_remeshkom_bln01_23_k1/?oid=26522",
-     "price": 3080,
-     "oldPrice": 4400,
-     "images": [
-      "https://maniolini.ru/upload/iblock/5c9/pooiqzsgy2dbfsb7v5mxlc1m4h2uk69j.jpg",
-      "https://maniolini.ru/upload/iblock/aec/xhlncbvxmfi4ajyxinpqutctsqmfihde.jpg",
-      "https://maniolini.ru/upload/iblock/d03/nkye2u8lrrwlcr4m701hkc5n81wjum00.jpg",
-      "https://maniolini.ru/upload/iblock/544/b094ev2iopopdq5dsmu1q1hrezkoanm4.jpg",
-      "https://maniolini.ru/upload/iblock/f09/7ta5xw4wg79uuxibhs1rmc2pzrm65ov2.jpg"
-     ],
-     "sizes": [
-      "38",
-      "39"
-     ]
-    },
-    {
-     "oid": 26429,
-     "title": "Винный",
-     "swatch": "https://maniolini.ru/upload/uf/ffa/s2ta0a8ipxbnuqz03qb03esp89c1svo1.webp",
-     "url": "https://maniolini.ru/catalog/obuv/leto/baletki/baletki_s_remeshkom_bln01_23_k1/?oid=26429",
-     "price": 3080,
-     "oldPrice": 4400,
-     "images": [
-      "https://maniolini.ru/upload/iblock/f09/7ta5xw4wg79uuxibhs1rmc2pzrm65ov2.jpg"
-     ],
-     "sizes": [
-      "37"
-     ]
-    }
-   ],
-   "price": 3080
-  },
-  {
    "id": 19450,
    "name": "Босоножки",
    "category": "obuv",
@@ -7144,6 +6849,66 @@
    "price": 2730
   },
   {
+   "id": 19505,
+   "name": "Балетки с ремешком",
+   "category": "obuv",
+   "subsection": "leto",
+   "subsectionTitle": "Лето",
+   "hit": false,
+   "new": false,
+   "sale": false,
+   "allSizes": [
+    "36",
+    "37",
+    "38",
+    "39",
+    "40",
+    "41"
+   ],
+   "colors": [
+    {
+     "oid": 31840,
+     "title": "Черный",
+     "swatch": "https://maniolini.ru/upload/uf/87b/y2t1pezl7eztkhzmchubp074hhayaqi3.png",
+     "url": "https://maniolini.ru/catalog/obuv/leto/baletki/baletki_s_remeshkom_bl03_23_p1/?oid=31840",
+     "price": 2590,
+     "oldPrice": 3700,
+     "images": [
+      "https://maniolini.ru/upload/iblock/f1f/90myepsc4pjel8wvq8x0ycigufdoahhb.jpg",
+      "https://maniolini.ru/upload/iblock/6ec/00wxdnwd8gta4v864ks19dzjebhr2xth.png",
+      "https://maniolini.ru/upload/iblock/738/j47n0d0vtn472yqvt3xriu0j3fvo1op1.jpg",
+      "https://maniolini.ru/upload/iblock/02f/it66nzktkm2cterluqqg9t93afnt66y5.jpg",
+      "https://maniolini.ru/upload/iblock/9e7/mewrpjpc3zteao6gh1ipr4nuttoh3mes.jpg",
+      "https://maniolini.ru/upload/iblock/189/xiq1ltbbru02m59zke7c4wp9dwhafuls.jpg"
+     ],
+     "sizes": [
+      "37",
+      "38",
+      "39",
+      "40",
+      "41"
+     ]
+    },
+    {
+     "oid": 25936,
+     "title": "Винный",
+     "swatch": "https://maniolini.ru/upload/uf/ffa/s2ta0a8ipxbnuqz03qb03esp89c1svo1.webp",
+     "url": "https://maniolini.ru/catalog/obuv/leto/baletki/baletki_s_remeshkom_bl03_23_p1/?oid=25936",
+     "price": 2590,
+     "oldPrice": 3700,
+     "images": [
+      "https://maniolini.ru/upload/iblock/189/xiq1ltbbru02m59zke7c4wp9dwhafuls.jpg"
+     ],
+     "sizes": [
+      "36",
+      "39",
+      "40"
+     ]
+    }
+   ],
+   "price": 2590
+  },
+  {
    "id": 18912,
    "name": "Балетки",
    "category": "obuv",
@@ -7211,66 +6976,6 @@
    "price": 2730
   },
   {
-   "id": 19505,
-   "name": "Балетки с ремешком",
-   "category": "obuv",
-   "subsection": "leto",
-   "subsectionTitle": "Лето",
-   "hit": false,
-   "new": false,
-   "sale": false,
-   "allSizes": [
-    "36",
-    "37",
-    "38",
-    "39",
-    "40",
-    "41"
-   ],
-   "colors": [
-    {
-     "oid": 31840,
-     "title": "Черный",
-     "swatch": "https://maniolini.ru/upload/uf/87b/y2t1pezl7eztkhzmchubp074hhayaqi3.png",
-     "url": "https://maniolini.ru/catalog/obuv/leto/baletki/baletki_s_remeshkom_bl03_23_p1/?oid=31840",
-     "price": 2590,
-     "oldPrice": 3700,
-     "images": [
-      "https://maniolini.ru/upload/iblock/f1f/90myepsc4pjel8wvq8x0ycigufdoahhb.jpg",
-      "https://maniolini.ru/upload/iblock/6ec/00wxdnwd8gta4v864ks19dzjebhr2xth.png",
-      "https://maniolini.ru/upload/iblock/738/j47n0d0vtn472yqvt3xriu0j3fvo1op1.jpg",
-      "https://maniolini.ru/upload/iblock/02f/it66nzktkm2cterluqqg9t93afnt66y5.jpg",
-      "https://maniolini.ru/upload/iblock/9e7/mewrpjpc3zteao6gh1ipr4nuttoh3mes.jpg",
-      "https://maniolini.ru/upload/iblock/189/xiq1ltbbru02m59zke7c4wp9dwhafuls.jpg"
-     ],
-     "sizes": [
-      "37",
-      "38",
-      "39",
-      "40",
-      "41"
-     ]
-    },
-    {
-     "oid": 25936,
-     "title": "Винный",
-     "swatch": "https://maniolini.ru/upload/uf/ffa/s2ta0a8ipxbnuqz03qb03esp89c1svo1.webp",
-     "url": "https://maniolini.ru/catalog/obuv/leto/baletki/baletki_s_remeshkom_bl03_23_p1/?oid=25936",
-     "price": 2590,
-     "oldPrice": 3700,
-     "images": [
-      "https://maniolini.ru/upload/iblock/189/xiq1ltbbru02m59zke7c4wp9dwhafuls.jpg"
-     ],
-     "sizes": [
-      "36",
-      "39",
-      "40"
-     ]
-    }
-   ],
-   "price": 2590
-  },
-  {
    "id": 19012,
    "name": "Ботинки",
    "category": "obuv",
@@ -7280,7 +6985,6 @@
    "new": false,
    "sale": false,
    "allSizes": [
-    "36",
     "37",
     "38",
     "39"
@@ -7313,9 +7017,7 @@
       "https://maniolini.ru/upload/iblock/9fb/hh4ts8lei0mohtttl7u34ye32tv95qz1.jpg"
      ],
      "sizes": [
-      "36",
       "37",
-      "38",
       "39"
      ]
     }
@@ -7588,39 +7290,41 @@
    "price": 3080
   },
   {
-   "id": 19426,
-   "name": "Ботинки",
+   "id": 19044,
+   "name": "Балетки леопардовые с ремешком",
    "category": "obuv",
-   "subsection": "zima",
-   "subsectionTitle": "Зима",
+   "subsection": "leto",
+   "subsectionTitle": "Лето",
    "hit": false,
    "new": false,
-   "sale": false,
+   "sale": true,
    "allSizes": [
     "36",
-    "39",
-    "40"
+    "38",
+    "39"
    ],
    "colors": [
     {
-     "oid": 31824,
-     "title": "Белый",
-     "swatch": "https://maniolini.ru/upload/uf/b57/g8omcrb5q80yratvrhwnfb5r0cr7an74.png",
-     "url": "https://maniolini.ru/catalog/obuv/zima/botinki_2/botinki_fz46_3_p5/?oid=31824",
-     "price": 4700,
-     "oldPrice": null,
+     "oid": 21429,
+     "title": "Леопардовый",
+     "swatch": "https://maniolini.ru/upload/uf/bb6/j4rl8xg0t7w87bd3p5dakvkb62pk8s0u.PNG",
+     "url": "https://maniolini.ru/catalog/obuv/leto/baletki/baletki_leopardovye_s_remeshkom_bl06_1_k1/?oid=21429",
+     "price": 2800,
+     "oldPrice": 4000,
      "images": [
-      "https://maniolini.ru/upload/iblock/67d/dggqb7kai5t2auv8h33ydz21dhzyh80a.jpg",
-      "https://maniolini.ru/upload/iblock/82a/el4ue8wkyt6hezkw4p80hgi0h9vzwfws.jpg"
+      "https://maniolini.ru/upload/iblock/e2d/p6w12sk7z497wxs7upl5khufwkcnvxgg.jpg",
+      "https://maniolini.ru/upload/iblock/8aa/pmdt4m9bnjxq76u8xuhbotmxj0hhoqx9.jpg",
+      "https://maniolini.ru/upload/iblock/f1a/cib0rookjuu1ytt85xy2jzuvn1ehcf9a.jpg",
+      "https://maniolini.ru/upload/iblock/65b/acv12zv0ddjdpk84zh4s5j0a70o5qxuh.jpg"
      ],
      "sizes": [
       "36",
-      "39",
-      "40"
+      "38",
+      "39"
      ]
     }
    ],
-   "price": 4700
+   "price": 2800
   },
   {
    "id": 19217,
@@ -7673,6 +7377,93 @@
     }
    ],
    "price": 2450
+  },
+  {
+   "id": 19426,
+   "name": "Ботинки",
+   "category": "obuv",
+   "subsection": "zima",
+   "subsectionTitle": "Зима",
+   "hit": false,
+   "new": false,
+   "sale": false,
+   "allSizes": [
+    "39",
+    "40"
+   ],
+   "colors": [
+    {
+     "oid": 31823,
+     "title": "Белый",
+     "swatch": "https://maniolini.ru/upload/uf/b57/g8omcrb5q80yratvrhwnfb5r0cr7an74.png",
+     "url": "https://maniolini.ru/catalog/obuv/zima/botinki_2/botinki_fz46_3_p5/?oid=31823",
+     "price": 4700,
+     "oldPrice": null,
+     "images": [
+      "https://maniolini.ru/upload/iblock/67d/dggqb7kai5t2auv8h33ydz21dhzyh80a.jpg",
+      "https://maniolini.ru/upload/iblock/82a/el4ue8wkyt6hezkw4p80hgi0h9vzwfws.jpg"
+     ],
+     "sizes": [
+      "39",
+      "40"
+     ]
+    }
+   ],
+   "price": 4700
+  },
+  {
+   "id": 19058,
+   "name": "Балетки в сетку с ремешком",
+   "category": "obuv",
+   "subsection": "leto",
+   "subsectionTitle": "Лето",
+   "hit": false,
+   "new": false,
+   "sale": true,
+   "allSizes": [
+    "37",
+    "38",
+    "40"
+   ],
+   "colors": [
+    {
+     "oid": 21658,
+     "title": "Черный",
+     "swatch": "https://maniolini.ru/upload/uf/87b/y2t1pezl7eztkhzmchubp074hhayaqi3.png",
+     "url": "https://maniolini.ru/catalog/obuv/leto/baletki/baletki_v_setku_s_remeshkom_bl04_2/?oid=21658",
+     "price": 2730,
+     "oldPrice": 3900,
+     "images": [
+      "https://maniolini.ru/upload/iblock/313/yo44rpk3guzzt0uyg6zxb9gpnflkoxri.jpg",
+      "https://maniolini.ru/upload/iblock/326/sw8pdpibbst6fzv30hain6zq0l3v6fnf.jpg",
+      "https://maniolini.ru/upload/iblock/480/npbhlz31qj4x303f1p8dqsgzznyfkp46.jpg",
+      "https://maniolini.ru/upload/iblock/bde/hxabe7105pkxy5qrp8wglvwbrostrhf0.jpg",
+      "https://maniolini.ru/upload/iblock/554/k2z9w6pfodoquicnyc50wwkqcpe2sy10.jpg"
+     ],
+     "sizes": [
+      "38"
+     ]
+    },
+    {
+     "oid": 21655,
+     "title": "Молочный",
+     "swatch": "https://maniolini.ru/upload/uf/80b/xgz3ifvuzuvn5nr7xw5zaby8cg24o5q7.png",
+     "url": "https://maniolini.ru/catalog/obuv/leto/baletki/baletki_v_setku_s_remeshkom_bl04_2/?oid=21655",
+     "price": 2730,
+     "oldPrice": 3900,
+     "images": [
+      "https://maniolini.ru/upload/iblock/554/k2z9w6pfodoquicnyc50wwkqcpe2sy10.jpg",
+      "https://maniolini.ru/upload/iblock/d93/ugpz6xmt66erlzsjzdwm3whaugs1emtf.jpg",
+      "https://maniolini.ru/upload/iblock/41a/910uoxj82a52setsz87hb4lram3dp2pj.jpg",
+      "https://maniolini.ru/upload/iblock/489/xn5ny094sjq0f5e2t25brfyvkxd5kjmb.jpg"
+     ],
+     "sizes": [
+      "37",
+      "40"
+     ]
+    }
+   ],
+   "price": 2730
   },
   {
    "id": 19574,
@@ -7733,97 +7524,6 @@
     }
    ],
    "price": 2870
-  },
-  {
-   "id": 19058,
-   "name": "Балетки в сетку с ремешком",
-   "category": "obuv",
-   "subsection": "leto",
-   "subsectionTitle": "Лето",
-   "hit": false,
-   "new": false,
-   "sale": true,
-   "allSizes": [
-    "37",
-    "38",
-    "40"
-   ],
-   "colors": [
-    {
-     "oid": 21658,
-     "title": "Черный",
-     "swatch": "https://maniolini.ru/upload/uf/87b/y2t1pezl7eztkhzmchubp074hhayaqi3.png",
-     "url": "https://maniolini.ru/catalog/obuv/leto/baletki/baletki_v_setku_s_remeshkom_bl04_2/?oid=21658",
-     "price": 2730,
-     "oldPrice": 3900,
-     "images": [
-      "https://maniolini.ru/upload/iblock/313/yo44rpk3guzzt0uyg6zxb9gpnflkoxri.jpg",
-      "https://maniolini.ru/upload/iblock/326/sw8pdpibbst6fzv30hain6zq0l3v6fnf.jpg",
-      "https://maniolini.ru/upload/iblock/480/npbhlz31qj4x303f1p8dqsgzznyfkp46.jpg",
-      "https://maniolini.ru/upload/iblock/bde/hxabe7105pkxy5qrp8wglvwbrostrhf0.jpg",
-      "https://maniolini.ru/upload/iblock/554/k2z9w6pfodoquicnyc50wwkqcpe2sy10.jpg"
-     ],
-     "sizes": [
-      "38"
-     ]
-    },
-    {
-     "oid": 21655,
-     "title": "Молочный",
-     "swatch": "https://maniolini.ru/upload/uf/80b/xgz3ifvuzuvn5nr7xw5zaby8cg24o5q7.png",
-     "url": "https://maniolini.ru/catalog/obuv/leto/baletki/baletki_v_setku_s_remeshkom_bl04_2/?oid=21655",
-     "price": 2730,
-     "oldPrice": 3900,
-     "images": [
-      "https://maniolini.ru/upload/iblock/554/k2z9w6pfodoquicnyc50wwkqcpe2sy10.jpg",
-      "https://maniolini.ru/upload/iblock/d93/ugpz6xmt66erlzsjzdwm3whaugs1emtf.jpg",
-      "https://maniolini.ru/upload/iblock/41a/910uoxj82a52setsz87hb4lram3dp2pj.jpg",
-      "https://maniolini.ru/upload/iblock/489/xn5ny094sjq0f5e2t25brfyvkxd5kjmb.jpg"
-     ],
-     "sizes": [
-      "37",
-      "40"
-     ]
-    }
-   ],
-   "price": 2730
-  },
-  {
-   "id": 19044,
-   "name": "Балетки леопардовые с ремешком",
-   "category": "obuv",
-   "subsection": "leto",
-   "subsectionTitle": "Лето",
-   "hit": false,
-   "new": false,
-   "sale": true,
-   "allSizes": [
-    "36",
-    "38",
-    "39"
-   ],
-   "colors": [
-    {
-     "oid": 21429,
-     "title": "Леопардовый",
-     "swatch": "https://maniolini.ru/upload/uf/bb6/j4rl8xg0t7w87bd3p5dakvkb62pk8s0u.PNG",
-     "url": "https://maniolini.ru/catalog/obuv/leto/baletki/baletki_leopardovye_s_remeshkom_bl06_1_k1/?oid=21429",
-     "price": 2800,
-     "oldPrice": 4000,
-     "images": [
-      "https://maniolini.ru/upload/iblock/e2d/p6w12sk7z497wxs7upl5khufwkcnvxgg.jpg",
-      "https://maniolini.ru/upload/iblock/8aa/pmdt4m9bnjxq76u8xuhbotmxj0hhoqx9.jpg",
-      "https://maniolini.ru/upload/iblock/f1a/cib0rookjuu1ytt85xy2jzuvn1ehcf9a.jpg",
-      "https://maniolini.ru/upload/iblock/65b/acv12zv0ddjdpk84zh4s5j0a70o5qxuh.jpg"
-     ],
-     "sizes": [
-      "36",
-      "38",
-      "39"
-     ]
-    }
-   ],
-   "price": 2800
   },
   {
    "id": 19285,
@@ -7899,6 +7599,7 @@
    "allSizes": [
     "37",
     "38",
+    "39",
     "40"
    ],
    "colors": [
@@ -7918,49 +7619,12 @@
      "sizes": [
       "37",
       "38",
-      "40"
-     ]
-    }
-   ],
-   "price": 2730
-  },
-  {
-   "id": 19639,
-   "name": "Мюли",
-   "category": "obuv",
-   "subsection": "leto",
-   "subsectionTitle": "Лето",
-   "hit": false,
-   "new": false,
-   "sale": false,
-   "allSizes": [
-    "36",
-    "38",
-    "39",
-    "40"
-   ],
-   "colors": [
-    {
-     "oid": 32738,
-     "title": "Черный",
-     "swatch": "https://maniolini.ru/upload/uf/87b/y2t1pezl7eztkhzmchubp074hhayaqi3.png",
-     "url": "https://maniolini.ru/catalog/obuv/leto/myuli/myuli_mln09_2_k3/?oid=32738",
-     "price": 3360,
-     "oldPrice": 4800,
-     "images": [
-      "https://maniolini.ru/upload/iblock/2b3/ll0mebyni1k2ni6h36s4bghmvit6zqql.jpg",
-      "https://maniolini.ru/upload/iblock/6d7/pekryk881gro2x6le4zm8369hxxco2yz.jpg",
-      "https://maniolini.ru/upload/iblock/c38/3qev2k245lu13hh1x1kld99lauw38as4.jpg"
-     ],
-     "sizes": [
-      "36",
-      "38",
       "39",
       "40"
      ]
     }
    ],
-   "price": 3360
+   "price": 2730
   },
   {
    "id": 19573,
@@ -8025,56 +7689,42 @@
    "price": 2590
   },
   {
-   "id": 19173,
-   "name": "Босоножки",
+   "id": 19639,
+   "name": "Мюли",
    "category": "obuv",
    "subsection": "leto",
    "subsectionTitle": "Лето",
    "hit": false,
    "new": false,
-   "sale": true,
+   "sale": false,
    "allSizes": [
-    "37",
-    "38"
+    "36",
+    "38",
+    "39",
+    "40"
    ],
    "colors": [
     {
-     "oid": 22987,
-     "title": "Синий",
-     "swatch": "https://maniolini.ru/upload/uf/df8/er652dk5em326ohh420a4zmfxszuccfi.png",
-     "url": "https://maniolini.ru/catalog/obuv/leto/bosonozhki/bosonozhki_242s11_2/?oid=22987",
-     "price": 3430,
-     "oldPrice": 4900,
+     "oid": 32738,
+     "title": "Черный",
+     "swatch": "https://maniolini.ru/upload/uf/87b/y2t1pezl7eztkhzmchubp074hhayaqi3.png",
+     "url": "https://maniolini.ru/catalog/obuv/leto/myuli/myuli_mln09_2_k3/?oid=32738",
+     "price": 3360,
+     "oldPrice": 4800,
      "images": [
-      "https://maniolini.ru/upload/iblock/a14/wieccfjenn2mcmv2kad4orv6oh37i6r5.jpg",
-      "https://maniolini.ru/upload/iblock/93a/4mk6gv1pmyxc20n6bdwv2tale776o8yh.jpg",
-      "https://maniolini.ru/upload/iblock/cab/o1uwedan8yczxe7lqnv0ouz0usd9vomo.jpg",
-      "https://maniolini.ru/upload/iblock/72c/sn50cw1e135q7r8a9a7tb9zpcnkxpz6v.jpg"
+      "https://maniolini.ru/upload/iblock/2b3/ll0mebyni1k2ni6h36s4bghmvit6zqql.jpg",
+      "https://maniolini.ru/upload/iblock/6d7/pekryk881gro2x6le4zm8369hxxco2yz.jpg",
+      "https://maniolini.ru/upload/iblock/c38/3qev2k245lu13hh1x1kld99lauw38as4.jpg"
      ],
      "sizes": [
-      "37"
-     ]
-    },
-    {
-     "oid": 22977,
-     "title": "Розовый",
-     "swatch": "https://maniolini.ru/upload/uf/ceb/b0ai0xtot2z1eojea69k9erjc82bhxx6.png",
-     "url": "https://maniolini.ru/catalog/obuv/leto/bosonozhki/bosonozhki_242s11_2/?oid=22977",
-     "price": 3430,
-     "oldPrice": 4900,
-     "images": [
-      "https://maniolini.ru/upload/iblock/2d2/3oyjcqz7tkeran3pr358tke11hrpvb0w.jpg",
-      "https://maniolini.ru/upload/iblock/afe/0wq9wjqyk19uvjx4sxt0xqq5irfa5bq4.jpg",
-      "https://maniolini.ru/upload/iblock/281/vxowuql0tnikz23cz5tsb7fionwenztc.jpg",
-      "https://maniolini.ru/upload/iblock/f65/0l0070lfedwfi1z9p9g3rxc9tu2kkyse.jpg",
-      "https://maniolini.ru/upload/iblock/72c/sn50cw1e135q7r8a9a7tb9zpcnkxpz6v.jpg"
-     ],
-     "sizes": [
-      "38"
+      "36",
+      "38",
+      "39",
+      "40"
      ]
     }
    ],
-   "price": 3430
+   "price": 3360
   },
   {
    "id": 19214,
@@ -8126,6 +7776,58 @@
     }
    ],
    "price": 2730
+  },
+  {
+   "id": 19173,
+   "name": "Босоножки",
+   "category": "obuv",
+   "subsection": "leto",
+   "subsectionTitle": "Лето",
+   "hit": false,
+   "new": false,
+   "sale": true,
+   "allSizes": [
+    "37",
+    "38"
+   ],
+   "colors": [
+    {
+     "oid": 22987,
+     "title": "Синий",
+     "swatch": "https://maniolini.ru/upload/uf/df8/er652dk5em326ohh420a4zmfxszuccfi.png",
+     "url": "https://maniolini.ru/catalog/obuv/leto/bosonozhki/bosonozhki_242s11_2/?oid=22987",
+     "price": 3430,
+     "oldPrice": 4900,
+     "images": [
+      "https://maniolini.ru/upload/iblock/a14/wieccfjenn2mcmv2kad4orv6oh37i6r5.jpg",
+      "https://maniolini.ru/upload/iblock/93a/4mk6gv1pmyxc20n6bdwv2tale776o8yh.jpg",
+      "https://maniolini.ru/upload/iblock/cab/o1uwedan8yczxe7lqnv0ouz0usd9vomo.jpg",
+      "https://maniolini.ru/upload/iblock/72c/sn50cw1e135q7r8a9a7tb9zpcnkxpz6v.jpg"
+     ],
+     "sizes": [
+      "37"
+     ]
+    },
+    {
+     "oid": 22977,
+     "title": "Розовый",
+     "swatch": "https://maniolini.ru/upload/uf/ceb/b0ai0xtot2z1eojea69k9erjc82bhxx6.png",
+     "url": "https://maniolini.ru/catalog/obuv/leto/bosonozhki/bosonozhki_242s11_2/?oid=22977",
+     "price": 3430,
+     "oldPrice": 4900,
+     "images": [
+      "https://maniolini.ru/upload/iblock/2d2/3oyjcqz7tkeran3pr358tke11hrpvb0w.jpg",
+      "https://maniolini.ru/upload/iblock/afe/0wq9wjqyk19uvjx4sxt0xqq5irfa5bq4.jpg",
+      "https://maniolini.ru/upload/iblock/281/vxowuql0tnikz23cz5tsb7fionwenztc.jpg",
+      "https://maniolini.ru/upload/iblock/f65/0l0070lfedwfi1z9p9g3rxc9tu2kkyse.jpg",
+      "https://maniolini.ru/upload/iblock/72c/sn50cw1e135q7r8a9a7tb9zpcnkxpz6v.jpg"
+     ],
+     "sizes": [
+      "38"
+     ]
+    }
+   ],
+   "price": 3430
   },
   {
    "id": 19265,
@@ -8286,65 +7988,6 @@
    "price": 5700
   },
   {
-   "id": 19054,
-   "name": "Балетки с бусинами",
-   "category": "obuv",
-   "subsection": "leto",
-   "subsectionTitle": "Лето",
-   "hit": false,
-   "new": false,
-   "sale": false,
-   "allSizes": [
-    "36",
-    "37",
-    "38",
-    "39"
-   ],
-   "colors": [
-    {
-     "oid": 32145,
-     "title": "Коричневый",
-     "swatch": "https://maniolini.ru/upload/uf/cd5/xhlk05k1356ql3sydwtuxy43n0oqwydi.png",
-     "url": "https://maniolini.ru/catalog/obuv/leto/baletki/baletki_s_businami_bln07_1/?oid=32145",
-     "price": 3640,
-     "oldPrice": 5200,
-     "images": [
-      "https://maniolini.ru/upload/iblock/254/yx67mjqx9csxjjwzndl3p2dkk7mxxu52.jpg",
-      "https://maniolini.ru/upload/iblock/999/93psebsctxa2dqh7hfcq23xdckmpwlau.jpg",
-      "https://maniolini.ru/upload/iblock/256/ffjmhejr4fn9hns96husoswnz7w3o8jp.jpg",
-      "https://maniolini.ru/upload/iblock/366/b5c22dza7tcxnnzhks4c057g9g9zso78.jpg",
-      "https://maniolini.ru/upload/iblock/901/erya8hlr0rod1z992l0vq9z3e2ytx31p.jpg"
-     ],
-     "sizes": [
-      "37",
-      "38",
-      "39"
-     ]
-    },
-    {
-     "oid": 32142,
-     "title": "Бежевый",
-     "swatch": "https://maniolini.ru/upload/uf/01f/zfhhby3mpxuie56u8p9eof9050919i47.png",
-     "url": "https://maniolini.ru/catalog/obuv/leto/baletki/baletki_s_businami_bln07_1/?oid=32142",
-     "price": 3640,
-     "oldPrice": 5200,
-     "images": [
-      "https://maniolini.ru/upload/iblock/901/erya8hlr0rod1z992l0vq9z3e2ytx31p.jpg",
-      "https://maniolini.ru/upload/iblock/fa7/95ze40zk6gcxr9dzthkjws4n23cwapm0.jpg",
-      "https://maniolini.ru/upload/iblock/d36/e9ilhux8ilhe6xhpsknifoxviwgscqxh.jpg",
-      "https://maniolini.ru/upload/iblock/c33/5lg5dg4xsuhw1y862fy7y35y80dqy0y6.jpg"
-     ],
-     "sizes": [
-      "36",
-      "37",
-      "38",
-      "39"
-     ]
-    }
-   ],
-   "price": 3640
-  },
-  {
    "id": 19575,
    "name": "Босоножки",
    "category": "obuv",
@@ -8394,6 +8037,67 @@
     }
    ],
    "price": 2450
+  },
+  {
+   "id": 19054,
+   "name": "Балетки с бусинами",
+   "category": "obuv",
+   "subsection": "leto",
+   "subsectionTitle": "Лето",
+   "hit": false,
+   "new": false,
+   "sale": false,
+   "allSizes": [
+    "36",
+    "37",
+    "38",
+    "39",
+    "40"
+   ],
+   "colors": [
+    {
+     "oid": 32145,
+     "title": "Коричневый",
+     "swatch": "https://maniolini.ru/upload/uf/cd5/xhlk05k1356ql3sydwtuxy43n0oqwydi.png",
+     "url": "https://maniolini.ru/catalog/obuv/leto/baletki/baletki_s_businami_bln07_1/?oid=32145",
+     "price": 3640,
+     "oldPrice": 5200,
+     "images": [
+      "https://maniolini.ru/upload/iblock/254/yx67mjqx9csxjjwzndl3p2dkk7mxxu52.jpg",
+      "https://maniolini.ru/upload/iblock/999/93psebsctxa2dqh7hfcq23xdckmpwlau.jpg",
+      "https://maniolini.ru/upload/iblock/256/ffjmhejr4fn9hns96husoswnz7w3o8jp.jpg",
+      "https://maniolini.ru/upload/iblock/366/b5c22dza7tcxnnzhks4c057g9g9zso78.jpg",
+      "https://maniolini.ru/upload/iblock/901/erya8hlr0rod1z992l0vq9z3e2ytx31p.jpg"
+     ],
+     "sizes": [
+      "37",
+      "38",
+      "39"
+     ]
+    },
+    {
+     "oid": 32142,
+     "title": "Бежевый",
+     "swatch": "https://maniolini.ru/upload/uf/01f/zfhhby3mpxuie56u8p9eof9050919i47.png",
+     "url": "https://maniolini.ru/catalog/obuv/leto/baletki/baletki_s_businami_bln07_1/?oid=32142",
+     "price": 3640,
+     "oldPrice": 5200,
+     "images": [
+      "https://maniolini.ru/upload/iblock/901/erya8hlr0rod1z992l0vq9z3e2ytx31p.jpg",
+      "https://maniolini.ru/upload/iblock/fa7/95ze40zk6gcxr9dzthkjws4n23cwapm0.jpg",
+      "https://maniolini.ru/upload/iblock/d36/e9ilhux8ilhe6xhpsknifoxviwgscqxh.jpg",
+      "https://maniolini.ru/upload/iblock/c33/5lg5dg4xsuhw1y862fy7y35y80dqy0y6.jpg"
+     ],
+     "sizes": [
+      "36",
+      "37",
+      "38",
+      "39",
+      "40"
+     ]
+    }
+   ],
+   "price": 3640
   },
   {
    "id": 18984,
@@ -8464,39 +8168,6 @@
     }
    ],
    "price": 2310
-  },
-  {
-   "id": 19581,
-   "name": "Босоножки",
-   "category": "obuv",
-   "subsection": "leto",
-   "subsectionTitle": "Лето",
-   "hit": false,
-   "new": false,
-   "sale": true,
-   "allSizes": [
-    "38"
-   ],
-   "colors": [
-    {
-     "oid": 32591,
-     "title": "Розовый",
-     "swatch": "https://maniolini.ru/upload/uf/ceb/b0ai0xtot2z1eojea69k9erjc82bhxx6.png",
-     "url": "https://maniolini.ru/catalog/obuv/leto/bosonozhki/bosonozhki_65k12_2/?oid=32591",
-     "price": 2870,
-     "oldPrice": 4100,
-     "images": [
-      "https://maniolini.ru/upload/iblock/883/mv231nyorjcem8ipk1e172ugkdpsipa7.jpg",
-      "https://maniolini.ru/upload/iblock/592/ft3imsvb96pwt6tld2aa4v8xyddokp9l.jpg",
-      "https://maniolini.ru/upload/iblock/03e/z901w36k026pr6at6i13be5vndbjwlik.jpg",
-      "https://maniolini.ru/upload/iblock/176/v10oaazrabu81grehxq0dic5lcyo9pid.jpg"
-     ],
-     "sizes": [
-      "38"
-     ]
-    }
-   ],
-   "price": 2870
   },
   {
    "id": 19282,
@@ -8575,6 +8246,39 @@
     }
    ],
    "price": 3430
+  },
+  {
+   "id": 19581,
+   "name": "Босоножки",
+   "category": "obuv",
+   "subsection": "leto",
+   "subsectionTitle": "Лето",
+   "hit": false,
+   "new": false,
+   "sale": true,
+   "allSizes": [
+    "38"
+   ],
+   "colors": [
+    {
+     "oid": 32591,
+     "title": "Розовый",
+     "swatch": "https://maniolini.ru/upload/uf/ceb/b0ai0xtot2z1eojea69k9erjc82bhxx6.png",
+     "url": "https://maniolini.ru/catalog/obuv/leto/bosonozhki/bosonozhki_65k12_2/?oid=32591",
+     "price": 2870,
+     "oldPrice": 4100,
+     "images": [
+      "https://maniolini.ru/upload/iblock/883/mv231nyorjcem8ipk1e172ugkdpsipa7.jpg",
+      "https://maniolini.ru/upload/iblock/592/ft3imsvb96pwt6tld2aa4v8xyddokp9l.jpg",
+      "https://maniolini.ru/upload/iblock/03e/z901w36k026pr6at6i13be5vndbjwlik.jpg",
+      "https://maniolini.ru/upload/iblock/176/v10oaazrabu81grehxq0dic5lcyo9pid.jpg"
+     ],
+     "sizes": [
+      "38"
+     ]
+    }
+   ],
+   "price": 2870
   },
   {
    "id": 19588,
@@ -8855,6 +8559,39 @@
    "price": 3150
   },
   {
+   "id": 19154,
+   "name": "Босоножки",
+   "category": "obuv",
+   "subsection": "leto",
+   "subsectionTitle": "Лето",
+   "hit": false,
+   "new": false,
+   "sale": true,
+   "allSizes": [
+    "39"
+   ],
+   "colors": [
+    {
+     "oid": 28170,
+     "title": "Бежевый",
+     "swatch": "https://maniolini.ru/upload/uf/01f/zfhhby3mpxuie56u8p9eof9050919i47.png",
+     "url": "https://maniolini.ru/catalog/obuv/leto/bosonozhki/bosonozhki_220s10_1/?oid=28170",
+     "price": 3010,
+     "oldPrice": 4300,
+     "images": [
+      "https://maniolini.ru/upload/iblock/db0/fitxdj9s77r1xezz55me0animteb2y31.jpg",
+      "https://maniolini.ru/upload/iblock/add/hicdp7zxnacjwlnbnbd6qmscdhubtwf0.jpg",
+      "https://maniolini.ru/upload/iblock/9f2/66blj34pat6cclvm8rg78x542a92b6a6.jpg",
+      "https://maniolini.ru/upload/iblock/dc3/egzq6rzt5otz1jdsimryjze8bw190qaa.jpg"
+     ],
+     "sizes": [
+      "39"
+     ]
+    }
+   ],
+   "price": 3010
+  },
+  {
    "id": 19616,
    "name": "Мюли",
    "category": "obuv",
@@ -8895,39 +8632,6 @@
     }
    ],
    "price": 3360
-  },
-  {
-   "id": 19154,
-   "name": "Босоножки",
-   "category": "obuv",
-   "subsection": "leto",
-   "subsectionTitle": "Лето",
-   "hit": false,
-   "new": false,
-   "sale": true,
-   "allSizes": [
-    "39"
-   ],
-   "colors": [
-    {
-     "oid": 28170,
-     "title": "Бежевый",
-     "swatch": "https://maniolini.ru/upload/uf/01f/zfhhby3mpxuie56u8p9eof9050919i47.png",
-     "url": "https://maniolini.ru/catalog/obuv/leto/bosonozhki/bosonozhki_220s10_1/?oid=28170",
-     "price": 3010,
-     "oldPrice": 4300,
-     "images": [
-      "https://maniolini.ru/upload/iblock/db0/fitxdj9s77r1xezz55me0animteb2y31.jpg",
-      "https://maniolini.ru/upload/iblock/add/hicdp7zxnacjwlnbnbd6qmscdhubtwf0.jpg",
-      "https://maniolini.ru/upload/iblock/9f2/66blj34pat6cclvm8rg78x542a92b6a6.jpg",
-      "https://maniolini.ru/upload/iblock/dc3/egzq6rzt5otz1jdsimryjze8bw190qaa.jpg"
-     ],
-     "sizes": [
-      "39"
-     ]
-    }
-   ],
-   "price": 3010
   },
   {
    "id": 19188,
@@ -9796,35 +9500,6 @@
    "price": 790
   },
   {
-   "id": 37172,
-   "name": "Свеча Тайга",
-   "category": "dlya_doma",
-   "subsection": "svechi",
-   "subsectionTitle": "Свечи",
-   "hit": false,
-   "new": false,
-   "sale": false,
-   "allSizes": [],
-   "colors": [
-    {
-     "oid": 37172,
-     "title": "",
-     "swatch": "",
-     "url": "https://maniolini.ru/catalog/dlya_doma/svechi/svecha_tayga/",
-     "price": 690,
-     "oldPrice": null,
-     "images": [
-      "https://maniolini.ru/upload/iblock/e37/9qlrx1ydcl0q0l72orn8wmawc0aw0tti.jpg",
-      "https://maniolini.ru/upload/iblock/3c6/sh8wwmxnlx9xtdcrzwc6t6cw4se4qzy7.jpg",
-      "https://maniolini.ru/upload/iblock/e51/e6y06zxgb5kiith63iyfbt8xb4do83cj.jpg",
-      "https://maniolini.ru/upload/iblock/445/5sjwk20yk8lo0lxnpsf1ux9678nfd31d.jpg"
-     ],
-     "sizes": []
-    }
-   ],
-   "price": 690
-  },
-  {
    "id": 37181,
    "name": "Свеча Игристое",
    "category": "dlya_doma",
@@ -9884,6 +9559,35 @@
     }
    ],
    "price": 1120
+  },
+  {
+   "id": 37179,
+   "name": "Свеча Голубая ель",
+   "category": "dlya_doma",
+   "subsection": "svechi",
+   "subsectionTitle": "Свечи",
+   "hit": false,
+   "new": false,
+   "sale": false,
+   "allSizes": [],
+   "colors": [
+    {
+     "oid": 37179,
+     "title": "",
+     "swatch": "",
+     "url": "https://maniolini.ru/catalog/dlya_doma/svechi/svecha_golubaya_el/",
+     "price": 790,
+     "oldPrice": null,
+     "images": [
+      "https://maniolini.ru/upload/iblock/36d/qvcd6w5e7dqo64jk0au9h8c33fxrwpi0.jpg",
+      "https://maniolini.ru/upload/iblock/3c6/sh8wwmxnlx9xtdcrzwc6t6cw4se4qzy7.jpg",
+      "https://maniolini.ru/upload/iblock/e51/e6y06zxgb5kiith63iyfbt8xb4do83cj.jpg",
+      "https://maniolini.ru/upload/iblock/1cf/mq3x9ohqwdfq13omob688gs0van2qds9.jpg"
+     ],
+     "sizes": []
+    }
+   ],
+   "price": 790
   },
   {
    "id": 37176,
@@ -9966,35 +9670,6 @@
       "https://maniolini.ru/upload/iblock/3c6/sh8wwmxnlx9xtdcrzwc6t6cw4se4qzy7.jpg",
       "https://maniolini.ru/upload/iblock/e51/e6y06zxgb5kiith63iyfbt8xb4do83cj.jpg",
       "https://maniolini.ru/upload/iblock/625/gcphzr83h6zesrhrbklz3sdnnc9svnjp.jpg"
-     ],
-     "sizes": []
-    }
-   ],
-   "price": 790
-  },
-  {
-   "id": 37179,
-   "name": "Свеча Голубая ель",
-   "category": "dlya_doma",
-   "subsection": "svechi",
-   "subsectionTitle": "Свечи",
-   "hit": false,
-   "new": false,
-   "sale": false,
-   "allSizes": [],
-   "colors": [
-    {
-     "oid": 37179,
-     "title": "",
-     "swatch": "",
-     "url": "https://maniolini.ru/catalog/dlya_doma/svechi/svecha_golubaya_el/",
-     "price": 790,
-     "oldPrice": null,
-     "images": [
-      "https://maniolini.ru/upload/iblock/36d/qvcd6w5e7dqo64jk0au9h8c33fxrwpi0.jpg",
-      "https://maniolini.ru/upload/iblock/3c6/sh8wwmxnlx9xtdcrzwc6t6cw4se4qzy7.jpg",
-      "https://maniolini.ru/upload/iblock/e51/e6y06zxgb5kiith63iyfbt8xb4do83cj.jpg",
-      "https://maniolini.ru/upload/iblock/1cf/mq3x9ohqwdfq13omob688gs0van2qds9.jpg"
      ],
      "sizes": []
     }
@@ -10234,35 +9909,6 @@
    "price": 1120
   },
   {
-   "id": 19031,
-   "name": "Диффузор Indien Foret",
-   "category": "dlya_doma",
-   "subsection": "diffuzory",
-   "subsectionTitle": "Диффузоры",
-   "hit": false,
-   "new": false,
-   "sale": false,
-   "allSizes": [],
-   "colors": [
-    {
-     "oid": 19031,
-     "title": "",
-     "swatch": "",
-     "url": "https://maniolini.ru/catalog/dlya_doma/diffuzory/diffuzor_indien_foret/",
-     "price": 1260,
-     "oldPrice": 1800,
-     "images": [
-      "https://maniolini.ru/upload/iblock/1c6/7b8sevpfnakraky0vwq4u0dvpri18flw.jpg",
-      "https://maniolini.ru/upload/iblock/6eb/lmmj1bkwc9cu791pdbs2grt9ci71y77s.jpg",
-      "https://maniolini.ru/upload/iblock/e71/sbziru3s3mprbucnjaqye925h1j2au4i.jpg",
-      "https://maniolini.ru/upload/iblock/fc3/8egkzuy2gds1f1pmr7v01jzb5968stto.jpg"
-     ],
-     "sizes": []
-    }
-   ],
-   "price": 1260
-  },
-  {
    "id": 19211,
    "name": "Рефил",
    "category": "dlya_doma",
@@ -10293,6 +9939,35 @@
     }
    ],
    "price": 1000
+  },
+  {
+   "id": 19031,
+   "name": "Диффузор Indien Foret",
+   "category": "dlya_doma",
+   "subsection": "diffuzory",
+   "subsectionTitle": "Диффузоры",
+   "hit": false,
+   "new": false,
+   "sale": false,
+   "allSizes": [],
+   "colors": [
+    {
+     "oid": 19031,
+     "title": "",
+     "swatch": "",
+     "url": "https://maniolini.ru/catalog/dlya_doma/diffuzory/diffuzor_indien_foret/",
+     "price": 1260,
+     "oldPrice": 1800,
+     "images": [
+      "https://maniolini.ru/upload/iblock/1c6/7b8sevpfnakraky0vwq4u0dvpri18flw.jpg",
+      "https://maniolini.ru/upload/iblock/6eb/lmmj1bkwc9cu791pdbs2grt9ci71y77s.jpg",
+      "https://maniolini.ru/upload/iblock/e71/sbziru3s3mprbucnjaqye925h1j2au4i.jpg",
+      "https://maniolini.ru/upload/iblock/fc3/8egkzuy2gds1f1pmr7v01jzb5968stto.jpg"
+     ],
+     "sizes": []
+    }
+   ],
+   "price": 1260
   },
   {
    "id": 18806,
@@ -10420,8 +10095,122 @@
    "price": 1120
   },
   {
-   "id": 34271,
-   "name": "Сапоги",
+   "id": 1058,
+   "name": "Ботфорты",
+   "category": "chernaya_pyatnitsa",
+   "subsection": "obuv_1",
+   "subsectionTitle": "",
+   "hit": false,
+   "new": false,
+   "sale": false,
+   "allSizes": [
+    "37",
+    "38"
+   ],
+   "colors": [
+    {
+     "oid": 14071,
+     "title": "Черный",
+     "swatch": "https://maniolini.ru/upload/uf/87b/y2t1pezl7eztkhzmchubp074hhayaqi3.png",
+     "url": "https://maniolini.ru/catalog/chernaya_pyatnitsa/obuv_1/zima_1/botforty_4/botforty_zn53_1_k3/?oid=14071",
+     "price": 3790,
+     "oldPrice": 6891,
+     "images": [
+      "https://maniolini.ru/upload/iblock/51a/rd8r52t1316gd4nncbxwuvr6lo50fpfv.jpg"
+     ],
+     "sizes": [
+      "37",
+      "38"
+     ]
+    }
+   ],
+   "price": 3790
+  },
+  {
+   "id": 37296,
+   "name": "Лоферы",
+   "category": "chernaya_pyatnitsa",
+   "subsection": "obuv_1",
+   "subsectionTitle": "",
+   "hit": false,
+   "new": false,
+   "sale": false,
+   "allSizes": [
+    "40"
+   ],
+   "colors": [
+    {
+     "oid": 37509,
+     "title": "Черный",
+     "swatch": "https://maniolini.ru/upload/uf/87b/y2t1pezl7eztkhzmchubp074hhayaqi3.png",
+     "url": "https://maniolini.ru/catalog/chernaya_pyatnitsa/obuv_1/demisezon_1/lofery/lofery_l06_2_p4/?oid=37509",
+     "price": 2150,
+     "oldPrice": 3909,
+     "images": [
+      "https://maniolini.ru/upload/iblock/51d/rxvb41smudk45anwsgnk1ucjllk8qe6h.jpg"
+     ],
+     "sizes": [
+      "40"
+     ]
+    }
+   ],
+   "price": 2150
+  },
+  {
+   "id": 19500,
+   "name": "Ботфорты",
+   "category": "chernaya_pyatnitsa",
+   "subsection": "obuv_1",
+   "subsectionTitle": "",
+   "hit": false,
+   "new": false,
+   "sale": false,
+   "allSizes": [
+    "37",
+    "38"
+   ],
+   "colors": [
+    {
+     "oid": 31942,
+     "title": "Черный",
+     "swatch": "https://maniolini.ru/upload/uf/87b/y2t1pezl7eztkhzmchubp074hhayaqi3.png",
+     "url": "https://maniolini.ru/catalog/chernaya_pyatnitsa/obuv_1/zima_1/botforty_4/botforty_zn01_1_p2/?oid=31942",
+     "price": 2890,
+     "oldPrice": 5255,
+     "images": [
+      "https://maniolini.ru/upload/iblock/fd8/mus8ryi08sz273knjixcgrjcavlycazh.jpg",
+      "https://maniolini.ru/upload/iblock/1ae/p2ewe5c6cm4ko5kbk4qzxni6kmasws31.jpg",
+      "https://maniolini.ru/upload/iblock/045/8ug351yes1gsa6e9cwasu1687hwkehid.jpg",
+      "https://maniolini.ru/upload/iblock/193/s6h1e0dcl3vv7q1vwk4i69d6h0nw7pg3.jpg",
+      "https://maniolini.ru/upload/iblock/e7e/5snor1vby8mf81ufg35m1ut0dxlk5nnl.jpg",
+      "https://maniolini.ru/upload/iblock/ddf/tfto0ucszynjkkup9pao5vt5c4qlmmyf.jpg",
+      "https://maniolini.ru/upload/iblock/35a/p1t3p9bdoj76045pu42ielo3f25t1kp9.jpg"
+     ],
+     "sizes": [
+      "37",
+      "38"
+     ]
+    },
+    {
+     "oid": 27581,
+     "title": "Изумрудный",
+     "swatch": "https://maniolini.ru/upload/uf/80c/z8f7cla140pz4jdf82cnhmaqwa4f2okh.png",
+     "url": "https://maniolini.ru/catalog/chernaya_pyatnitsa/obuv_1/zima_1/botforty_4/botforty_zn01_1_p2/?oid=27581",
+     "price": 2890,
+     "oldPrice": 5255,
+     "images": [
+      "https://maniolini.ru/upload/iblock/35a/p1t3p9bdoj76045pu42ielo3f25t1kp9.jpg"
+     ],
+     "sizes": [
+      "38"
+     ]
+    }
+   ],
+   "price": 2890
+  },
+  {
+   "id": 37288,
+   "name": "Ботфорты",
    "category": "chernaya_pyatnitsa",
    "subsection": "obuv_1",
    "subsectionTitle": "",
@@ -10431,210 +10220,45 @@
    "allSizes": [
     "36",
     "37",
-    "38",
-    "39"
+    "38"
    ],
    "colors": [
     {
-     "oid": 35384,
-     "title": "Бежевый",
-     "swatch": "https://maniolini.ru/upload/uf/01f/zfhhby3mpxuie56u8p9eof9050919i47.png",
-     "url": "https://maniolini.ru/catalog/chernaya_pyatnitsa/obuv_1/demisezon_1/sapogi_3/sapogi_sd56_2_p4/?oid=35384",
-     "price": 2590,
-     "oldPrice": 4709,
-     "images": [
-      "https://maniolini.ru/upload/iblock/3c6/gd5jc4a2toqxt7cp2mz3q9uy57h6yyt6.jpg",
-      "https://maniolini.ru/upload/iblock/73c/mi74jg8nw0l5earpvkceddxj7tlbpqon.jpg",
-      "https://maniolini.ru/upload/iblock/db8/1pgkprjxdafs12vpi7fg8llui1yjt15r.jpg",
-      "https://maniolini.ru/upload/iblock/5df/gdwnvfyprx3yfu9ndmxh4rozx53dq6sk.jpg",
-      "https://maniolini.ru/upload/iblock/c86/clnwkg3yystr8ktoor47j6g135lepfpg.jpg",
-      "https://maniolini.ru/upload/iblock/533/9n0fckduaqexqh49dci631tgplj5hns0.jpg",
-      "https://maniolini.ru/upload/iblock/fa5/epfr2gtmpbvek6oe139rbpqwn1smoxxy.jpg",
-      "https://maniolini.ru/upload/iblock/648/x5qehq1cojj9yzxh3gx4no3m335a3nof.jpg",
-      "https://maniolini.ru/upload/iblock/8be/d0kmm139bih50f4t1xb40vu49jtikxdd.jpg",
-      "https://maniolini.ru/upload/iblock/eb8/jlxd9rygry89kkgjsq644em93rme785n.jpg",
-      "https://maniolini.ru/upload/iblock/ca7/7w5p1oiz0pmzg5lqzswl7qs9elffa40b.jpg"
-     ],
-     "sizes": [
-      "36",
-      "37",
-      "38",
-      "39"
-     ]
-    }
-   ],
-   "price": 2590
-  },
-  {
-   "id": 37262,
-   "name": "Экошуба",
-   "category": "chernaya_pyatnitsa",
-   "subsection": "verkhnyaya_odezhda_1",
-   "subsectionTitle": "",
-   "hit": false,
-   "new": false,
-   "sale": false,
-   "allSizes": [
-    "L"
-   ],
-   "colors": [
-    {
-     "oid": 37609,
-     "title": "Серый",
-     "swatch": "https://maniolini.ru/upload/uf/a10/jrbcvehu4h002xnx9mra6uurt094r2lc.png",
-     "url": "https://maniolini.ru/catalog/chernaya_pyatnitsa/verkhnyaya_odezhda_1/zima_2/shuby/ekoshuba_ita002/?oid=37609",
-     "price": 6900,
-     "oldPrice": 12545,
-     "images": [
-      "https://maniolini.ru/upload/iblock/3c7/j2mua08cifa997u2894v0ndz0znubwqk.jpg"
-     ],
-     "sizes": [
-      "L"
-     ]
-    }
-   ],
-   "price": 6900
-  },
-  {
-   "id": 37278,
-   "name": "Ботинки",
-   "category": "chernaya_pyatnitsa",
-   "subsection": "obuv_1",
-   "subsectionTitle": "",
-   "hit": false,
-   "new": false,
-   "sale": false,
-   "allSizes": [
-    "37"
-   ],
-   "colors": [
-    {
-     "oid": 37471,
-     "title": "Черный",
-     "swatch": "https://maniolini.ru/upload/uf/87b/y2t1pezl7eztkhzmchubp074hhayaqi3.png",
-     "url": "https://maniolini.ru/catalog/chernaya_pyatnitsa/obuv_1/demisezon_1/botinki_3/botinki_fd10_2_p2/?oid=37471",
-     "price": 2390,
-     "oldPrice": 4345,
-     "images": [
-      "https://maniolini.ru/upload/iblock/69c/0t3am7pvkp2c1hbsp1ebnng73rkh2hcd.jpg"
-     ],
-     "sizes": [
-      "37"
-     ]
-    }
-   ],
-   "price": 2390
-  },
-  {
-   "id": 19558,
-   "name": "Ботфорты",
-   "category": "chernaya_pyatnitsa",
-   "subsection": "obuv_1",
-   "subsectionTitle": "",
-   "hit": false,
-   "new": false,
-   "sale": false,
-   "allSizes": [
-    "36"
-   ],
-   "colors": [
-    {
-     "oid": 26685,
-     "title": "Черный",
-     "swatch": "https://maniolini.ru/upload/uf/87b/y2t1pezl7eztkhzmchubp074hhayaqi3.png",
-     "url": "https://maniolini.ru/catalog/chernaya_pyatnitsa/obuv_1/zima_1/botforty_4/botforty_z22_13_k2/?oid=26685",
-     "price": 2990,
-     "oldPrice": 5436,
-     "images": [
-      "https://maniolini.ru/upload/iblock/cc7/kcrj317z3ex5qxsqc351bgi0t5ighj9p.jpg"
-     ],
-     "sizes": [
-      "36"
-     ]
-    }
-   ],
-   "price": 2990
-  },
-  {
-   "id": 19368,
-   "name": "Ботфорты",
-   "category": "chernaya_pyatnitsa",
-   "subsection": "obuv_1",
-   "subsectionTitle": "",
-   "hit": false,
-   "new": false,
-   "sale": false,
-   "allSizes": [
-    "40"
-   ],
-   "colors": [
-    {
-     "oid": 27788,
-     "title": "Бежевый",
-     "swatch": "https://maniolini.ru/upload/uf/01f/zfhhby3mpxuie56u8p9eof9050919i47.png",
-     "url": "https://maniolini.ru/catalog/chernaya_pyatnitsa/obuv_1/zima_1/botforty_4/botforty_zn03_2_p2/?oid=27788",
+     "oid": 37715,
+     "title": "Изумрудный",
+     "swatch": "https://maniolini.ru/upload/uf/80c/z8f7cla140pz4jdf82cnhmaqwa4f2okh.png",
+     "url": "https://maniolini.ru/catalog/chernaya_pyatnitsa/obuv_1/demisezon_1/botforty_3/botforty_d01_1_p2/?oid=37715",
      "price": 2890,
      "oldPrice": 5255,
      "images": [
-      "https://maniolini.ru/upload/iblock/fef/nca6t8kdrg06o9g5t12wz0y3x1cfywsl.jpg"
+      "https://maniolini.ru/upload/iblock/e21/8gge0ra3hkmd13ienh48x33uzngimlsa.jpg"
      ],
      "sizes": [
-      "40"
+      "36",
+      "37"
+     ]
+    },
+    {
+     "oid": 37494,
+     "title": "Бежевый",
+     "swatch": "https://maniolini.ru/upload/uf/01f/zfhhby3mpxuie56u8p9eof9050919i47.png",
+     "url": "https://maniolini.ru/catalog/chernaya_pyatnitsa/obuv_1/demisezon_1/botforty_3/botforty_d01_1_p2/?oid=37494",
+     "price": 2890,
+     "oldPrice": 5255,
+     "images": [
+      "https://maniolini.ru/upload/iblock/df4/jqfv183bx69d464tecktcdnu91yzmoeh.jpg",
+      "https://maniolini.ru/upload/iblock/e21/8gge0ra3hkmd13ienh48x33uzngimlsa.jpg"
+     ],
+     "sizes": [
+      "37",
+      "38"
      ]
     }
    ],
    "price": 2890
   },
   {
-   "id": 33946,
-   "name": "Пальто Зима",
-   "category": "chernaya_pyatnitsa",
-   "subsection": "verkhnyaya_odezhda_1",
-   "subsectionTitle": "",
-   "hit": false,
-   "new": false,
-   "sale": true,
-   "allSizes": [
-    "40"
-   ],
-   "colors": [
-    {
-     "oid": 34175,
-     "title": "Изумрудный",
-     "swatch": "https://maniolini.ru/upload/uf/80c/z8f7cla140pz4jdf82cnhmaqwa4f2okh.png",
-     "url": "https://maniolini.ru/catalog/chernaya_pyatnitsa/verkhnyaya_odezhda_1/zima_2/palto_3/palto_zima_m_370z/?oid=34175",
-     "price": 9900,
-     "oldPrice": 18000,
-     "images": [
-      "https://maniolini.ru/upload/iblock/04c/bcw7qpexiekthigqu2xeeveppuw5dstu.jpg",
-      "https://maniolini.ru/upload/iblock/0c9/7xje9gmv2dfha515bpthfb5wtck6nk43.jpg",
-      "https://maniolini.ru/upload/iblock/12d/60eop7dpd95u503vftyhsdce2z5r4exg.jpg",
-      "https://maniolini.ru/upload/iblock/6bb/4vs4xfgjo5v0golxp7e62cxn3do41mc3.jpg",
-      "https://maniolini.ru/upload/iblock/b4e/j7mtf6lyxgx53eazepgkbrctcmzf0i4l.jpg"
-     ],
-     "sizes": [
-      "40"
-     ]
-    },
-    {
-     "oid": 34087,
-     "title": "Кэмел",
-     "swatch": "https://maniolini.ru/upload/uf/377/ql7zl7ii9qnqgpvcwdtagrt9fci1lnma.PNG",
-     "url": "https://maniolini.ru/catalog/chernaya_pyatnitsa/verkhnyaya_odezhda_1/zima_2/palto_3/palto_zima_m_370z/?oid=34087",
-     "price": 9900,
-     "oldPrice": 18000,
-     "images": [
-      "https://maniolini.ru/upload/iblock/04c/bcw7qpexiekthigqu2xeeveppuw5dstu.jpg"
-     ],
-     "sizes": [
-      "40"
-     ]
-    }
-   ],
-   "price": 9900
-  },
-  {
-   "id": 37319,
+   "id": 37317,
    "name": "Ботфорты",
    "category": "chernaya_pyatnitsa",
    "subsection": "obuv_1",
@@ -10643,29 +10267,89 @@
    "new": false,
    "sale": false,
    "allSizes": [
-    "41"
+    "39"
    ],
    "colors": [
     {
-     "oid": 37735,
-     "title": "Бежевый",
-     "swatch": "https://maniolini.ru/upload/uf/01f/zfhhby3mpxuie56u8p9eof9050919i47.png",
-     "url": "https://maniolini.ru/catalog/chernaya_pyatnitsa/obuv_1/demisezon_1/botforty_3/botforty_d116_1_p0/?oid=37735",
-     "price": 2990,
-     "oldPrice": 5436,
+     "oid": 37692,
+     "title": "Черный",
+     "swatch": "https://maniolini.ru/upload/uf/87b/y2t1pezl7eztkhzmchubp074hhayaqi3.png",
+     "url": "https://maniolini.ru/catalog/chernaya_pyatnitsa/obuv_1/demisezon_1/botforty_3/botforty_d109_2_k6/?oid=37692",
+     "price": 3590,
+     "oldPrice": 6527,
      "images": [
-      "https://maniolini.ru/upload/iblock/f04/hn11p45oykth35skjzdwlo4ugn5n03ra.jpg"
+      "https://maniolini.ru/upload/iblock/0b1/4cb2hstq8v02z1ldnxkbmeu6z30w14rj.jpg"
      ],
      "sizes": [
-      "41"
+      "39"
      ]
     }
    ],
-   "price": 2990
+   "price": 3590
   },
   {
-   "id": 18962,
-   "name": "Босоножки",
+   "id": 37232,
+   "name": "Джинсы",
+   "category": "chernaya_pyatnitsa",
+   "subsection": "odezhda_1",
+   "subsectionTitle": "",
+   "hit": false,
+   "new": false,
+   "sale": false,
+   "allSizes": [
+    "44"
+   ],
+   "colors": [
+    {
+     "oid": 37518,
+     "title": "",
+     "swatch": "",
+     "url": "https://maniolini.ru/catalog/chernaya_pyatnitsa/odezhda_1/demisezon_3/dzhinsy/dzhinsy_j99085/?oid=37518",
+     "price": 1590,
+     "oldPrice": 2891,
+     "images": [
+      "https://maniolini.ru/upload/iblock/548/yl1642yo83vw3uzmdhoefa67yruvh1eo.jpg"
+     ],
+     "sizes": [
+      "44"
+     ]
+    }
+   ],
+   "price": 1590
+  },
+  {
+   "id": 37290,
+   "name": "Куртка",
+   "category": "chernaya_pyatnitsa",
+   "subsection": "verkhnyaya_odezhda_1",
+   "subsectionTitle": "",
+   "hit": false,
+   "new": false,
+   "sale": false,
+   "allSizes": [
+    "42"
+   ],
+   "colors": [
+    {
+     "oid": 37501,
+     "title": "",
+     "swatch": "",
+     "url": "https://maniolini.ru/catalog/chernaya_pyatnitsa/verkhnyaya_odezhda_1/demisezon_2/kurtki/kurtka_g02347an_naturalnaya_kozha/?oid=37501",
+     "price": 9900,
+     "oldPrice": 18000,
+     "images": [
+      "https://maniolini.ru/upload/iblock/86a/nzz7p9iawm08rct6l16764o9kc0qbg6b.jpg"
+     ],
+     "sizes": [
+      "42"
+     ]
+    }
+   ],
+   "price": 9900
+  },
+  {
+   "id": 37287,
+   "name": "Ботфорты",
    "category": "chernaya_pyatnitsa",
    "subsection": "obuv_1",
    "subsectionTitle": "",
@@ -10674,44 +10358,88 @@
    "sale": false,
    "allSizes": [
     "35",
-    "41"
+    "37",
+    "39"
    ],
    "colors": [
     {
-     "oid": 32160,
-     "title": "Красный",
-     "swatch": "https://maniolini.ru/upload/uf/2a6/sa9lvq3afjoaddy326eujlaf4kmqf13z.png",
-     "url": "https://maniolini.ru/catalog/chernaya_pyatnitsa/obuv_1/leto_1/bosonozhki_1/bosonozhki_51k14_3/?oid=32160",
-     "price": 3790,
-     "oldPrice": 6891,
+     "oid": 37711,
+     "title": "Черный",
+     "swatch": "https://maniolini.ru/upload/uf/87b/y2t1pezl7eztkhzmchubp074hhayaqi3.png",
+     "url": "https://maniolini.ru/catalog/chernaya_pyatnitsa/obuv_1/demisezon_1/botforty_3/botforty_d118_1_k10/?oid=37711",
+     "price": 2890,
+     "oldPrice": 5255,
      "images": [
-      "https://maniolini.ru/upload/iblock/c2c/icbdfcc4hvx0encyqsyx0ipp1czl2c3t.jpg",
-      "https://maniolini.ru/upload/iblock/ec8/ww0v106any1ujqkmcwt1bohexzd95fzn.jpg",
-      "https://maniolini.ru/upload/iblock/3f6/3xbzkfqajf7q7o8rl4frpqhrrgb1yw0q.jpg",
-      "https://maniolini.ru/upload/iblock/235/rhcr083bdsfvgvev9fq9uf0bb5tsxjpn.jpg"
+      "https://maniolini.ru/upload/iblock/643/1tei5r6ts528vky4asyyy2ozmqevbama.jpg"
      ],
      "sizes": [
       "35",
-      "41"
-     ]
-    },
-    {
-     "oid": 21164,
-     "title": "Желтый",
-     "swatch": "https://maniolini.ru/upload/uf/482/ulj4gff5ojrvdx5gdsra7g6dod7nqi5a.png",
-     "url": "https://maniolini.ru/catalog/chernaya_pyatnitsa/obuv_1/leto_1/bosonozhki_1/bosonozhki_51k14_3/?oid=21164",
-     "price": 3790,
-     "oldPrice": 6891,
-     "images": [
-      "https://maniolini.ru/upload/iblock/c2c/icbdfcc4hvx0encyqsyx0ipp1czl2c3t.jpg"
-     ],
-     "sizes": [
-      "35",
-      "41"
+      "37",
+      "39"
      ]
     }
    ],
-   "price": 3790
+   "price": 2890
+  },
+  {
+   "id": 37244,
+   "name": "Платье",
+   "category": "chernaya_pyatnitsa",
+   "subsection": "odezhda_1",
+   "subsectionTitle": "",
+   "hit": false,
+   "new": false,
+   "sale": false,
+   "allSizes": [
+    "48"
+   ],
+   "colors": [
+    {
+     "oid": 37478,
+     "title": "Белый",
+     "swatch": "https://maniolini.ru/upload/uf/b57/g8omcrb5q80yratvrhwnfb5r0cr7an74.png",
+     "url": "https://maniolini.ru/catalog/chernaya_pyatnitsa/odezhda_1/demisezon_3/platya_1/plate_odp23/?oid=37478",
+     "price": 2150,
+     "oldPrice": 3909,
+     "images": [
+      "https://maniolini.ru/upload/iblock/013/bsm7rhkb28b7qrm03t9wjfqnf0upi8ls.jpg"
+     ],
+     "sizes": [
+      "48"
+     ]
+    }
+   ],
+   "price": 2150
+  },
+  {
+   "id": 37275,
+   "name": "Ботинки",
+   "category": "chernaya_pyatnitsa",
+   "subsection": "obuv_1",
+   "subsectionTitle": "",
+   "hit": false,
+   "new": false,
+   "sale": false,
+   "allSizes": [
+    "39"
+   ],
+   "colors": [
+    {
+     "oid": 37458,
+     "title": "Черный",
+     "swatch": "https://maniolini.ru/upload/uf/87b/y2t1pezl7eztkhzmchubp074hhayaqi3.png",
+     "url": "https://maniolini.ru/catalog/chernaya_pyatnitsa/obuv_1/demisezon_1/botinki_3/botinki_fdn01_2_p2/?oid=37458",
+     "price": 4090,
+     "oldPrice": 7436,
+     "images": [
+      "https://maniolini.ru/upload/iblock/1a1/ns2vrmrg7bng32waajni5hr8iqu9juir.jpg"
+     ],
+     "sizes": [
+      "39"
+     ]
+    }
+   ],
+   "price": 4090
   },
   {
    "id": 18864,
@@ -10744,7 +10472,277 @@
    "price": 2150
   },
   {
-   "id": 37309,
+   "id": 37242,
+   "name": "Рубашка",
+   "category": "chernaya_pyatnitsa",
+   "subsection": "odezhda_1",
+   "subsectionTitle": "",
+   "hit": false,
+   "new": false,
+   "sale": false,
+   "allSizes": [
+    "XS"
+   ],
+   "colors": [
+    {
+     "oid": 37522,
+     "title": "Белый",
+     "swatch": "https://maniolini.ru/upload/uf/b57/g8omcrb5q80yratvrhwnfb5r0cr7an74.png",
+     "url": "https://maniolini.ru/catalog/chernaya_pyatnitsa/odezhda_1/demisezon_3/rubashki/rubashka_21aia061/?oid=37522",
+     "price": 2900,
+     "oldPrice": 5273,
+     "images": [
+      "https://maniolini.ru/upload/iblock/17f/id98ze5ymu8dm65w91b9jfoyq78vf53q.jpg"
+     ],
+     "sizes": [
+      "XS"
+     ]
+    }
+   ],
+   "price": 2900
+  },
+  {
+   "id": 19530,
+   "name": "Ботфорты",
+   "category": "chernaya_pyatnitsa",
+   "subsection": "obuv_1",
+   "subsectionTitle": "",
+   "hit": false,
+   "new": false,
+   "sale": false,
+   "allSizes": [
+    "40"
+   ],
+   "colors": [
+    {
+     "oid": 27772,
+     "title": "Бежевый",
+     "swatch": "https://maniolini.ru/upload/uf/01f/zfhhby3mpxuie56u8p9eof9050919i47.png",
+     "url": "https://maniolini.ru/catalog/chernaya_pyatnitsa/obuv_1/zima_1/botforty_4/botforty_zn101_1_k10/?oid=27772",
+     "price": 3790,
+     "oldPrice": 6891,
+     "images": [
+      "https://maniolini.ru/upload/iblock/1a6/mfu8td0eatqwuwt5m4g7bpy87c1ms055.jpg"
+     ],
+     "sizes": [
+      "40"
+     ]
+    }
+   ],
+   "price": 3790
+  },
+  {
+   "id": 19084,
+   "name": "Сапоги",
+   "category": "chernaya_pyatnitsa",
+   "subsection": "obuv_1",
+   "subsectionTitle": "",
+   "hit": false,
+   "new": false,
+   "sale": false,
+   "allSizes": [
+    "41"
+   ],
+   "colors": [
+    {
+     "oid": 22041,
+     "title": "Черный",
+     "swatch": "https://maniolini.ru/upload/uf/87b/y2t1pezl7eztkhzmchubp074hhayaqi3.png",
+     "url": "https://maniolini.ru/catalog/chernaya_pyatnitsa/obuv_1/zima_1/sapogi_4/sapogi_sz02_3_k10/?oid=22041",
+     "price": 2590,
+     "oldPrice": 4709,
+     "images": [
+      "https://maniolini.ru/upload/iblock/719/wj0hy6g3lqj3a57c4lgt8hpurt3k0n9e.jpg"
+     ],
+     "sizes": [
+      "41"
+     ]
+    }
+   ],
+   "price": 2590
+  },
+  {
+   "id": 19717,
+   "name": "Ботинки",
+   "category": "chernaya_pyatnitsa",
+   "subsection": "obuv_1",
+   "subsectionTitle": "",
+   "hit": false,
+   "new": false,
+   "sale": false,
+   "allSizes": [
+    "36",
+    "37",
+    "39"
+   ],
+   "colors": [
+    {
+     "oid": 31428,
+     "title": "Бежевый",
+     "swatch": "https://maniolini.ru/upload/uf/01f/zfhhby3mpxuie56u8p9eof9050919i47.png",
+     "url": "https://maniolini.ru/catalog/chernaya_pyatnitsa/obuv_1/zima_1/botinki_4/botinki_fz14_1_p2/?oid=31428",
+     "price": 3250,
+     "oldPrice": 5909,
+     "images": [
+      "https://maniolini.ru/upload/iblock/844/s0o4e7hik89ptzhu92nfurwhxbyr41k6.jpg"
+     ],
+     "sizes": [
+      "36",
+      "37",
+      "39"
+     ]
+    }
+   ],
+   "price": 3250
+  },
+  {
+   "id": 19348,
+   "name": "Ботфорты",
+   "category": "chernaya_pyatnitsa",
+   "subsection": "obuv_1",
+   "subsectionTitle": "",
+   "hit": false,
+   "new": false,
+   "sale": false,
+   "allSizes": [
+    "37",
+    "38"
+   ],
+   "colors": [
+    {
+     "oid": 26565,
+     "title": "Изумрудный",
+     "swatch": "https://maniolini.ru/upload/uf/80c/z8f7cla140pz4jdf82cnhmaqwa4f2okh.png",
+     "url": "https://maniolini.ru/catalog/chernaya_pyatnitsa/obuv_1/zima_1/botforty_4/botforty_z146_1_k8/?oid=26565",
+     "price": 2990,
+     "oldPrice": 5436,
+     "images": [
+      "https://maniolini.ru/upload/iblock/f03/kf45i2mz9qhmzmbz1k9f23c5yuwtyem9.jpg"
+     ],
+     "sizes": [
+      "37",
+      "38"
+     ]
+    }
+   ],
+   "price": 2990
+  },
+  {
+   "id": 19490,
+   "name": "Босоножки",
+   "category": "chernaya_pyatnitsa",
+   "subsection": "obuv_1",
+   "subsectionTitle": "",
+   "hit": false,
+   "new": false,
+   "sale": false,
+   "allSizes": [
+    "36",
+    "37",
+    "39",
+    "40",
+    "41"
+   ],
+   "colors": [
+    {
+     "oid": 32614,
+     "title": "Розовый",
+     "swatch": "https://maniolini.ru/upload/uf/ceb/b0ai0xtot2z1eojea69k9erjc82bhxx6.png",
+     "url": "https://maniolini.ru/catalog/chernaya_pyatnitsa/obuv_1/leto_1/bosonozhki_1/bosonozhki_63k14_2/?oid=32614",
+     "price": 2190,
+     "oldPrice": 3982,
+     "images": [
+      "https://maniolini.ru/upload/iblock/293/090ume3nu4ilime2uhz4isqc1sv2860w.jpg",
+      "https://maniolini.ru/upload/iblock/a7c/yworwq6l8qngnuoxd5ud23hxd8wcbm75.jpg",
+      "https://maniolini.ru/upload/iblock/148/21hrz5n1s2hw6nsk2qetjygpsrq1gvjh.jpg",
+      "https://maniolini.ru/upload/iblock/fa8/90i82wnortqaqvhb17bka2b81d59m5ml.jpg",
+      "https://maniolini.ru/upload/iblock/69c/z3g4svhwbk7srqb73aalul3h0wl53puj.jpg",
+      "https://maniolini.ru/upload/iblock/02d/5okkouz4lck5ba2jou8v0q2e78z2zcgy.jpg"
+     ],
+     "sizes": [
+      "36",
+      "37",
+      "39",
+      "40",
+      "41"
+     ]
+    },
+    {
+     "oid": 32604,
+     "title": "Черный",
+     "swatch": "https://maniolini.ru/upload/uf/87b/y2t1pezl7eztkhzmchubp074hhayaqi3.png",
+     "url": "https://maniolini.ru/catalog/chernaya_pyatnitsa/obuv_1/leto_1/bosonozhki_1/bosonozhki_63k14_2/?oid=32604",
+     "price": 2190,
+     "oldPrice": 3982,
+     "images": [
+      "https://maniolini.ru/upload/iblock/ae4/4xvm0lfnz3omck0hm51kyk6snjcq19g1.jpg",
+      "https://maniolini.ru/upload/iblock/b28/lfo4f18rx8pi5qf4rftyp8734005r6eu.jpg",
+      "https://maniolini.ru/upload/iblock/6d3/ktgrc3nn4cvhkqs7d712r6vc0xz2swpc.jpg",
+      "https://maniolini.ru/upload/iblock/492/at1kkkzv3r13trltwlaqgfz530l06i4t.jpg",
+      "https://maniolini.ru/upload/iblock/88b/wycj20j2kx4mspfal9uf7hufc4smlbqa.jpg",
+      "https://maniolini.ru/upload/iblock/02d/5okkouz4lck5ba2jou8v0q2e78z2zcgy.jpg"
+     ],
+     "sizes": [
+      "36",
+      "37",
+      "39",
+      "40"
+     ]
+    },
+    {
+     "oid": 25691,
+     "title": "Белый",
+     "swatch": "https://maniolini.ru/upload/uf/b57/g8omcrb5q80yratvrhwnfb5r0cr7an74.png",
+     "url": "https://maniolini.ru/catalog/chernaya_pyatnitsa/obuv_1/leto_1/bosonozhki_1/bosonozhki_63k14_2/?oid=25691",
+     "price": 2190,
+     "oldPrice": 3982,
+     "images": [
+      "https://maniolini.ru/upload/iblock/02d/5okkouz4lck5ba2jou8v0q2e78z2zcgy.jpg",
+      "https://maniolini.ru/upload/iblock/991/hdxyo3hb5af6l72w78o6o0l1anbdbee5.jpg",
+      "https://maniolini.ru/upload/iblock/a06/j7a81r9x4e921c4mvehk001keobm2gck.jpg",
+      "https://maniolini.ru/upload/iblock/a12/86w58opolymfy6ktxykzrpjgf59arfcn.jpg",
+      "https://maniolini.ru/upload/iblock/71c/w3otimyroyvsvun5gxyc61j3lcnda2jz.jpg",
+      "https://maniolini.ru/upload/iblock/11f/72xoiy8j6cb4fqgttygrefr2svv7chws.jpg"
+     ],
+     "sizes": [
+      "39"
+     ]
+    }
+   ],
+   "price": 2190
+  },
+  {
+   "id": 19521,
+   "name": "Ботфорты",
+   "category": "chernaya_pyatnitsa",
+   "subsection": "obuv_1",
+   "subsectionTitle": "",
+   "hit": false,
+   "new": false,
+   "sale": false,
+   "allSizes": [
+    "41"
+   ],
+   "colors": [
+    {
+     "oid": 27669,
+     "title": "Бежевый",
+     "swatch": "https://maniolini.ru/upload/uf/01f/zfhhby3mpxuie56u8p9eof9050919i47.png",
+     "url": "https://maniolini.ru/catalog/chernaya_pyatnitsa/obuv_1/zima_1/botforty_4/botforty_zn118_2_k10/?oid=27669",
+     "price": 2990,
+     "oldPrice": 5436,
+     "images": [
+      "https://maniolini.ru/upload/iblock/8e0/3bfb8ogwk3yrux3tykqklvzt2j6nemqs.jpg"
+     ],
+     "sizes": [
+      "41"
+     ]
+    }
+   ],
+   "price": 2990
+  },
+  {
+   "id": 37293,
    "name": "Куртка",
    "category": "chernaya_pyatnitsa",
    "subsection": "verkhnyaya_odezhda_1",
@@ -10753,25 +10751,85 @@
    "new": false,
    "sale": false,
    "allSizes": [
-    "42"
+    "L"
    ],
    "colors": [
     {
-     "oid": 37683,
-     "title": "",
-     "swatch": "",
-     "url": "https://maniolini.ru/catalog/chernaya_pyatnitsa/verkhnyaya_odezhda_1/demisezon_2/kurtki/kurtka_g02952ne_naturalnaya_zamsha/?oid=37683",
+     "oid": 37526,
+     "title": "Молочный",
+     "swatch": "https://maniolini.ru/upload/uf/80b/xgz3ifvuzuvn5nr7xw5zaby8cg24o5q7.png",
+     "url": "https://maniolini.ru/catalog/chernaya_pyatnitsa/verkhnyaya_odezhda_1/demisezon_2/kurtki/kurtka_odkk23/?oid=37526",
      "price": 9900,
      "oldPrice": 18000,
      "images": [
-      "https://maniolini.ru/upload/iblock/ee7/ksgcla2eeuzwa6i53skiv6yywek1z6kv.jpg"
+      "https://maniolini.ru/upload/iblock/fb1/an6oiv2ks9vi0uzpc23o4fyr2blm190n.jpg"
      ],
      "sizes": [
-      "42"
+      "L"
      ]
     }
    ],
    "price": 9900
+  },
+  {
+   "id": 19720,
+   "name": "Ботильоны",
+   "category": "chernaya_pyatnitsa",
+   "subsection": "obuv_1",
+   "subsectionTitle": "",
+   "hit": false,
+   "new": false,
+   "sale": false,
+   "allSizes": [
+    "38"
+   ],
+   "colors": [
+    {
+     "oid": 31473,
+     "title": "Молочный",
+     "swatch": "https://maniolini.ru/upload/uf/80b/xgz3ifvuzuvn5nr7xw5zaby8cg24o5q7.png",
+     "url": "https://maniolini.ru/catalog/chernaya_pyatnitsa/obuv_1/zima_1/botilony_2/botilony_bz54_2_k14/?oid=31473",
+     "price": 2690,
+     "oldPrice": 4891,
+     "images": [
+      "https://maniolini.ru/upload/iblock/774/0annbn2orqpaups4efw684cj19ai2wod.jpg"
+     ],
+     "sizes": [
+      "38"
+     ]
+    }
+   ],
+   "price": 2690
+  },
+  {
+   "id": 19593,
+   "name": "Ботфорты",
+   "category": "chernaya_pyatnitsa",
+   "subsection": "obuv_1",
+   "subsectionTitle": "",
+   "hit": false,
+   "new": false,
+   "sale": false,
+   "allSizes": [
+    "41"
+   ],
+   "colors": [
+    {
+     "oid": 27354,
+     "title": "Черный",
+     "swatch": "https://maniolini.ru/upload/uf/87b/y2t1pezl7eztkhzmchubp074hhayaqi3.png",
+     "url": "https://maniolini.ru/catalog/chernaya_pyatnitsa/obuv_1/zima_1/botforty_4/botforty_zn104_2_k10/?oid=27354",
+     "price": 3790,
+     "oldPrice": 6891,
+     "images": [
+      "https://maniolini.ru/upload/iblock/5bc/k8p4qcxrtu0eqr0li1jkbs6e6w4c9735.jpg"
+     ],
+     "sizes": [
+      "41"
+     ]
+    }
+   ],
+   "price": 3790
   },
   {
    "id": 19729,
@@ -10807,7 +10865,7 @@
    "price": 2790
   },
   {
-   "id": 37287,
+   "id": 37249,
    "name": "Ботфорты",
    "category": "chernaya_pyatnitsa",
    "subsection": "obuv_1",
@@ -10816,30 +10874,77 @@
    "new": false,
    "sale": false,
    "allSizes": [
+    "36",
     "37",
-    "39"
+    "39",
+    "40"
    ],
    "colors": [
     {
-     "oid": 37711,
+     "oid": 37547,
      "title": "Черный",
      "swatch": "https://maniolini.ru/upload/uf/87b/y2t1pezl7eztkhzmchubp074hhayaqi3.png",
-     "url": "https://maniolini.ru/catalog/chernaya_pyatnitsa/obuv_1/demisezon_1/botforty_3/botforty_d118_1_k10/?oid=37711",
-     "price": 2890,
-     "oldPrice": 5255,
+     "url": "https://maniolini.ru/catalog/chernaya_pyatnitsa/obuv_1/demisezon_1/botforty_3/botforty_d214_2_k12/?oid=37547",
+     "price": 2690,
+     "oldPrice": 4891,
      "images": [
-      "https://maniolini.ru/upload/iblock/643/1tei5r6ts528vky4asyyy2ozmqevbama.jpg"
+      "https://maniolini.ru/upload/iblock/94e/9k0wzsn8u5y1daychupd8whr1xg7eusl.jpg"
      ],
      "sizes": [
+      "36",
       "37",
       "39"
      ]
+    },
+    {
+     "oid": 37545,
+     "title": "Молочный",
+     "swatch": "https://maniolini.ru/upload/uf/80b/xgz3ifvuzuvn5nr7xw5zaby8cg24o5q7.png",
+     "url": "https://maniolini.ru/catalog/chernaya_pyatnitsa/obuv_1/demisezon_1/botforty_3/botforty_d214_2_k12/?oid=37545",
+     "price": 2690,
+     "oldPrice": 4891,
+     "images": [
+      "https://maniolini.ru/upload/iblock/94e/9k0wzsn8u5y1daychupd8whr1xg7eusl.jpg"
+     ],
+     "sizes": [
+      "40"
+     ]
     }
    ],
-   "price": 2890
+   "price": 2690
   },
   {
-   "id": 37310,
+   "id": 37306,
+   "name": "Туфли",
+   "category": "chernaya_pyatnitsa",
+   "subsection": "obuv_1",
+   "subsectionTitle": "",
+   "hit": false,
+   "new": false,
+   "sale": false,
+   "allSizes": [
+    "35"
+   ],
+   "colors": [
+    {
+     "oid": 37629,
+     "title": "Светло - Бежевый",
+     "swatch": "https://maniolini.ru/upload/uf/01f/zfhhby3mpxuie56u8p9eof9050919i47.png",
+     "url": "https://maniolini.ru/catalog/chernaya_pyatnitsa/obuv_1/demisezon_1/tufli_1/tufli_31s10_3/?oid=37629",
+     "price": 2150,
+     "oldPrice": 3909,
+     "images": [
+      "https://maniolini.ru/upload/iblock/b00/acfw3hmirwivub5dki1rvc13hfebaf9z.jpg"
+     ],
+     "sizes": [
+      "35"
+     ]
+    }
+   ],
+   "price": 2150
+  },
+  {
+   "id": 19540,
    "name": "Ботфорты",
    "category": "chernaya_pyatnitsa",
    "subsection": "obuv_1",
@@ -10848,29 +10953,97 @@
    "new": false,
    "sale": false,
    "allSizes": [
-    "36"
+    "36",
+    "37",
+    "40"
    ],
    "colors": [
     {
-     "oid": 37614,
-     "title": "Синий",
-     "swatch": "https://maniolini.ru/upload/uf/df8/er652dk5em326ohh420a4zmfxszuccfi.png",
-     "url": "https://maniolini.ru/catalog/chernaya_pyatnitsa/obuv_1/demisezon_1/botforty_3/botforty_d211_1_k12/?oid=37614",
-     "price": 2390,
-     "oldPrice": 4345,
+     "oid": 26479,
+     "title": "Черный",
+     "swatch": "https://maniolini.ru/upload/uf/87b/y2t1pezl7eztkhzmchubp074hhayaqi3.png",
+     "url": "https://maniolini.ru/catalog/chernaya_pyatnitsa/obuv_1/zima_1/botforty_4/botforty_z44_12_p4/?oid=26479",
+     "price": 2990,
+     "oldPrice": 5436,
      "images": [
-      "https://maniolini.ru/upload/iblock/288/nz6weh30dwbhcrfg9tnqk5nak4wcxefr.jpg"
+      "https://maniolini.ru/upload/iblock/470/i5q1ta1dkioi02xl9y0d7f2i192vw1s0.jpg"
      ],
      "sizes": [
-      "36"
+      "36",
+      "37",
+      "40"
      ]
     }
    ],
-   "price": 2390
+   "price": 2990
   },
   {
-   "id": 37314,
-   "name": "Куртка",
+   "id": 19370,
+   "name": "Ботфорты",
+   "category": "chernaya_pyatnitsa",
+   "subsection": "obuv_1",
+   "subsectionTitle": "",
+   "hit": false,
+   "new": false,
+   "sale": false,
+   "allSizes": [
+    "37"
+   ],
+   "colors": [
+    {
+     "oid": 27761,
+     "title": "Капучино",
+     "swatch": "https://maniolini.ru/upload/uf/a56/2h202yrdbvjelxs37bcq4jr004o71d7t.png",
+     "url": "https://maniolini.ru/catalog/chernaya_pyatnitsa/obuv_1/zima_1/botforty_4/botforty_zn11_1_k2/?oid=27761",
+     "price": 3790,
+     "oldPrice": 6891,
+     "images": [
+      "https://maniolini.ru/upload/iblock/82a/lprgx0fhkpdx0anf00jia3mlnkxq9bci.jpg"
+     ],
+     "sizes": [
+      "37"
+     ]
+    }
+   ],
+   "price": 3790
+  },
+  {
+   "id": 18968,
+   "name": "Ботфорты",
+   "category": "chernaya_pyatnitsa",
+   "subsection": "obuv_1",
+   "subsectionTitle": "",
+   "hit": false,
+   "new": false,
+   "sale": false,
+   "allSizes": [
+    "38"
+   ],
+   "colors": [
+    {
+     "oid": 20870,
+     "title": "Черный",
+     "swatch": "https://maniolini.ru/upload/uf/87b/y2t1pezl7eztkhzmchubp074hhayaqi3.png",
+     "url": "https://maniolini.ru/catalog/chernaya_pyatnitsa/obuv_1/zima_1/botforty_4/botforty_z138_2_k12/?oid=20870",
+     "price": 2990,
+     "oldPrice": 5436,
+     "images": [
+      "https://maniolini.ru/upload/iblock/ff1/gcqpkwkc0jd3ae7c39b5bhde847p5m2e.jpg",
+      "https://maniolini.ru/upload/iblock/d85/krwsdzd52i4j6b81370sj7bf0aatrdk7.jpg",
+      "https://maniolini.ru/upload/iblock/426/py3b8g0wahx18aya3thqd7yvzbqf509m.jpg",
+      "https://maniolini.ru/upload/iblock/e9e/gfj8qkj10o2j4do9y0bewoe5trfp6iys.jpg",
+      "https://maniolini.ru/upload/iblock/dce/wq2jskobk9v3yjm0rptyi5piy1ovniba.jpg"
+     ],
+     "sizes": [
+      "38"
+     ]
+    }
+   ],
+   "price": 2990
+  },
+  {
+   "id": 37262,
+   "name": "Экошуба",
    "category": "chernaya_pyatnitsa",
    "subsection": "verkhnyaya_odezhda_1",
    "subsectionTitle": "",
@@ -10882,118 +11055,21 @@
    ],
    "colors": [
     {
-     "oid": 37648,
-     "title": "Черный",
-     "swatch": "https://maniolini.ru/upload/uf/87b/y2t1pezl7eztkhzmchubp074hhayaqi3.png",
-     "url": "https://maniolini.ru/catalog/chernaya_pyatnitsa/verkhnyaya_odezhda_1/demisezon_2/kurtki/kurtka_odkk07/?oid=37648",
-     "price": 9900,
-     "oldPrice": 18000,
-     "images": [
-      "https://maniolini.ru/upload/iblock/5bf/nnsjodmqgv35p6iuff606wpp37g18lz0.jpg",
-      "https://maniolini.ru/upload/iblock/880/2yvknc80or5hvq7jo8xany84y2s21d6s.jpg"
-     ],
-     "sizes": [
-      "L"
-     ]
-    },
-    {
-     "oid": 37639,
-     "title": "Молочный",
-     "swatch": "https://maniolini.ru/upload/uf/80b/xgz3ifvuzuvn5nr7xw5zaby8cg24o5q7.png",
-     "url": "https://maniolini.ru/catalog/chernaya_pyatnitsa/verkhnyaya_odezhda_1/demisezon_2/kurtki/kurtka_odkk07/?oid=37639",
-     "price": 9900,
-     "oldPrice": 18000,
-     "images": [
-      "https://maniolini.ru/upload/iblock/880/2yvknc80or5hvq7jo8xany84y2s21d6s.jpg"
-     ],
-     "sizes": [
-      "L"
-     ]
-    }
-   ],
-   "price": 9900
-  },
-  {
-   "id": 37241,
-   "name": "Блузка",
-   "category": "chernaya_pyatnitsa",
-   "subsection": "odezhda_1",
-   "subsectionTitle": "",
-   "hit": false,
-   "new": false,
-   "sale": false,
-   "allSizes": [
-    "XS"
-   ],
-   "colors": [
-    {
-     "oid": 37338,
-     "title": "",
-     "swatch": "",
-     "url": "https://maniolini.ru/catalog/chernaya_pyatnitsa/odezhda_1/demisezon_3/bluzki/bluzka_21aia063/?oid=37338",
-     "price": 2900,
-     "oldPrice": 5273,
-     "images": [
-      "https://maniolini.ru/upload/iblock/033/6a6w0g7u6eyee2pqbeofyyiutgc6klrd.jpg"
-     ],
-     "sizes": [
-      "XS"
-     ]
-    }
-   ],
-   "price": 2900
-  },
-  {
-   "id": 37273,
-   "name": "Шляпа",
-   "category": "chernaya_pyatnitsa",
-   "subsection": "aksessuary",
-   "subsectionTitle": "",
-   "hit": false,
-   "new": false,
-   "sale": false,
-   "allSizes": [],
-   "colors": [
-    {
-     "oid": 37448,
-     "title": "Черный",
-     "swatch": "https://maniolini.ru/upload/uf/87b/y2t1pezl7eztkhzmchubp074hhayaqi3.png",
-     "url": "https://maniolini.ru/catalog/chernaya_pyatnitsa/aksessuary/shlyapa_sh15/?oid=37448",
-     "price": 700,
-     "oldPrice": 1273,
-     "images": [
-      "https://maniolini.ru/upload/iblock/588/tks71q2ppyd3iv9lpgy68h6efl3vz7o1.jpg"
-     ],
-     "sizes": []
-    },
-    {
-     "oid": 37447,
+     "oid": 37609,
      "title": "Серый",
      "swatch": "https://maniolini.ru/upload/uf/a10/jrbcvehu4h002xnx9mra6uurt094r2lc.png",
-     "url": "https://maniolini.ru/catalog/chernaya_pyatnitsa/aksessuary/shlyapa_sh15/?oid=37447",
-     "price": 700,
-     "oldPrice": 1273,
+     "url": "https://maniolini.ru/catalog/chernaya_pyatnitsa/verkhnyaya_odezhda_1/zima_2/shuby/ekoshuba_ita002/?oid=37609",
+     "price": 6900,
+     "oldPrice": 12545,
      "images": [
-      "https://maniolini.ru/upload/iblock/b43/esg5qxmtr11zfbao93dhae6yaiwskqdo.jpg",
-      "https://maniolini.ru/upload/iblock/588/tks71q2ppyd3iv9lpgy68h6efl3vz7o1.jpg"
+      "https://maniolini.ru/upload/iblock/3c7/j2mua08cifa997u2894v0ndz0znubwqk.jpg"
      ],
-     "sizes": []
-    },
-    {
-     "oid": 37446,
-     "title": "Бежевый",
-     "swatch": "https://maniolini.ru/upload/uf/01f/zfhhby3mpxuie56u8p9eof9050919i47.png",
-     "url": "https://maniolini.ru/catalog/chernaya_pyatnitsa/aksessuary/shlyapa_sh15/?oid=37446",
-     "price": 700,
-     "oldPrice": 1273,
-     "images": [
-      "https://maniolini.ru/upload/iblock/eef/n6nv95y46x5z5i023r3201o1e7d7tjz7.jpg",
-      "https://maniolini.ru/upload/iblock/588/tks71q2ppyd3iv9lpgy68h6efl3vz7o1.jpg"
-     ],
-     "sizes": []
+     "sizes": [
+      "L"
+     ]
     }
    ],
-   "price": 700
+   "price": 6900
   },
   {
    "id": 37264,
@@ -11044,117 +11120,7 @@
    "price": 2990
   },
   {
-   "id": 37301,
-   "name": "Туфли",
-   "category": "chernaya_pyatnitsa",
-   "subsection": "obuv_1",
-   "subsectionTitle": "",
-   "hit": false,
-   "new": false,
-   "sale": false,
-   "allSizes": [
-    "38",
-    "39",
-    "40"
-   ],
-   "colors": [
-    {
-     "oid": 37757,
-     "title": "Голубой",
-     "swatch": "https://maniolini.ru/upload/uf/66d/ek2832hdyqhgd8wgrz5e7dct0r5xv1j6.png",
-     "url": "https://maniolini.ru/catalog/chernaya_pyatnitsa/obuv_1/demisezon_1/tufli_1/tufli_27s10_3_shelk/?oid=37757",
-     "price": 2490,
-     "oldPrice": 4527,
-     "images": [
-      "https://maniolini.ru/upload/iblock/8bf/vqp94y9rewgnn9x1jnrkazk2lkfuwuuu.jpg"
-     ],
-     "sizes": [
-      "40"
-     ]
-    },
-    {
-     "oid": 37755,
-     "title": "Желтый",
-     "swatch": "https://maniolini.ru/upload/uf/482/ulj4gff5ojrvdx5gdsra7g6dod7nqi5a.png",
-     "url": "https://maniolini.ru/catalog/chernaya_pyatnitsa/obuv_1/demisezon_1/tufli_1/tufli_27s10_3_shelk/?oid=37755",
-     "price": 2490,
-     "oldPrice": 4527,
-     "images": [
-      "https://maniolini.ru/upload/iblock/9b2/rwdgs88b4kcrl2amyq66dvg2pp0ktnma.jpg",
-      "https://maniolini.ru/upload/iblock/8bf/vqp94y9rewgnn9x1jnrkazk2lkfuwuuu.jpg"
-     ],
-     "sizes": [
-      "38",
-      "39"
-     ]
-    }
-   ],
-   "price": 2490
-  },
-  {
-   "id": 37294,
-   "name": "Куртка",
-   "category": "chernaya_pyatnitsa",
-   "subsection": "verkhnyaya_odezhda_1",
-   "subsectionTitle": "",
-   "hit": false,
-   "new": false,
-   "sale": false,
-   "allSizes": [
-    "42"
-   ],
-   "colors": [
-    {
-     "oid": 37506,
-     "title": "",
-     "swatch": "",
-     "url": "https://maniolini.ru/catalog/chernaya_pyatnitsa/verkhnyaya_odezhda_1/demisezon_2/kurtki/kurtka_g02347cu_naturalnaya_kozha/?oid=37506",
-     "price": 9900,
-     "oldPrice": 18000,
-     "images": [
-      "https://maniolini.ru/upload/iblock/214/qqghqepvlbjbjo37ab0t61m0hax1vnpq.jpg"
-     ],
-     "sizes": [
-      "42"
-     ]
-    }
-   ],
-   "price": 9900
-  },
-  {
-   "id": 19569,
-   "name": "Ботфорты",
-   "category": "chernaya_pyatnitsa",
-   "subsection": "obuv_1",
-   "subsectionTitle": "",
-   "hit": false,
-   "new": false,
-   "sale": false,
-   "allSizes": [
-    "36",
-    "38"
-   ],
-   "colors": [
-    {
-     "oid": 26983,
-     "title": "Бежевый",
-     "swatch": "https://maniolini.ru/upload/uf/01f/zfhhby3mpxuie56u8p9eof9050919i47.png",
-     "url": "https://maniolini.ru/catalog/chernaya_pyatnitsa/obuv_1/zima_1/botforty_4/botforty_z01_2_p0/?oid=26983",
-     "price": 2990,
-     "oldPrice": 5436,
-     "images": [
-      "https://maniolini.ru/upload/iblock/195/se43pr1guq684yami7kwgwg3y7uax3bw.jpg"
-     ],
-     "sizes": [
-      "36",
-      "38"
-     ]
-    }
-   ],
-   "price": 2990
-  },
-  {
-   "id": 19540,
+   "id": 37312,
    "name": "Ботфорты",
    "category": "chernaya_pyatnitsa",
    "subsection": "obuv_1",
@@ -11165,14 +11131,14 @@
    "allSizes": [
     "36",
     "37",
-    "40"
+    "39"
    ],
    "colors": [
     {
-     "oid": 26479,
+     "oid": 37733,
      "title": "Черный",
      "swatch": "https://maniolini.ru/upload/uf/87b/y2t1pezl7eztkhzmchubp074hhayaqi3.png",
-     "url": "https://maniolini.ru/catalog/chernaya_pyatnitsa/obuv_1/zima_1/botforty_4/botforty_z44_12_p4/?oid=26479",
+     "url": "https://maniolini.ru/catalog/chernaya_pyatnitsa/obuv_1/demisezon_1/botforty_3/botforty_d44_3_p5/?oid=37733",
      "price": 2990,
      "oldPrice": 5436,
      "images": [
@@ -11181,174 +11147,6 @@
      "sizes": [
       "36",
       "37",
-      "40"
-     ]
-    }
-   ],
-   "price": 2990
-  },
-  {
-   "id": 19572,
-   "name": "Ботфорты",
-   "category": "chernaya_pyatnitsa",
-   "subsection": "obuv_1",
-   "subsectionTitle": "",
-   "hit": false,
-   "new": false,
-   "sale": false,
-   "allSizes": [
-    "36"
-   ],
-   "colors": [
-    {
-     "oid": 27211,
-     "title": "Черный",
-     "swatch": "https://maniolini.ru/upload/uf/87b/y2t1pezl7eztkhzmchubp074hhayaqi3.png",
-     "url": "https://maniolini.ru/catalog/chernaya_pyatnitsa/obuv_1/zima_1/botforty_4/botforty_z02_1_k2_pchelka_zamsha/?oid=27211",
-     "price": 2990,
-     "oldPrice": 5436,
-     "images": [
-      "https://maniolini.ru/upload/iblock/906/sf8uu787c7s9oncwpmpj1idk9djp05m6.jpg"
-     ],
-     "sizes": [
-      "36"
-     ]
-    },
-    {
-     "oid": 26984,
-     "title": "Бирюзовый",
-     "swatch": "https://maniolini.ru/upload/uf/e25/sqkcicm8dyy563c7gkko94raz3ilmkos.png",
-     "url": "https://maniolini.ru/catalog/chernaya_pyatnitsa/obuv_1/zima_1/botforty_4/botforty_z02_1_k2_pchelka_zamsha/?oid=26984",
-     "price": 2990,
-     "oldPrice": 5436,
-     "images": [
-      "https://maniolini.ru/upload/iblock/906/sf8uu787c7s9oncwpmpj1idk9djp05m6.jpg"
-     ],
-     "sizes": [
-      "36"
-     ]
-    }
-   ],
-   "price": 2990
-  },
-  {
-   "id": 19349,
-   "name": "Сапоги",
-   "category": "chernaya_pyatnitsa",
-   "subsection": "obuv_1",
-   "subsectionTitle": "",
-   "hit": false,
-   "new": false,
-   "sale": false,
-   "allSizes": [
-    "40",
-    "41"
-   ],
-   "colors": [
-    {
-     "oid": 31706,
-     "title": "Черный",
-     "swatch": "https://maniolini.ru/upload/uf/87b/y2t1pezl7eztkhzmchubp074hhayaqi3.png",
-     "url": "https://maniolini.ru/catalog/chernaya_pyatnitsa/obuv_1/zima_1/sapogi_4/sapogi_sz02_1_k10/?oid=31706",
-     "price": 2590,
-     "oldPrice": 4709,
-     "images": [
-      "https://maniolini.ru/upload/iblock/de8/9xsfwjm0jgkop5piay08auuctpyg656l.jpg"
-     ],
-     "sizes": [
-      "40",
-      "41"
-     ]
-    },
-    {
-     "oid": 31687,
-     "title": "Серый",
-     "swatch": "https://maniolini.ru/upload/uf/a10/jrbcvehu4h002xnx9mra6uurt094r2lc.png",
-     "url": "https://maniolini.ru/catalog/chernaya_pyatnitsa/obuv_1/zima_1/sapogi_4/sapogi_sz02_1_k10/?oid=31687",
-     "price": 2590,
-     "oldPrice": 4709,
-     "images": [
-      "https://maniolini.ru/upload/iblock/8c4/gsdi4s6vbtef416mljn45edlnkncaikf.jpg",
-      "https://maniolini.ru/upload/iblock/de8/9xsfwjm0jgkop5piay08auuctpyg656l.jpg"
-     ],
-     "sizes": [
-      "41"
-     ]
-    },
-    {
-     "oid": 31668,
-     "title": "Капучино",
-     "swatch": "https://maniolini.ru/upload/uf/a56/2h202yrdbvjelxs37bcq4jr004o71d7t.png",
-     "url": "https://maniolini.ru/catalog/chernaya_pyatnitsa/obuv_1/zima_1/sapogi_4/sapogi_sz02_1_k10/?oid=31668",
-     "price": 2590,
-     "oldPrice": 4709,
-     "images": [
-      "https://maniolini.ru/upload/iblock/799/frz3elmlk7ry3zusclg7tw75wzejtzuy.jpg",
-      "https://maniolini.ru/upload/iblock/de8/9xsfwjm0jgkop5piay08auuctpyg656l.jpg"
-     ],
-     "sizes": [
-      "40"
-     ]
-    }
-   ],
-   "price": 2590
-  },
-  {
-   "id": 37240,
-   "name": "Пуховик",
-   "category": "chernaya_pyatnitsa",
-   "subsection": "verkhnyaya_odezhda_1",
-   "subsectionTitle": "",
-   "hit": false,
-   "new": false,
-   "sale": false,
-   "allSizes": [
-    "M",
-    "L"
-   ],
-   "colors": [
-    {
-     "oid": 37516,
-     "title": "",
-     "swatch": "",
-     "url": "https://maniolini.ru/catalog/chernaya_pyatnitsa/verkhnyaya_odezhda_1/zima_2/pukhoviki/pukhovik_hlg8750/?oid=37516",
-     "price": 5790,
-     "oldPrice": 10527,
-     "images": [
-      "https://maniolini.ru/upload/iblock/f5e/of64uwchjfiybpfergrmhd9alwia36pg.jpg"
-     ],
-     "sizes": [
-      "M",
-      "L"
-     ]
-    }
-   ],
-   "price": 5790
-  },
-  {
-   "id": 37311,
-   "name": "Ботфорты",
-   "category": "chernaya_pyatnitsa",
-   "subsection": "obuv_1",
-   "subsectionTitle": "",
-   "hit": false,
-   "new": false,
-   "sale": false,
-   "allSizes": [
-    "39"
-   ],
-   "colors": [
-    {
-     "oid": 37740,
-     "title": "Белый",
-     "swatch": "https://maniolini.ru/upload/uf/b57/g8omcrb5q80yratvrhwnfb5r0cr7an74.png",
-     "url": "https://maniolini.ru/catalog/chernaya_pyatnitsa/obuv_1/demisezon_1/botforty_3/botforty_d43_2_p0/?oid=37740",
-     "price": 2990,
-     "oldPrice": 5436,
-     "images": [
-      "https://maniolini.ru/upload/iblock/b1c/3m4v513rbq087amn894n8815r014me8u.jpg"
-     ],
-     "sizes": [
       "39"
      ]
     }
