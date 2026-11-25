@@ -18,6 +18,7 @@ window.MANI_CONFIG = {
   messageGeneral: "Здравствуйте! Хочу подобрать одежду из каталога MANIOLINI.",
   messageItem: "Здравствуйте! Интересует товар: {name}{variant}, {price}\n{url}",
   site: "https://maniolini.ru",
+  metrikaCounterId: 114676940,
   // Ресайз фото через бесплатный CDN, чтобы каталог быстро грузился в телефоне.
   // Пустая строка — грузить оригиналы с сайта (по ~400 КБ).
   imageProxy: "https://wsrv.nl/?w={w}&output=webp&url={url}",

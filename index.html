@@ -13,7 +13,27 @@
   <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css?v=20261125-7">
   <script src="https://telegram.org/js/telegram-web-app.js"></script>
-  <script src="config.js?v=20261027141832"></script>
+  <script src="config.js?v=20261125-8"></script>
+  <script>
+    (() => {
+      const id = window.MANI_CONFIG.metrikaCounterId;
+      if (!id || location.hostname !== "mpanalitikmani-dot.github.io") return;
+      window.ym = window.ym || function () { (window.ym.a = window.ym.a || []).push(arguments); };
+      window.ym.l = Date.now();
+      const tag = document.createElement("script");
+      tag.async = true;
+      tag.src = "https://mc.yandex.ru/metrika/tag.js";
+      document.head.appendChild(tag);
+      window.ym(id, "init", { defer: true, webvisor: false, clickmap: false, trackLinks: false });
+      // Telegram carries launch data in the fragment. Send only the page and campaign tags.
+      const page = new URL(location.pathname, location.origin);
+      for (const key of ["utm_source", "utm_medium", "utm_campaign"]) {
+        const value = new URLSearchParams(location.search).get(key);
+        if (value && /^[a-z][a-z0-9_-]{0,63}$/i.test(value)) page.searchParams.set(key, value);
+      }
+      window.ym(id, "hit", page.href, { referer: "" });
+    })();
+  </script>
 </head>
 <body>
   <header class="top">
@@ -154,6 +174,6 @@
     </div>
   </div>
 
-  <script src="app.js?v=20261125-7"></script>
+  <script src="app.js?v=20261125-8"></script>
 </body>
 </html>

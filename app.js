@@ -7,6 +7,7 @@
   // Telegram Mini App: скрипт определяет WebApp и вне Telegram, поэтому смотрим на platform
   const tg = window.Telegram && window.Telegram.WebApp;
   const inTg = !!(tg && tg.platform && tg.platform !== "unknown");
+  const goal = (name) => window.ym?.(CFG.metrikaCounterId, "reachGoal", name);
 
   const state = {
     all: [], blackFriday: [], categories: [], looks: [], cat: "", sub: "", q: "", size: "", color: "", shown: PAGE,
@@ -190,6 +191,7 @@
   function openProduct(id, colorIdx = 0, category = "") {
     const products = category === BLACK_FRIDAY ? state.blackFriday : state.all;
     const p = products.find((x) => x.id === id); if (!p) return;
+    goal("product_open");
     state.current = p;
     // Если в каталоге выбран размер и он есть в этом цвете — сразу подставляем
     state.pickedSize = "";
@@ -253,6 +255,7 @@
   });
   $("pWrite").addEventListener("click", () => contact(state.current));
   $("pSite").addEventListener("click", (e) => {
+    goal("site_click");
     if (inTg) { e.preventDefault(); tg.openLink($("pSite").href); }
   });
 
@@ -321,6 +324,7 @@
   // Текст сообщения всегда виден: Telegram не гарантирует подстановку ?text= в чат
   // (а если в чате уже есть черновик — оставляет старый), поэтому человек видит, что отправляет.
   function contact(p, text) {
+    goal("contact_click");
     haptic("medium");
     $("cTitle").textContent = p ? "Сообщение о товаре" : text ? "Сообщение об образе" : "Ваше сообщение";
     $("cText").value = text || message(p);
@@ -473,7 +477,10 @@ ${state.looks[i].src}`;
   async function init() {
     initTg();
     $("siteLink").href = CFG.site;
-    $("siteLink").addEventListener("click", (e) => { if (inTg) { e.preventDefault(); tg.openLink(CFG.site); } });
+    $("siteLink").addEventListener("click", (e) => {
+      goal("site_click");
+      if (inTg) { e.preventDefault(); tg.openLink(CFG.site); }
+    });
     try {
       const res = await fetch("data/products.json", { cache: "no-cache" });
       if (!res.ok) throw new Error("Catalog HTTP " + res.status);
