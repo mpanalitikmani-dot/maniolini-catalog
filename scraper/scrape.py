@@ -12,6 +12,7 @@ import json
 import re
 import sys
 import time
+import urllib.error
 import urllib.parse
 import urllib.request
 from concurrent.futures import ThreadPoolExecutor
@@ -29,6 +30,9 @@ CATEGORIES = {
     "obuv": "Обувь",
     "dlya_doma": "Для дома",
 }
+PROMO_SLUG = "chernaya_pyatnitsa"
+PROMO_TITLE = "Чёрная пятница"
+NO_IMAGE = "/bitrix/templates/aspro-premier/images/svg/noimage_product.svg"
 MAX_PAGES = 30
 
 CARD_SPLIT = re.compile(r'<div class="catalog-block__item\s')
@@ -164,6 +168,8 @@ def parse_cards(page: str) -> list[dict]:
         for src in IMG.findall(chunk):
             if src not in images:
                 images.append(src)
+        if not images and url.startswith(f"/catalog/{PROMO_SLUG}/") and NO_IMAGE in chunk:
+            images.append(NO_IMAGE)
         items.append({
             "oid": data["ID"],
             "productId": int(pid.group(1)) if pid else data["ID"],
@@ -246,22 +252,29 @@ def _safe(fn, *args):
 
 def main() -> None:
     cards: dict[int, dict] = {}
+    promo_cards: dict[int, dict] = {}
     sections: dict[str, dict] = {}
 
-    for slug, title in CATEGORIES.items():
+    for slug, title in {**CATEGORIES, PROMO_SLUG: PROMO_TITLE}.items():
+        section_cards = promo_cards if slug == PROMO_SLUG else cards
         print(f"[{slug}]")
         subs: dict[str, str] = {}
         for n in range(1, MAX_PAGES + 1):
             url = f"{BASE}/catalog/{slug}/" + (f"?PAGEN_1={n}" if n > 1 else "")
-            page = fetch(url)
+            try:
+                page = fetch(url)
+            except urllib.error.HTTPError as exc:
+                if slug == PROMO_SLUG and n == 1 and exc.code in (404, 410):
+                    break
+                raise
             if n == 1:
                 subs = subsection_names(page, slug)
             found = parse_cards(page)
-            new = [c for c in found if c["oid"] not in cards]
+            new = [c for c in found if c["oid"] not in section_cards]
             print(f"  page {n}: {len(found)} cards, {len(new)} new")
             for c in new:
                 c["category"] = slug
-                cards[c["oid"]] = c
+                section_cards[c["oid"]] = c
             # Bitrix отдаёт последнюю страницу на «лишних» номерах — новых товаров нет, значит конец
             if not new or f"PAGEN_1={n + 1}" not in page:
                 break
@@ -272,27 +285,36 @@ def main() -> None:
     for c in parse_cards(fetch(BASE + "/")):
         if c["oid"] in cards:
             cards[c["oid"]]["hit"] = cards[c["oid"]]["hit"] or c["hit"]
-        else:
+        elif c["oid"] not in promo_cards:
             cards[c["oid"]] = c
 
     # Все фото и точное наличие размеров — со страницы каждого цвета
-    print(f"[details] {len(cards)} pages")
+    detail_cards = {**cards, **promo_cards}
+    print(f"[details] {len(detail_cards)} pages")
     with ThreadPoolExecutor(max_workers=4) as pool:
-        details = list(pool.map(lambda c: _safe(detail, c) or {}, cards.values()))
-    for c, d in zip(cards.values(), details):
-        c.update(d)
+        details = list(pool.map(lambda c: _safe(detail, c) or {}, detail_cards.values()))
+    for oid, d in zip(detail_cards, details):
+        if oid in cards:
+            cards[oid].update(d)
+        if oid in promo_cards:
+            promo_cards[oid].update(d)
     print(f"  photos: {sum('images' in d for d in details)}, sizes: {sum('sizes' in d for d in details)}")
 
     looks = _safe(lookbook) or []
     print(f"[lookbook] {len(looks)} photos")
 
     items = group(list(cards.values()), sections)
+    promo = group(list(promo_cards.values()), sections)
+    categories = [{"slug": s, "title": t} for s, t in CATEGORIES.items()]
+    if promo:
+        categories.insert(0, {"slug": PROMO_SLUG, "title": PROMO_TITLE})
     OUT.parent.mkdir(parents=True, exist_ok=True)
     OUT.write_text(json.dumps({
         "updated": datetime.now(timezone.utc).isoformat(timespec="seconds"),
         "source": BASE,
-        "categories": [{"slug": s, "title": t} for s, t in CATEGORIES.items()],
+        "categories": categories,
         "products": items,
+        "blackFriday": promo,
         "lookbook": looks,
     }, ensure_ascii=False, indent=1), encoding="utf-8")
     print(f"saved {len(items)} products ({len(cards)} color cards), hits: {sum(p['hit'] for p in items)} -> {OUT}")

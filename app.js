@@ -1,6 +1,7 @@
 (() => {
   const CFG = window.MANI_CONFIG;
   const PAGE = 24;
+  const BLACK_FRIDAY = "chernaya_pyatnitsa";
   const $ = (id) => document.getElementById(id);
 
   // Telegram Mini App: скрипт определяет WebApp и вне Telegram, поэтому смотрим на platform
@@ -8,7 +9,7 @@
   const inTg = !!(tg && tg.platform && tg.platform !== "unknown");
 
   const state = {
-    all: [], categories: [], looks: [], cat: "", sub: "", q: "", size: "", color: "", shown: PAGE,
+    all: [], blackFriday: [], categories: [], looks: [], cat: "", sub: "", q: "", size: "", color: "", shown: PAGE,
     current: null, colorIdx: 0, pickedSize: "",
   };
 
@@ -63,7 +64,7 @@
     const dots = named.length > 1
       ? `<div class="card__swatches">${named.slice(0, 5).map(swatch).join("")}${named.length > 5 ? `+${named.length - 5}` : ""}</div>`
       : "";
-    return `<button class="card" data-id="${p.id}" data-color="${ci}">
+    return `<button class="card" data-id="${p.id}" data-color="${ci}" data-category="${esc(p.category)}">
       <div class="card__img">${imgTag(c.images[0], w, p.name)}<div class="stickers">${stickers(p)}</div></div>
       <div class="card__name">${esc(p.name)}</div>
       <div class="price">${priceHtml(c)}</div>
@@ -74,22 +75,28 @@
   // ---------- Каталог ----------
   function matches(p) {
     const q = state.q.trim().toLowerCase();
-    if (state.cat && p.category !== state.cat) return false;
     if (state.sub && p.subsection !== state.sub) return false;
     if (q && !(p.name + " " + p.subsectionTitle + " " + p.colors.map((c) => c.title).join(" ")).toLowerCase().includes(q)) return false;
     // Цвет и размер должны совпасть в одном варианте: «чёрный 38», а не «чёрный» + «38 в бежевом»
     return p.colors.some((c) =>
       (!state.color || c.title === state.color) && (!state.size || c.sizes.includes(state.size)));
   }
-  const filtered = () => state.all.filter(matches);
+  function categoryProducts() {
+    if (state.cat === BLACK_FRIDAY) return state.blackFriday;
+    return state.cat ? state.all.filter((p) => p.category === state.cat) : state.all;
+  }
+
+  const filtered = () => categoryProducts().filter(matches);
 
   function renderChips() {
     const cats = [{ slug: "", title: "Все" }, ...state.categories];
-    $("cats").innerHTML = cats.map((c) =>
-      `<button class="chip" data-cat="${c.slug}" aria-pressed="${c.slug === state.cat}">${esc(c.title)}</button>`).join("");
+    $("cats").innerHTML = cats.map((c) => {
+      const badge = c.slug === BLACK_FRIDAY ? '<span class="chip__discount">−45%</span>' : "";
+      return `<button class="chip" data-cat="${c.slug}" aria-pressed="${c.slug === state.cat}">${esc(c.title)}${badge}</button>`;
+    }).join("");
 
     const subs = new Map();
-    if (state.cat) state.all.filter((p) => p.category === state.cat && p.subsection)
+    if (state.cat) categoryProducts().filter((p) => p.subsection)
       .forEach((p) => subs.set(p.subsection, p.subsectionTitle || p.subsection));
     $("subs").innerHTML = subs.size < 2 ? "" : [["", "Все"], ...subs].map(([s, t]) =>
       `<button class="chip" data-sub="${s}" aria-pressed="${s === state.sub}">${esc(t)}</button>`).join("");
@@ -144,13 +151,13 @@
     t = setTimeout(() => { state.q = e.target.value; state.shown = PAGE; renderGrid(); }, 150);
   });
   document.addEventListener("click", (e) => {
-    const c = e.target.closest(".card"); if (c) openProduct(+c.dataset.id, +c.dataset.color);
+    const c = e.target.closest(".card"); if (c) openProduct(+c.dataset.id, +c.dataset.color, c.dataset.category);
   });
 
   // ---------- Фильтры размер / цвет ----------
   // Варианты считаем по текущему разделу, чтобы не предлагать «XL» в обуви
   function filterOptions(kind) {
-    const pool = state.all.filter((p) => (!state.cat || p.category === state.cat) && (!state.sub || p.subsection === state.sub));
+    const pool = categoryProducts().filter((p) => !state.sub || p.subsection === state.sub);
     if (kind === "size") {
       const set = new Set();
       pool.forEach((p) => p.colors.forEach((c) => c.sizes.forEach((s) => set.add(s))));
@@ -180,8 +187,9 @@
   $("resetFilters").addEventListener("click", () => { state.size = ""; state.color = ""; haptic(); refresh(); });
 
   // ---------- Карточка товара ----------
-  function openProduct(id, colorIdx = 0) {
-    const p = state.all.find((x) => x.id === id); if (!p) return;
+  function openProduct(id, colorIdx = 0, category = "") {
+    const products = category === BLACK_FRIDAY ? state.blackFriday : state.all;
+    const p = products.find((x) => x.id === id); if (!p) return;
     state.current = p;
     // Если в каталоге выбран размер и он есть в этом цвете — сразу подставляем
     state.pickedSize = "";
@@ -451,10 +459,12 @@ ${state.looks[i].src}`;
     const item = +(qs.get("item") || (k === "item" ? v : "")) || 0;
     if (cat && state.categories.some((c) => c.slug === cat)) state.cat = cat;
     if (!item) return null;
-    for (const p of state.all) {
-      if (p.id === item) return [p.id, 0];
+    const products = state.cat === BLACK_FRIDAY
+      ? [...state.blackFriday, ...state.all] : [...state.all, ...state.blackFriday];
+    for (const p of products) {
+      if (p.id === item) return [p.id, 0, p.category];
       const i = p.colors.findIndex((c) => c.oid === item);
-      if (i >= 0) return [p.id, i];
+      if (i >= 0) return [p.id, i, p.category];
     }
     return null;
   }
@@ -466,8 +476,12 @@ ${state.looks[i].src}`;
     $("siteLink").addEventListener("click", (e) => { if (inTg) { e.preventDefault(); tg.openLink(CFG.site); } });
     try {
       const res = await fetch("data/products.json", { cache: "no-cache" });
+      if (!res.ok) throw new Error("Catalog HTTP " + res.status);
       const data = await res.json();
-      state.all = data.products; state.categories = data.categories; state.looks = data.lookbook || [];
+      state.blackFriday = data.blackFriday || [];
+      const regularIds = new Set(data.products.map((p) => p.id));
+      state.all = [...data.products, ...state.blackFriday.filter((p) => !regularIds.has(p.id))];
+      state.categories = data.categories; state.looks = data.lookbook || [];
       $("updated").textContent = "Обновлено " + new Date(data.updated).toLocaleDateString("ru-RU");
     } catch (e) {
       $("empty").hidden = false;
