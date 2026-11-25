@@ -30,8 +30,9 @@
     return CFG.imageProxy.replace("{w}", w).replace("{url}", encodeURIComponent(url));
   }
   // Если ресайз-CDN недоступен — тихо грузим оригинал с сайта
-  function imgTag(url, w, alt) {
-    return `<img src="${esc(img(url, w))}" data-orig="${esc(url)}" alt="${esc(alt)}" loading="lazy" decoding="async" data-loading>`;
+  function imgTag(url, w, alt, priority = false) {
+    const loading = priority ? 'loading="eager" fetchpriority="high"' : 'loading="lazy"';
+    return `<img src="${esc(img(url, w))}" data-orig="${esc(url)}" alt="${esc(alt)}" ${loading} decoding="async" data-loading>`;
   }
   document.addEventListener("load", (e) => { if (e.target.tagName === "IMG") e.target.removeAttribute("data-loading"); }, true);
   document.addEventListener("error", (e) => {
@@ -66,14 +67,14 @@
     return Math.max(i, 0);
   }
 
-  function card(p, w) {
+  function card(p, w, priority = false) {
     const ci = shownColor(p), c = p.colors[ci];
     const named = p.colors.filter((x) => x.title);
     const dots = named.length > 1
       ? `<div class="card__swatches">${named.slice(0, 5).map(swatch).join("")}${named.length > 5 ? `+${named.length - 5}` : ""}</div>`
       : "";
     return `<button class="card" data-id="${p.id}" data-color="${ci}" data-category="${esc(p.category)}">
-      <div class="card__img">${imgTag(c.images[0], w, p.name)}<div class="stickers">${stickers(p)}</div></div>
+      <div class="card__img">${imgTag(c.images[0], w, p.name, priority)}<div class="stickers">${stickers(p)}</div></div>
       <div class="card__name">${esc(p.name)}</div>
       <div class="price">${priceHtml(c)}</div>
       ${dots}
@@ -131,7 +132,7 @@
     $("hitsSection").hidden = !hits.length;
     // В хитах всегда основной цвет, независимо от фильтров каталога
     const saved = state.color; state.color = "";
-    $("hits").innerHTML = hits.map((p) => card(p, 500)).join("");
+    $("hits").innerHTML = hits.map((p, i) => card(p, 500, i === 0)).join("");
     state.color = saved;
     $("hitsCount").textContent = "листайте →";
   }
@@ -489,7 +490,7 @@ ${state.looks[i].src}`;
       if (inTg) { e.preventDefault(); tg.openLink($("siteLink").href); }
     });
     try {
-      const res = await fetch("data/products.json", { cache: "no-cache" });
+      const res = await fetch("data/products.json");
       if (!res.ok) throw new Error("Catalog HTTP " + res.status);
       const data = await res.json();
       state.blackFriday = data.blackFriday || [];
