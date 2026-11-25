@@ -8,6 +8,13 @@
   const tg = window.Telegram && window.Telegram.WebApp;
   const inTg = !!(tg && tg.platform && tg.platform !== "unknown");
   const goal = (name) => window.ym?.(CFG.metrikaCounterId, "reachGoal", name);
+  function siteVisitUrl(href) {
+    const url = new URL(href);
+    url.searchParams.set("utm_source", "maniolini_miniapp");
+    url.searchParams.set("utm_medium", "referral");
+    url.searchParams.set("utm_campaign", "mini_catalog");
+    return url.href;
+  }
 
   const state = {
     all: [], blackFriday: [], categories: [], looks: [], cat: "", sub: "", q: "", size: "", color: "", shown: PAGE,
@@ -214,7 +221,7 @@
     $("pGallery").scrollLeft = 0;
     $("pDots").innerHTML = c.images.length > 1 ? c.images.map((_, k) => `<span class="${k ? "" : "on"}"></span>`).join("") : "";
     $("pPrice").innerHTML = priceHtml(c);
-    $("pSite").href = c.url;
+    $("pSite").href = siteVisitUrl(c.url);
 
     const named = p.colors.filter((x) => x.title);
     $("pColorsBox").hidden = !named.length;
@@ -476,10 +483,10 @@ ${state.looks[i].src}`;
   // ---------- Старт ----------
   async function init() {
     initTg();
-    $("siteLink").href = CFG.site;
+    $("siteLink").href = siteVisitUrl(CFG.site);
     $("siteLink").addEventListener("click", (e) => {
       goal("site_click");
-      if (inTg) { e.preventDefault(); tg.openLink(CFG.site); }
+      if (inTg) { e.preventDefault(); tg.openLink($("siteLink").href); }
     });
     try {
       const res = await fetch("data/products.json", { cache: "no-cache" });
